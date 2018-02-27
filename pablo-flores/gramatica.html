@@ -1,0 +1,659 @@
+<html>
+<head>
+<title>Cómo crear un lenguaje - Gramática</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1">
+
+<link rel="shortcut icon" href="/ii-favicon.png" />
+<meta name="og:title" content="Idiomas imaginarios" />
+<meta name="og:type" content="website" />
+<meta name="og:description" content="Guías y artículos sobre la creación de idiomas" />
+<meta name="og:image" content="https://idiomas-imaginarios.github.io/ii-socialicon.png" />
+
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="pablo-flores-style.css">
+
+<body>
+
+<div id="wrapper">
+<div id="title">
+<h1>Idiomas imaginarios</h1>
+</div>
+
+<div id="main">
+
+<div class="crumbles">
+<a href="/">Inicio</a> &gt; <a href="como-crear-un-lenguaje.html">Cómo crear un lenguaje</a> &gt;
+</div>
+
+<hr/>
+
+<h1 id="gramatica">Gramática</h1>
+
+<p>En esta sección tomaré algunos temas gramaticales y los desarrollaré, mostrando con ejemplos, cuando sea posible, cómo los manejan lenguajes naturales, y qué podés hacer sobre ellos. No se puede tener un lenguaje sin gramática; si no pensás en eso, seguramente vas a terminar copiando la estructura de tu propio lenguaje, y todo no va a pasar de un ejercicio de traducción de palabras sueltas.</p>
+
+<h3 id="tipologia">Tipología morfológica</h3>
+
+<p>La categorización clásica divide a las lenguas en <strong>inflexivas</strong>, <strong>aglutinantes</strong>, y <strong>aislantes</strong>. Esta categorización se ha probado muy limitada, pero la voy a explicar porque es un buen comienzo para entender las diferencias.</p>
+
+<h4 id="inflexion">Inflexión</h4>
+
+<p>Un lenguaje <strong>inflexivo</strong> usa <strong>inflexiones</strong>, las cuales son afijos usados, por ejemplo, para conjugar verbos, declinar sustantivos y otras cosas. Algunos lenguajes usan sufijos para esto, mientras que otros usan prefijos o incluso infijos. Algunos ejemplos del español son la <em>-s</em> usada para pluralizar sustantivos, y las terminaciones <em>-aba, -abas, -ábamos</em> del tiempo pasado de los verbos.</p>
+
+
+<p>Otro tipo de inflexión (más 'puro', si es posible) es el cambio de las raíces de las palabras. Por ejemplo, la inflexión de los verbos ingleses como <em>sing</em>, pasado <em>sang</em>, participio <em>sung</em>, que son inflexiones de un concepto radical abstracto <em>sing</em>. La inflexión por cambio vocálico es bastante común en ciertas lenguas. El cambio consonántico también existe, pero es más raro. También en inglés hay ejemplos: pares como <em>breath</em> <tt>/brET/</tt> 'aliento' vs. <em>breathe</em> <tt>/briD/</tt> 'respirar' (donde <tt>/T/</tt> cambia de sorda a sonora <tt>/D/</tt>, además de alternarse la vocal), <em>house</em> 'casa' vs. <em>house</em> 'albergar' (cambia <tt>/s/</tt> por <tt>/z/</tt>).</p>
+
+<p>La inflexión incluye también el cambio de tono, de acento, de altura o longitud de una vocal, o repetir una parte de la raíz. Lo principal es que una inflexión puede tener más de un significado al mismo tiempo. Por ejemplo, en español, la <em>-í</em> de <em>viví</em> es una inflexión que une tiempo pretérito indefinido, primera persona del singular, modo indicativo. Ejemplos de lenguajes inflexivos son el inglés, el español, el alemán, el latín, el griego, y en general todos los lenguajes indoeuropeos.</p>
+
+<h4 id="aglutinacion">Aglutinación</h4>
+
+<p>Un lenguaje <strong>aglutinante</strong> usa afijos cuyo significado es único, y que se concatenan uno después del otro sin fundirse. Algunos lenguajes aglutinantes conocidos son el quechua y muchos otros lenguajes nativos americanos, el turco, el finés, y el húngaro. Por ejemplo, en la palabra quechua <em>wasikunapi</em> 'en las casas', el sufijo de plural <em>-kuna</em> está separado del caso locativo <em>-pi</em>. En finés, <em>huoneissansakaan</em> significa '(ni) siquiera en sus habitaciones', y consiste de cinco morfemas aglutinados, 'habitación-es-en-sus-siquiera'.</p>
+
+<h4 id="aislacion">Aislación</h4>
+
+<p>Un lenguaje <strong><a name="isolating">aislante</a></strong> no usa afijos ni modificaciones de la raíz. Cada palabra es invariable, y los significados se modifican insertando palabras adicionales, o se entienden por contexto. El más conocido ejemplo de lenguaje aislante es el chino. En chino (mandarín), un sustantivo por sí mismo no es singular ni plural, y un verbo no tiene tiempo ni persona; estas distinciones se hacen (cuando hace falta) añadiendo cuantificadores, adverbios o pronombres. En efecto se dice 'libros' diciendo algo parecido a 'varios libro'.</p>
+
+<h3 id="analisis+sintesis">Análisis y síntesis</h3>
+
+<p>La clasificación moderna de las gramáticas es una escala continua que va desde <strong>analítico</strong> a <strong>sintético</strong>. Cuanto más analítico un lenguaje, menos significado tienen las palabras por sí solas, y más importante es el contexto. Cuando más sintético es un lenguaje, más autocontenidas son las palabras. Los lenguajes más analíticos dependen del contexto y del orden de las palabras para expresar significados, mientras que los sintéticos tienden a declinar (añadir inflexiones a) las palabras.</p>
+
+<p>Esta escala se toma como referencia; no hay puntos extremos, pero se pueden comparar dos lenguajes y decir que uno es más sintético que el otro. El chino mandarín es muy analítico; una palabra china sola puede significar muchas cosas, porque no se hacen distinciones en ella: no se sabe si es un verbo, un sustantivo o un adjetivo, o si es pasado o futuro, o plural, o singular, o nada, solamente se tiene el concepto raíz. Algunos lenguajes nativos americanos como el nootka o el chinook son el otro extremo, tan sintéticos que de hecho se los llama <strong>polisintéticos</strong>, y declinan de tal forma las palabras que una sola puede significar 'los muchos pequeños fuegos que estuvieron encendidos en la casa' (esto no lo estoy inventando; la palabra es <em>inikwihl'minih'isit</em>, y de hecho ni siquiera es un verbo o sustantivo aún; necesita prefijos nominales o verbales...). En el medio tenemos el japonés (bastante analítico excepto en los verbos), el inglés (muy analítico, ya que apenas distingue caso en los sustantivos o persona en los verbos), el español, el francés, el italiano, el alemán (ya con muchas inflexiones) y todos los lenguajes aglutinantes, que son de hecho un subconjunto de los inflexivos; el latín, el griego, el sánscrito...</p>
+
+<p>Así que vas a tener que elegir un punto en la escala y quedarte allí. Ésta es probablemente la más importante decisión del proceso. Cada tipo de gramática tiene sus pros y sus contras.</p>
+
+<ul>
+
+<li>Un lenguaje <strong>aislante</strong> evita mucho trabajo en asuntos difíciles como decidir cómo pluralizar sustantivos y conjugar verbos. Pero requiere que planees un orden de palabras rígido y que lo respetes a toda costa, después de asegurarte de que no conduce a ambigüedades (serias). Y un lenguaje totalmente aislante es difícil de crear, ya que hay que eliminar todo rastro de inflexión, aun aquellos de los que nunca sospecharías.</li>
+
+<li>Un lenguaje <strong>aglutinante</strong> implica un cuidadoso plan de afijos (docenas de ellos) que deben tener significados únicos. También tenés que decidir en qué orden aparecerán después o antes de una raíz. Finalmente, los lenguajes aglutinantes pueden producir palabras muy largas, o que son muy difíciles de pronunciar (considerá el georgiano, donde muchos afijos están formados por sólo una o dos consonantes; a veces tienen que unirse a otros afijos del mismo tipo, y terminás teniendo hasta seis consonantes seguidas).</li>
+
+<li>Un lenguaje <strong>inflexivo</strong> produce palabras más cortas y oraciones compactas (cuanto más inflexivo, más compactas), pero requiere que planees todas las inflexiones y combinaciones de significados, porque a veces no vas a poder colocar dos o más seguidas (aglutinadas). Se puede tener una inflexión mínima (como la del inglés) o producir un lenguaje polisintético que declina las palabras para casi cualquier propósito concebible. Cuanto más inflexivo es un lenguaje, más vas a tener que tener cuidado con la concordancia (el acuerdo entre adjetivos y sustantivos, y entre sustantivos y verbos).</li>
+
+</ul>
+
+<h3 id="sapir">La clasificación de Sapir</h3>
+
+<p>Hay otra clasificación de lenguajes, que es mucho más compleja, y fue creada por Edward Sapir en los años 1920. Divide los conceptos en cuatro clases:</p>
+
+<p><strong>Grupo I. Conceptos básicos</strong> (concretos) (objetos, acciones, cualidades): expresados normalmente mediante palabras o elementos radicales independientes; no denotan ninguna relación propiamente dicha.</p>
+
+<p><strong>Grupo II. Conceptos derivativos</strong> (por lo general menos concretos que el grupo I, pero más concretos que el grupo III): expresados normalmente mediante la afijación de elementos no radicales a los elementos radicales, o mediante una modificación interna de estos últimos; difieren del grupo I porque denotan ideas que no interesan al conjunto de la proposición u oración, pero que dan a un elemento radical un incremento particular de significación y que, de ese modo, están íntimamente relacionadas, de una manera concreta, con los conceptos del grupo I. Por ejemplo, los prefijos <em>pre-, in-, des-</em> y los sufijos <em>-mente, -ito</em>.</p>
+
+<p><strong>Grupo III. Conceptos concretos de relación</strong> (más abstractos aún, pero no totalmente desprovistos de un matiz concreto): expresados normalmente mediante la afijación de elementos no radicales a los elementos radicales, pero, por lo común, de manera menos íntima que los elementos del grupo II, o mediante una modificación interna de los elementos radicales; difieren fundamentalmente del grupo II porque indican o dan a entender relaciones que trascienden la palabra particular a la cual van adheridos de manera inmediata. Por ejemplo, la <em>-s</em> del plural de los sustantivos.</p>
+
+<p><strong>Grupo IV. Conceptos puros de relación</strong> (totalmente abstractos): expresados normalmente mediante la afijación de elementos no radicales a los elementos radicales (y en tal caso estos conceptos suelen entremezclarse con los del grupo III), o por su modificación interna, o por palabras independientes, o por la posición en la frase; sirven para relacionar entre sí los elementos concretos de la proposición, dándoles así una forma sintáctica definida. Por ejemplo, las modificaciones de <em>le, la, te</em> de <em>él, ella, tú</em> que indican caso acusativo; las preposiciones <em>a, para</em>; la posición de "el perro" en "Veo al perro" indicando que es el objeto del verbo, etc.</p>
+
+<p>La clasificación de los lenguajes con respecto a estas clases es como sigue:</p>
+
+<p><strong>Tipo A.</strong> Lenguajes que sólo expresan conceptos de los grupos I y IV, de manera que no tienen medios para modificar el significado de un elemento radical (o raíz) por medio de afijos o cambios internos. Por ejemplo, el chino.</p>
+
+<p><strong>Tipo B.</strong> Lenguajes que expresan conceptos de los grupos I, II y IV, preservando las relaciones sintácticas en forma pura (fuera de la palabra) y capaces de modificar el significado de las raíces por afijación o cambio interno.</p>
+
+<p><strong>Tipo C.</strong> Lenguajes que expresan conceptos de los grupos I y III, es decir, en los cuales las relaciones sintácticas se expresan en conexión necesaria con conceptos no totalmente desprovistos de significado concreto, pero que, si se prescinde de esa mezcla, no tienen la facultad de cambiar el sentido de sus elementos radicales por medio de afijos o de cambios internos. [El grupo III absorbe al grupo IV.]</p>
+
+<p><strong>Tipo D.</strong> Lenguajes que expresan conceptos de los grupos I, II y III, es decir donde las relaciones sintácticas se expresan de forma mezclada, como en el tipo C, y que también pueden modificar el significado de los elementos radicales por afijación o cambio interno. A este grupo pertenecen la mayoría de los lenguajes inflexivos con los que estamos familiarizados, como así también muchos de los aglutinantes.</p>
+
+<p>Cada uno de los tipos A, B, C, D se puede subdividir en <strong>aglutinante</strong>, <strong>fusional</strong> y <strong>simbólico</strong>. Aglutinante significa que las cosas añadidas a la raíz están simplemente yuxtapuestas (puestas juntas); fusional significa que a veces se funden; simbólica implica, aproximadamente, cambio interno de la raíz. El tipo A también tiene un subtipo <strong>aislante</strong>.</p>
+
+<p>El método (aglutinante, fusional o simbólico) de un cierto grupo de conceptos no tiene por qué ser igual al método de un grupo diferente. La clasificación usa un término compuesto, la primera parte del cual se refiere al método para los conceptos de grupo II, y la segunda a los conceptos de los grupos III y IV. Estos métodos no están solos; el inglés, por ejemplo, los usa todos (aunque algunos predominan y otros son marginales). Por ejemplo, <em>goodness</em> 'bondad' de <em>good</em> 'bueno' es aglutinación; <em>books</em> 'libros' de <em>book</em> 'libro' es fusión regular, <em>depth</em> 'profundidad' de <em>deep</em> 'profundo' es fusión irregular, y <em>geese</em> 'gansos' de <em>goose</em> 'ganso' es fusión simbólica o simbolismo. El español no usa la fusión simbólica y prefiere fundamentalmente la fusión regular.</p>
+
+<p>Todo esto conduce a una sola cosa: no tenés por qué esperar que todo esté en su lugar 'correcto' en tu lenguaje (es decir, en el mismo lugar que en español). El número en español (singular vs. plural) es un concepto del grupo III, bastante abstracto y que forma parte íntima de las palabras; no concebimos una palabra sin número. En tibetano, sin embargo, el número es una característica opcional y no está gramaticalizada como en español; no es una cosa abstracta que debe incluirse en la palabra, sino una cosa concreta, la idea de pluralidad: 'varios' o 'muchos' se expresa por una raíz que es una palabra separada y con todas las de la ley, un concepto del grupo I. No es parte obligatoria de la sintaxis y por lo tanto se omite cuando no se necesita.</p>
+
+<p>Pensá mucho sobre esto. Después de colocar tu lenguaje en la escala, tenés que decidir qué clases de palabras vas a usar, y cómo se relacionarán unas con otras.</p>
+
+<p><a href="#gramatica" class="top-link">↑ Volver arriba</a></p>
+
+<h2 id="sustantivos">Sustantivos</h2>
+
+<h3 id="numero">Número</h3>
+
+<p>La distinción de número no está restringida a singular-plural; muchos lenguajes tienen formas especiales para pares de cosas (número dual) y algunos para grupos de tres (trial). Ciertos lenguajes tienen un número paucal (del latín <em>paucum</em> 'poco'), que se usa para plurales de pocos objetos (generalmente no más de diez), reservándose el plural simple para cantidades más grandes.</p>
+
+<p>Podrías tener un singular que se refiere a un objeto realmente único, o plurales que distingan las cosas que se ven ('estas casas') o todas las cosas de ese tipo ('las casas' en general). Tu imaginación es el único límite.</p>
+
+<p>Pero también podés dejar el número fuera del sistema. Esto es lo que hacen el japonés, el chino y la mayoría de las otras lenguas de Asia Oriental. En caso de necesidad, y si el contexto no es suficiente, se puede usar una partícula o adjetivo similar a 'varios' o 'muchos' para expresar la idea de pluralidad.</p>
+
+<p>Si usás una inflexión para marcar el plural, no hace falta que sea un sufijo corto; puede ser relativamente largo (como el quechua <em>-kuna</em>) o puede ser un prefijo, o un infijo, o aparecer como un cambio vocálico interno. Muchos lenguajes marcan el plural de ciertas clases de objetos por reduplicación, es decir repitiendo la palabra o su primera o última sílaba (en Bahasa Indonesia se dice <em>baterei-baterei</em> 'baterías'; en japonés, <em>hitobito</em> 'gente' como una reduplicación ligeramente modificada de <em>hito</em> 'persona').</p>
+
+<p>Los plurales ingleses de palabras como <em>man</em>, <em>goose</em>, <em>mouse</em> (<em>men</em>, <em>geese</em>, <em>mice</em>) son ejemplos de cambio de una vocal por otra, conocido como gradación o alternancia vocálica. La misma resultó de un cambio fonético (Umlaut) originalmente condicionado por la presencia de un sufijo de plural, que se perdió más tarde.</p>
+
+<h3 id="genero">Género</h3>
+
+<p>Género es el término común que designa al concepto general de clase (nominal). El género no tiene por qué ser una oposición masculino-femenino. El alemán, el griego y el latín tienen tres géneros: masculino, femenino y neutro. El swahili tiene clases nominales (géneros) distintas para animales, para seres humanos, para sustantivos abstractos, etc. Muchos lenguajes hacen una distinción de género entre objetos animados e inanimados (personas y animales vs. plantas y objetos no vivientes, o similar).</p>
+
+<p>Las clases nominales pueden ser más o menos arbitrarias. En las lenguas indoeuropeas usualmente no hay relación entre el género y el objeto real (el género no tiene significado, es convencional). Aunque <em>mesa</em> en español es femenino, no sólo no tiene absolutamente nada de femenino, sino que tampoco tiene nada en común con otros sustantivos de género femenino, como <em>comadreja</em> o <em>crisis</em>... La distinción animado-inanimado tiende a ser menos arbitraria, pero siempre hay casos límite e idiosincracias culturales particulares (por ejemplo, algunos lenguajes pueden tomar <em>fuego</em> como sustantivo animado). En los casos en que hay muchas clases que tienen contenido semántico (como en las lenguas bantúes), puede suceder que algunos sustantivos cambien de significado pero permanezcan en la misma clase, ahora 'incorrecta' para ellos (supongamos que se tiene una clase nominal para objetos redondos o curvos, y la palabra <em>arco</em> pasa a significar 'rectángulo por donde debe pasar la pelota para marcar un gol en el fútbol', como en español...).</p>
+
+<h3 id="caso">Caso</h3>
+
+<p>En un sentido estricto, un caso gramatical es una marca inflexiva de la función de un sustantivo en la oración. En un sentido más amplio, es el rol del sustantivo en la oración (marcado de la forma que sea). No hay un conjunto fijo de casos posibles; cada lenguaje distingue uno o más casos morfológicamente marcados y los usa para determinados propósitos. Sin embargo, algunos casos que presentan funciones comunes en muchos lenguajes reciben siempre el mismo nombre.</p>
+
+<p>El latín tiene los siguientes casos, marcados por inflexiones: nominativo, acusativo, genitivo, ablativo, dativo, y vocativo. Un sustantivo está en caso nominativo cuando es el sujeto de una oración; acusativo, cuando es el objeto directo; dativo cuando es objeto indirecto; genitivo cuando es posesivo; ablativo cuando es parte de un complemento verbal; y vocativo cuando muestra una llamada. El español no tiene casos morfológicos (podemos hablar de casos sintácticos, marcados por orden de palabras y por preposiciones). El inglés tiene un caso genitivo marcado por la partícula <em>'s</em>. Ambos además distinguen entre formas sujeto y formas objeto de los pronombres (en español, <em>yo</em> vs. <em>me</em>, <em>él</em> vs. <em>le</em>, etc.). Tu lenguaje puede tener más casos; el estonio tiene 14, y el finés aún más (unos 18, creo). La mayoría de estos casos son locales (es decir, se refieren a posiciones y direcciones: en, sobre, debajo, alrededor, dentro, al lado, desde, hacia, etc.).</p>
+
+<p>Algunos casos se usan luego de ciertas preposiciones (se dice que la preposición 'gobierna' el caso). Mi lenguaje St&#x0101;l&#x0101;g tiene un caso base o absoluto (usado para sujetos y objetos, que son diferenciados además de otras maneras) y un caso oblicuo (que se usa como genitivo o compositivo/asociativo, y con todas las posposiciones).</p>
+
+<h2 id="adjetivos">Adjetivos</h2>
+
+<p>Con los adjetivos entramos en la tierra de las posibilidades. Podés elegir tener adjetivos (como clase de palabras separada), o no. Los adjetivos pueden ser una clase enteramente distinta de las otras, como en inglés; o pueden ser un subconjunto de los sustantivos (en morfología y costumbres), como en español o latín; o pueden comportarse como verbos (como en japonés). Examinemos estas alternativas.</p>
+
+<p>Si son una clase completamente aparte, los adjetivos no tienen por qué comportarse como algo más; pueden tener sus propias reglas de inflexión, o no tener inflexión alguna. Los adjetivos del inglés son un ejemplo de esto: son palabras invariables, excepto (en los adjetivos cortos) por la forma comparativa y superlativa.</p>
+
+<p>Si son como sustantivos, o un subconjunto de éstos, entonces se comportan como sustantivos. En español, donde los sustantivos tienen género y número, los adjetivos también los tienen, y deben concordar con su sustantivo. Muchas veces, gracias a esto, pueden transformarse en sustantivos sin cambiar; <em>rojas</em> puede ser tanto adjetivo ('quiero rosas rojas') como sustantivo ('déme de las rojas') en cuanto a sintaxis y morfología. Curiosamente, algunos sustantivos pueden funcionar como adjetivos en el uso coloquial (por ejemplo, he escuchado muchas veces la frase <em>¡Es tan payaso!</em>. En latín, los adjetivos concuerdan con su sustantivo modificado aún en caso gramatical.</p>
+
+<p>En <a href="http://www.sf.airnet.ne.jp/~ts/japanese/index.html">japonés</a>, los adjetivos de una clase particular (adjetivos <em>na</em>) se comportan como sustantivos; se colocan antes del sustantivo que modifican, seguidos por <em>na</em>, que es la forma relativa de la cópula 'ser'. Por ejemplo: <em>kirei na kimono</em> 'hermoso kimono' -- el adjetivo nominal (o sustantivo calificativo, como se lo llama también), <em>kirei</em>, significa 'hermoso' o 'hermosura', y la frase podría traducirse como 'un kimono que es hermoso / que posee hermosura'. Se puede añadir tiempo a la expresión marcando el tiempo en la cópula: <em>kirei datta kimono</em> 'un kimono que era hermoso'.</p>
+
+<p>Si los adjetivos son como verbos, se conjugan como tales. Otra clase de adjetivos japoneses (adjetivos <em>i</em>, porque todos terminan en <em>-i</em>) funcionan de esta manera; son generalmente una especie de forma participial de los verbos, o bien una cláusula relativa de palabra única (las cláusulas relativas del japonés vienen antes de lo que modifican, al igual que adjetivos y demostrativos). Puede pensarse en los adjetivos japoneses como una combinación de un adjetivo en español + la cópula 'ser', aunque los adjetivos japoneses pueden tomar, y toman, la cópula a veces. Pero el tiempo sigue estando en el adjetivo, no en la cópula. Por ejemplo: <em>Kakkoii desu</em> 'Él es lindo' (forma cortés); <em>Kakkoikatta desu</em> 'Él era lindo'. Aquí <em>kakkoi-</em> es la raíz, mientras que <em>-i</em> es el sufijo para adjetivos en tiempo presente, <em>-katta</em> es para el tiempo pasado, y <em>desu</em> es la forma cortés <em>en tiempo presente</em> de la cópula. Como se ve, el tiempo en esta clase va directamente en el adjetivo, no en la cópula, que puede omitirse a veces.</p>
+
+<p>También puede ocurrir simplemente que los adjetivos no se diferencien para nada de los verbos, como ocurre en mi lenguaje draseléq. En él hay verbos que significan 'ser grande', 'ser amarillo', e incluso 'ser cuatro'. Se dice 'un árbol alto' diciendo 'un árbol siendo-alto', donde 'siendo-alto' es el participio activo del verbo 'ser alto'. Se puede decir 'el árbol es alto' usando 'el árbol' como sujeto del verbo 'ser alto', que se conjuga en tercera persona del singular. Lo mejor de esto es que se pueden fundir dos clases de palabras en una, y cualesquiera medios expresivos que se usen para una sirven para la otra. En draseléq, por ejemplo, se puede decir 'Nos hicimos cuatro (personas)' en una sola palabra. [Si tenés que saberlo: la palabra es <em>tenenrrednüat</em>, <em>ten-</em> reflexivo, <em>en-</em> causativo, <em>rred(n)-</em> 'cuatro', <em>-(n)üat</em> primera persona plural exclusiva, tiempo pasado.]</p>
+
+<p>Muchos adjetivos pueden no existir de ninguna forma (aunque todos los lenguajes tienen algunas palabras que actúan como adjetivos). Las ideas de calificación pueden expresar de otras maneras. El tibetano usa sustantivos abstractos en vez de adjetivos; no hay un adjetivo 'grande', pero sí un sustantivo 'magnitud, tamaño', y 'una habitación grande' se puede expresar como 'una habitación de magnitud'. Esto no es ridículo en español; 'un desastre de proporciones', que sigue una estructura similar, es una expresión conocida y común.</p>
+
+<p>En algunos lenguajes, los adjetivos forman una clase cerrada; hay un cierto número (pequeño) de ellos, generalmente pares opuestos como 'grande/chico' y los colores) y no se pueden formar otros adjetivos.</p>
+
+<p>Si tenés en tu lenguaje una clase morfológicamente separada para los adjetivos, deberías crear algunos afijos (u otros medios) para colorear su significado, para negarlos, y para transformarlos en otras clases de palabras. También tenés que pensar en comparativos y superlativos. No es obligación tenerlos, pero un lenguaje debería poder expresar ideas tales como la de que algo es más alto, o más rojo, o más feo, que alguna otra cosa. El español es analítico en este caso (usa la frase <em>más</em> + adjetivo). El inglés utiliza un sufijo comparativo y otro superlativo con los adjetivos cortos. El japonés utiliza una adposición para los comparativos, y marca los superlativos diciendo simplemente <em>ichiban</em> 'número uno, primero'.</p>
+
+<p><a href="#gramatica" class="top-link">↑ Volver arriba</a></p>
+
+<h2 id="verbos">Verbos</h2>
+
+<h3 id="persona+numero">Persona y número</h3>
+
+<p>En muchos lenguajes, el verbo concuerda con uno de sus argumentos (una de las frases nominales de la oración); en los que marcan sujeto y objeto, generalmente el sujeto. Sin embargo, algunos lenguajes tienen doble concordancia (los verbos en húngaro, por ejemplo, concuerdan con el sujeto y con el objeto a la vez), y en ciertos casos hay concordancia polipersonal (como en vasco, donde los verbos ditransitivos llevan marcado el sujeto, el objeto directo y el objeto indirecto). En otros lenguajes, el verbo concuerda con la frase nominal que esté un caso particular (el nominativo en lenguajes nominativo/acusativos, el absolutivo en los ergativo/absolutivos).</p>
+
+<p>En más de un lenguaje no hay ninguna concordancia: el inglés apenas distingue la tercera persona del singular en presente de las demás; el chino y el japonés no marcan persona ni número en el verbo de ninguna forma.</p>
+
+<h3 id="tiempo">Tiempo</h3>
+
+<p>El sistema de tiempos puede ser cualquier cosa desde una distinción binaria entre presente y no presente, hasta una estructura muy compleja. El único tiempo universal es el presente. Suele haber una distinción básica entre eventos pasados y no pasados, esta última englobando el presente y el futuro. Muchas lenguas no tienen un tiempo futuro marcado morfológicamente en el verbo. Por ejemplo, el inglés usa un auxiliar, <em>will</em>, que de hecho significa también 'querer' o 'tener la intención de', y el verbo queda en infinitivo. El español tiene un tiempo futuro que proviene de una fusión del infinitivo más formas de <em>haber</em>, habiendo perdido el futuro latino original (<em>perderé</em> proviene de <em>perder he</em>, es decir <em>he de perder</em>), y va firmemente en camino de perder este tiempo futuro sintético, que está prácticamente obsoleto en el discurso coloquial (reemplazado por una perífrasis con <em>ir a</em>) y apenas se usa para expresar incertidumbre ("vendré mañana o pasado").</p>
+
+<p>Se pueden tener varios tipos de presente, pasado o futuro. El español tiene dos pasados, el pretérito imperfecto (para acciones que ocurrieron en un período del pasado) y el indefinido (que muestra acciones terminadas, sin considerar su duración), aunque esta distinción es formalmente una de aspecto. Algunos lenguajes no usan marca de tiempo nunca, sino adverbios o frases adverbiales ('hoy', 'mañana', 'hace una semana') para marcarlo cuando haga falta.</p>
+
+<h3 id="aspecto">Aspecto</h3>
+
+<p>Del sitio <a href="javascript:;//no hace nada">Invisible Lighthouse</a><span class="clarification"> [enlace muerto]</span>, de Richard Harrison (traducido libremente): "El aspecto se refiere a la constitución temporal interna de un evento, o la manera en que la acción verbal se distribuye a través del continuo espaciotemporal. El tiempo, en cambio, señala la ubicación de un evento en el continuo de eventos." En muchas descripciones de gramática tradicionales, el tiempo y el aspecto (al igual que el modo) se toman como una unidad; por ejemplo, lo que se llama 'pretérito indefinido' en español es en realidad un tiempo pasado junto con un aspecto perfectivo.</p>
+
+<p>Los verbos pueden declinarse para mostrar que el énfasis es en el proceso (progresivo), o la acción en sí, o una acción habitual, o una acción repetida, o el comienza o fin de una acción, etc. Algunos lenguajes tienen docenas de estos aspectos. Un par interesante es la distinción entre <strong>estático</strong> y <strong>dinámico</strong>. Una forma estática describe un estado particular, mientras que una dinámica muestra un cambio de estado. Por ejemplo, en árabe, <em>rukubun</em> significa 'cabalgar' en forma estática, y 'montar' en su forma estática.</p>
+
+<p>El japonés tiene un aspecto condicional, pudiendo declinar un verbo para transformarlo en cláusula condicional: <em>nobasu</em> 'extender' produce <em>nobaseba</em> 'si yo extiendo'.</p>
+
+
+<h4 id="perfectividad">Perfectividad</h4>
+
+<p>La perfectividad o compleción es un aspecto que depende de si la acción está completada (desde el punto de vista del que habla) o no. La acción completada se llama <strong>perfecta</strong> (por ejemplo 'He llegado') y la no completada <strong>imperfecta</strong> ('Estoy llegando').</p>
+
+<h3 id="modo">Modo</h3>
+
+<p>El modo, por oposición al aspecto, se refiere más a la actitud del hablante que a la forma del evento en sí. Se refiere, por ejemplo, a si la acción es real y cierta (<strong>indicativo</strong>), o es dudosa o deseable (<strong>subjuntivo</strong>), o no sucede en realidad (<strong>negativo</strong>), etc. El modo indicativo es el más común y el menos marcado.</p>
+
+<p>En español y otros lenguajes romances se usa el subjuntivo (entre otras cosas) para acciones hipotéticas y para expresiones de deseo.</p>
+
+<p>El inglés no distingue entre indicativo y subjuntivo, y usa un auxiliar para negar el verbo. El japonés declina los verbos para negarlos (<em>keru</em> 'patear', <em>keranai</em> 'no patear'), mientras que el finés utiliza un verbo auxiliar conjugado (<em>ei</em>) junto con una forma del verbo principal. </p>
+
+<p>También está el modo <strong>imperativo</strong>, que se usa para dar órdenes o hacer pedidos. Estos modos, por supuesto, no son los únicos. Nenets, un lenguaje siberiano (urálico/samoyédico), tiene muchos modos (algunos son en realidad aspectos): indicativo, imperativo, hortativo ('dejáme hacer'), optativo ('que él haga'), conjuntivo ('él lo hará' [pedido]), necesitativo ('él debe'), interrogativo ('&#191;Lo hizo?'), probabilitativo ('quizá lo haga'), obligativo ('debería hacerlo'), aproximativo ('parece que hace'), superprobabilitivo ('probablemente lo haga'), hiperprobabilitivo ('seguramente lo ha hecho'), reputativo ('se supone que debe hacerlo'), habitivo ('acostumbra hacerlo').</p>
+
+<h3 id="evidencialidad">Evidencialidad</h3>
+
+<p>Se refiere a cómo el hablante sabe lo que está diciendo. Puede ser por experiencia personal directa, o de oídas, o simplemente una idea que le parece probable. El quechua, el aymará y muchos otros lenguajes nativos americanos (y otros) distinguen estos aspectos con diferentes niveles de sutileza. También se los llama 'niveles de experiencia', y Umberto Eco llama al sistema del aymará 'lógica trivalente' (es decir, no basada en nuestra lógica binaria 'verdadero' contra 'falso', sino con niveles intermedios).</p>
+
+<h3 id="estructura-argumental">Estructura argumental</h3>
+
+<p>Los <strong>argumentos</strong> de un verbo son las partes de la oración (generalmente frases nominales) que éste une y que están en relación gramatical cercana con él. En general esto significa el sujeto y (si están presentes) el objeto directo y quizá un objeto indirecto.</p>
+
+<p>El número de argumentos de un verbo se llama <strong>valencia</strong> (por analogía con la valencia de los elementos químicos, que es la cantidad de átomos de otros elementos que se pueden enlazar a un átomo del elemento dado).</p>
+
+<div class="wide-elem">
+<table>
+<thead><td>Valencia</td><td>Tipo de verbo</td><td>Ejemplo</td></thead>
+<tr><td>0</td><td>impersonal</td><td>"Llueve."</td></tr>
+<tr><td>1</td><td>intransitivo</td><td>"Él corre."</td></tr>
+<tr><td>2</td><td>transitivo</td><td>"Ella comió lechuga."</td></tr>
+<tr><td>3</td><td>ditransitivo</td><td>"Les dimos regalos."</td></tr>
+</table>
+</div>
+
+<p>En inglés y francés, por dar un ejemplo, todos los verbos deben tener algo que ocupe el lugar de un sujeto, aun en el caso de verbos como 'llover', así que 'llueve' en francés se dice <em>il pluie</em>, y en inglés <em>it rains</em>; es decir, la valencia mínima de un verbo es 1 y se usa como sujeto un pronombre que no designa nada en realidad.</p>
+
+<p>La mayoría de los lenguajes no distinguen entre verbos transitivos e intransitivos con inflexiones en el verbo (morfológicamente), pero por ejemplo el húngaro tiene diferentes conjuntos de inflexiones de persona/número (paradigmas) para los verbos transitivos y para los intransitivos.</p>
+
+<p>Las formas reflexivas son un caso especial. Algunos lenguajes las marcan en el verbo, mientras que otros pueden usar pronombres reflexivos (el español utiliza los pronombres objeto como reflexivos cuando es necesario, a veces con el añadido de <em>mismo</em>).</p>
+
+<p>En algunos lenguajes, además, los pronombres objeto (y/o los sujetos) son incorporados en el verbo (el español añade los pronombres clíticos de objeto a los verbos, aunque esto no es inflexión).</p>
+
+Algunos lenguajes son más rígidos que otros con respecto a la estructura argumental de los verbos. Por ejemplos, puede exigirse que los verbos transitivos lleven siempre un sujeto explícito. Compárese esto con la libertad del español, y en mayor medida, del inglés, donde muchos verbos transitivos pueden aparecer sin objeto ('comer', 'escribir', etc.). En inglés, además, muchos verbos son intercambiablemente intransitivos o transitivos/reflexivos (<em>burn</em> 'quemar algo' o 'quemarse', <em>stand up</em> 'dejar plantado' o 'pararse').
+
+<h3 id="voz">Voz</h3>
+
+<p>El concepto de voz se puede entender desde dos puntos de vista: el sintáctico y el semántico. El punto de vista semántico se refiere a lo que representa la voz para el significado del verbo y la oración. En español, por ejemplo, uno puede enfocar la acción en el sujeto (voz activa) o en el objeto (voz pasiva). <em>Un perro me mordió</em> es voz activa (focalizada en <em>un perro</em>), mientras que <em>Fui mordido por un perro</em> es voz pasiva (focalizada en el sujeto tácito <em>yo</em>).</p>
+
+<p>Desde el punto de vista sintáctica, la voz cambia la forma en que se estructuran el sujeto y el objeto (los argumentos). Así, el cambio de voz es una operación gramatical que desplaza argumentos de su lugar original y puede incrementar o disminuir la valencia del verbo. En las construcciones de voz pasiva en español, el objeto original se transforma en sujeto (es <strong>promovido</strong>), mientras que el sujeto original se transforma en complemento opcional (es <strong>degradado</strong>).</p>
+
+<p>El español, el inglés y otros lenguajes usan una construcción perifrástica con el verbo <em>ser</em> y un participio verbal (y por lo tanto no tienen distinción morfológica de voz verbal, aunque sí distinción sintáctica). Los verbos latinos, por otra parte, se pueden declinar para cambiar de voz: <em>curare</em> 'curar', <em>curantur</em> 'son curados'.</p>
+
+<p>Activa y pasiva no son las únicas distinciones de voz. El griego tenía una voz media, que sugería una acción realizada por el sujeto en beneficio propio. Desde el punto de vista semántico, las construcciones seudorreflexivas del español tienen un valor de voz media (o mediopasiva): <em>La carne se vende bien</em>, <em>Me voy</em>, <em>Lávese las manos</em>, son todos ejemplos.</p>
+
+<p>Aparte de estas, hay voces más difíciles de definir desde lo semántico, pero que pueden entenderse sin dificultad como dispositivos sintácticos. Por ejemplo, muchos lenguajes ergativo/absolutivos tienen una voz antipasiva, la cual transforma un verbo transitivo en uno intransitivo ('Yo como carne' se hace 'Yo como'). En estos lenguajes, esto también significa que el sujeto es degradado de ergativo a absolutivo, aunque esto no se hace evidente en la traducción; esto sugiere un cambio de significado, del de acción (ergativo = agente activo) al de estado (absolutivo = paciente pasivo).</p>
+
+<p>En St&#x0101;l&#x0101;g, uno de mis lenguajes, hay una voz aplicativa que promueve un complemento oblicuo opcional a la posición de objeto, con una marca especial en el verbo que muestra la función general del complemento original (¿se refería a una posición, un destino, una fuente?). Por ejemplo, 'él nada bajo el bote' se transforma en 'él *sub-nada el bote'. En St&#x0101;l&#x0101;g hay también una especie de voz antipasiva que actúa sobre verbos intransitivos con complementos, promoviendo un complemento a la posición de sujeto y degradando el sujeto original: 'el gato duerme sobre la alfombra' se transforma en 'la alfombra *sobre-duerme al gato'.</p>
+
+<h3 id="deferencia">Deferencia</h3>
+
+<p>Muestra el grado de deferencia (o necesidad de cortesía) entre el hablante y el oyente. En ciertos lenguajes, hay formas diferentes de verbos y pronombres para hablar a un subordinado, a un igual y a un superior. Los verbos japoneses se declinan para mostrar cortesía: <em>hanasu</em> 'hablar', en forma cortés <em>hanashimasu</em>. El japonés tiene otras formas más y menos formales y corteses para dirigirse a otras personas según su sexo y posición social, en distintas ocasiones.</p>
+
+<h3 id="rarezas">Rarezas</h3>
+
+<p>Algunos verbos muy comunes en español no se encuentran en otros lenguajes, como 'tener'. Muchos lenguajes reemplazan 'Yo tengo un libro' por perífrasis como 'Un libro es a mí', o 'conmigo', o 'junto a mí', o algo similar. En el caso de 'tener', además, hay lenguajes que distinguen (verbos y pronombres) entre posesión alienable o accidental (que no es inherente al objeto), como 'mi libro', y posesión inalienable (que es parte de la esencia del objeto y no puede cambiar), como 'mi carácter' o 'mi padre'.</p>
+
+<p>Algunos verbos pueden ser usados como palabras gramaticales más allá de su estado original. Por ejemplo, en khmer se usa el verbo 'dar' como equivalente del significado de la preposición 'a' o 'para', para marcar objetos indirectos. Y en ainu, las formas conjugadas del verbo 'tener' se usan como marcas posesivas. Por ejemplo:</p>
+
+<div class="wide-elem">
+<pre class="indented">
+kukor    kunupe     kunukar rusuy
+1s.tener 1s.hermano 1s.ver  querer
+'Quiero ver a mi hermano'
+</pre>
+</div>
+
+<p>(nótese que el prefijo de primera persona singular, <tt>1s</tt>, se coloca ante verbos y sustantivos). Dado esto, no es imposible pensar en un lenguaje donde los pronombres posesivos no existen, ni se forman a partir de los pronombres personales, sino que son cláusulas subordinadas consistentes en formas conjugadas del verbo 'tener' (en vez de 'mi hermano', digo 'el hermano que tengo').</p>
+
+<p>En japonés, los verbos se usan a veces en lugar de adjetivos, aprovechando el hecho de que las cláusulas subordinadas se colocan antes que el sustantivo modificado (igual que los adjetivos). Por ejemplo: <em>sabitsuita kokoro</em> 'corazón oxidado' (<em>sabitsuita</em> 'se oxidó'), <em>takanaru mirai</em> 'futuro exaltado' (<em>takanaru</em> 'sube, se eleva').</p>
+
+<p><a href="#gramatica" class="top-link">↑ Volver arriba</a></p>
+
+<h2 id="conjunciones">Conjunciones</h2>
+
+<p>Las <strong>conjunciones</strong> son palabras que juntan partes de la oración. Algunas conjunciones comunes en español son <em>y, o, si, pero,</em> etc. Se pueden incluir algunas distinciones en las conjunciones que no están presentes en español; por ejemplo, la diferencia entre <strong><em>o</em> inclusivo y exclusivo</strong> (lo que en lógica de Boole se expresa como OR y XOR). En latín, se puede decir <em>vel X vel Y</em> ('X o Y' inclusivo, o sea uno u otro o los dos') o bien <em>aut X aut Y</em> ('X o Y' de forma excluyente, o sea uno u otro, pero no los dos al mismo tiempo). Las conjunciones pueden a veces transformarse en otras cosas; por ejemplo, en latín, además de <em>et</em> 'y', se puede usar una partícula pospuesta, <em>-que</em>, para unir dos sustantivos: <em>Senatus Populusque Romae</em> 'el Senado y el Pueblo de Roma'. Algunos lenguajes no tienen conjunciones; simplemente ponen las cosas juntas. 'X Y' (quizá con una pausa intermedia) puede significar 'X e Y' o también 'X o Y' (dependiendo de otros factores, como el contexto y la entonación). También se pueden usar casos gramaticales para unir cosas, por ejemplo diciendo 'X junto-con-Y' en vez de 'X e Y', si el significado 'junto con' se expresa con un caso (típicamente llamado <strong>comitativo</strong>). O se pueden reemplazar las conjunciones por adverbios o frases adverbiales: 'Traté pero no pude' se transformaría en 'Traté, sin embargo no pude'.</p>
+
+<h2 id="articulos">Artículos</h2>
+
+<p>¿Tiene <strong>artículos</strong> tu lenguaje? El español tiene indefinidos (<em>un, una, unos, unas</em>) y definidos (<em>el, la, los, las</em>), que deben concordar en género y número con los sustantivos. El inglés tiene sólo dos artículos, <em>a</em> y <em>the</em>, y no tiene artículo indefinido plural, ni concordancia. En griego, los artículos no sólo deben concordar en número y género (femenino, masculino o neutro) sino también en caso, con sus sustantivos. Los lenguajes escandinavos colocan los artículos al final de las palabras, en vez de al principio (por ejemplo, en sueco, <em>en bok</em> 'un libro', <em>boken</em> 'el libro', <em>böcker</em> 'unos libros', <em>böckerna</em> 'los libros'). Muchos lenguajes no tienen artículos.</p>
+
+<p>En la mayoría de los casos, se pueden parafrasear los artículos usando adjetivos, cuantificadores (como <em>algunos, todos</em>) o demostrativos (<em>este, ese, aquel</em>). Los artículos frecuentemente no llevan acentuación y se unen al comienzo de las palabras siguientes (son <strong>clíticos</strong>), quizás elidiendo vocales o causando otros cambios. En francés, se dice <em>la voiture</em> 'el automóvil' pero <em>l'avion</em> 'el avión'. En italiano y portugués, los artículos se funden con cualquier partícula (generalmente preposiciones) que se ponga en su camino. En otros lenguajes, como el galés o el hebreo, el artículo provoca mutación de los sonidos iniciales de los sustantivos (en galés, lenición; en hebreo, geminación). En árabe el artículo se asimila parcialmente a la consonante inicial de ciertos sustantivos.</p>
+
+<h2 id="adposiciones">Adposiciones y partículas</h2>
+
+<p>Las <strong>partículas</strong> son pequeñas palabras invariables que modifican el significado de otras, o de la oración. Entre ellas encontramos las adposiciones (preposiciones y postposiciones), que son usadas por la mayoría de las lenguas para modificar el significado de frases nominales y crear complementos (de lugar, tiempo, manera, etc.).</p>
+
+<p>Hay partículas que tienen un rango más amplio de funciones, como las muchas partículas del japonés, algunas de las cuales funcionan como marcas de caso postposicionales, otra como parte de frases adverbiales, y otras para añadir matices semánticos a la oración entera. Por ejemplo, <em>watashi no</em> 'mi' usa la partícula genitiva <em>no</em> para marcar <em>watashi</em> 'yo'; la partícula <em>wa</em> marca un nuevo tópico o tema de la oración, que se omitirá (dándose por entendido) en lo sucesivo. Hay incluso una partícula exclamativa, <em>yo</em>, que añade fuerza a las afirmaciones (como un signo de admiración), y una partícula interrogativa, <em>ka</em>, que sirve para hacer preguntas (<em>Taberu ka</em> '¿Comemos?'); <em>ka</em> también crea deícticos indefidos (<em>itsu</em> 'cuándo', <em>itsuka</em> 'en algún momento').</p>
+
+<p>Un lenguaje puede tener (como clase aparte) preposiciones o postposiciones, o ninguna de las dos (no conozco ningún caso en que se encuentren ambas en el mismo lenguaje). El que un lenguaje sea preposicional o postposicional depende sobre todo de la posición de las partes de la oración (especialmente los argumentos verbales). Como regla general, los lenguajes SOV son postposicionales (ejemplo clásico: japonés), y los lenguajes VSO son preposicionales (ejemplo clásico: árabe); los lenguajes SVO pueden ir para cualquiera de los dos lados. Desde luego, hay muchas excepciones (el latín es SOV y preposicional).</p>
+
+<p>Las adposiciones más comunes pueden ser adecuadamente reemplazadas por casos, y quizá por adverbios. El japonés muestra muchas relaciones con partículas pospuestas que no tienen un significado real, sino muchas funciones aparentemente desconectadas. En algunos casos, cuando se necesita usar el equivalente a una frase adposicional, usa dos sustantivos unidos por la partícula genitiva:</p>
+
+<div class="wide-elem">
+<pre class="indented">
+<em>heya no naka</em>
+heya       no  naka
+habitación GEN interior
+<em>"(en) el interior de la habitación"</em>
+
+<em>ki no ue</em>
+ki    no  ue
+árbol GEN parte_superior
+<em>"encima del árbol"</em>
+</pre>
+</div>
+
+<p>Esto no es lejano a las construcciones preposicionales perifrásticas del español (<em>debajo de</em> por <em>abajo</em>, <em>encima de</em> por <em>sobre</em>, etc.).</p>
+
+<p><a href="#gramatica" class="top-link">↑ Volver arriba</a></p>
+
+<h2>Sintaxis</h2>
+
+<p>En términos simplificados, <strong>sintaxis</strong> es el orden y la estructura de las palabras y frases dentro de una proposición gramatical.</p>
+
+<p>Los varios componentes de una oración suelen aparecer en un orden fijo. Cuanto más analítico es un lenguaje, generalmente más fijo es el orden de palabras. Las sentencias del chino tienen un orden tan estricto que el colocar mal una palabra puede alterar mucho el significado. Cuanto más sintético es un lenguaje, probablemente más libre sea el orden, porque las palabras sintéticas, con mucha inflexión, pueden permanecer solas y no dependen tanto del contexto. Por ejemplo, en latín <em>Petrus amat Paulum</em> 'Pedro ama a Pablo', el sujeto y el objeto están perfectamente determinados por sus marcas de caso, y sus lugares se pueden intercambiar sin cambiar el significado de la frase: se puede decir <em>Paulum Petrus amat</em> o <em>amat Petrus Paulum</em>, etc., y estará bien. Pero en español, 'Pedro ama a Pablo' y 'Pablo ama a Pedro' son cosas diferentes, ya que el orden de las palabras sirve para distinguir sujeto y objeto.</p>
+
+<p>Un lenguaje sintético puede tener un orden libre no sólo recurriendo a casos. Me ha sido señalado que otros medios gramaticales como la concordancia (entre verbos y sustantivos, sustantivos y adjetivos, etc.) pueden también servir a este propósito.</p>
+
+<h3>Sujeto, verbo, objeto</h3>
+
+<p>La estructura básica de una oración completa incluye sujeto, objeto y verbo. Éstos, por supuesto, sólo pueden ocurrir en seis posiciones relativas diferentes: SVO, SOV, VSO, OVS, OSV, VOS. El español casi siempre usa SVO, aunque para algunos verbos y expresiones prefiere VSO, y para dar énfasis puede soltar algún OVS. El inglés es mucho más restringido, casi siempre SVO. Quizá algunos verbos de tu lenguaje puedan usar un orden, y otros otro, o usar un orden distinto para oraciones largas que para las más cortas.</p>
+
+<p>Siempre hay un <strong>orden de palabras no marcado</strong>, que es un orden particular que no transmite información extra (como el énfasis), y que por lo tanto es 'neutral' para el que escucha. Por ejemplo, el orden no marcado en español, para casi todos los verbos en oraciones afirmativas, es SVO.</p>
+
+<p>Algunos órdenes son más comunes que otros. De acuerdo a estadísticas, SVO y SOV, cada uno, engloban a cerca del 40% de los lenguajes de todo el mundo. Los lenguajes VSO son también relativamente frecuentes, un 15%. Los otros órdenes (aquéllos donde el objeto precede al sujeto) suman entre todos un 5%. O sea que si tu lenguaje intenta ser promedio, debería ser SVO o SOV; si la idea es que sea exótico y extraño, podés probar OVS, OSV o VOS.</p>
+
+<h3>Núcleos y modificadores</h3>
+
+<p>Cada parte de una oración puede dividirse en un <strong>núcleo</strong> y cero o más <strong>modificadores</strong>. Un núcleo y sus modificadores forman una <strong>frase</strong>.</p>
+
+<p>Una frase como <em>la pequeña casa roja</em>, donde el núcleo es el sustantivo <em>casa</em> y los modificadores son el artículo y los dos adjetivos, es una frase nominal (que puede funcionar como sustantivo). Una frase cuyo núcleo es un verbo se llama frase verbal, y de manera similar puede ser modificada por adverbios, otros verbos, etc.</p>
+
+<p>En cada caso un lenguaje tiene un orden no marcado para colocar el núcleo y los modificadores. El español coloca los artículos antes de los sustantivos, y los adjetivos generalmente después; los adverbios también suelen ir después de los sustantivos, y las frases genitivas y adposicionales también. Por lo tanto se lo llama un lenguaje con núcleo inicial o con ramificación a la derecha (traduzco aproximadamente del inglés <em>head-first</em>, <em>right-branching</em>). El inglés es más bien <strong>head-last</strong> (con núcleo final).</p>
+
+<p>Hay que tener en cuenta que estas son tendencias. El español no siempre coloca los adjetivos antes que los sustantivos; hay algunos que van tradicionalmente antes. En inglés, al igual que en español, se invierte el orden usual en ciertos tipos de discurso (poesía). También hay variación en cuanto a los tipos de modificadores: el inglés coloca los adverbios antes de los verbos, pero las frases preposicionales y adverbiales (más largas) después. El japonés es más estricto: coloca todos los modificadores antes de sus núcleos, incluso las proposiciones subordinadas, que actúan como adjetivos:</p>
+
+<div class="wide-elem">
+<pre class="indented">
+Kanojo ga  dakishimeta otoko  wa  goshujin  deshita.
+ella   NOM abrazar-PAS hombre TOP su_esposo ser-CORTÉS-PAS
+"El hombre que ella abrazó es su esposo."
+</pre>
+</div>
+
+<p>Hay algunas tendencias generales que correlacionan el orden de los elementos sintácticos a nivel de la oración con el orden dentro de las frases.</p>
+
+<div class="wide-elem indented">
+<table>
+<tr><td>Orden oraciones</td><td>Orden frases</td><td>Adposiciones</td></tr>
+<tr><td>SOV</td><td>postposiciones</td><td>núcleo final</td></tr>
+<tr><td>VSO</td><td>preposiciones</td><td>núcleo inicial</td></tr>
+<tr><td>SVO</td><td>cualquiera de los dos</td><td>cualquiera de las dos</td></tr>
+</table>
+</div>
+
+<p>Estas son sólo tendencias y tienen muchas excepciones. Mientras que los lenguajes SOV son casi siempre de núcleo final y postposicionales (el ejemplo prototípico es el japonés), el latín es SOV y sin embargo usa preposiciones y posiciona bastante libremente los modificadores con respecto a sus núcleos. Los lenguajes SVO son indiferentes (el inglés y el chino son ambos preposicionales, pero el chino tiende más marcadamente a ser de núcleo final que el inglés; y el español, el francés y el italiano, todos ellos SVO, son de núcleo inicial). Los lenguajes SOV usualmente marcan el sujeto de alguna forma explícita, para que no se confunda con el objeto que sigue; los lenguajes SVO no necesitan esa clase de marca, aunque muchos la usan, porque el verbo mismo separa y distingue el sujeto del objeto.</p>
+
+<h3>Lenguajes V2</h3>
+
+<p>Algunos lenguajes (con diferentes órdenes de palabras) muestran una peculiaridad en la posición del verbo dentro de la oración. Se los llama <strong>lenguajes V2</strong> (abreviado del inglés <strong><em>verb-second languages</em></strong>, o lenguajes con verbo segundo). Todos los lenguajes germánicos (excepto el inglés) son V2. El verbo tiene que ser siempre el segundo constituyente de la oración. Esto no es lo mismo que tener orden SVO u OVS; el español es casi siempre SVO, pero en una oración como 'Ayer en mi casa hubo una fiesta', el verbo es el <em>tercer</em> constituyente (el primero es el adverbio 'ayer', y el segundo es el complemento 'en mi casa'). Para nuestros propósitos, los constituyentes son las frases nominales (el artículo o demostrativo + sustantivo + adjetivos), las frases verbales (verbos conjugados y auxiliares), adverbios y frases adverbiales (complementos de lugar, tiempo, etc.).</p>
+
+<p>En los lenguajes V2, hay espacio para un y sólo un constituyente antes del verbo. Si algo tiene que ser enfatizado, usualmente se mueve al principio de la oración (esto ocurre en muchos lenguajes). Si el lenguaje es V2, sin embargo, esto significa que lo que estaba al principio va a tener que desplazarse hacia atrás, después del verbo. Por ejemplo, en alemán se puede decir (con el auxiliar verbal en MAYÚSCULAS):</p>
+
+<div class="wide-elem">
+<pre class="indented">
+Zum Geburtstag HAT sie ihm ein Buch geschenkt.
+Por su cumpleaños ella le ha regalado un libro.
+(lit. 'Para su cumpleaños ha ella a él un libro regalado.')
+
+Ein Buch HAT sie ihm zum Geburtstag geschenkt.
+Ella le ha regalado <strong>un libro</strong> por su cumpleaños.
+(lit. 'Un libro ha ella a él por su cumpleaños regalado.')
+
+Geschenkt HAT sie ihm zum Geburtstag ein Buch.
+Ella le ha <strong>regalado</strong> un libro por su cumpleaños.
+(lit. 'Regalado ha ella a él por su cumpleaños un libro.')
+</pre>
+</div>
+
+<p>Por supuesto, el alemán tiene casos gramaticales, así que el sujeto y los objetos no se confunden tanto como en la traducción literal española.</p>
+
+<h3>Sistemas de gatillo</h3>
+
+<p>Este tema queda un poco fuera del propósito de esta sección, pero sentí que valía la pena incluirlo. La clasificación de órdenes de la que he estado hablando asume que habrá un sujeto, un verbo y un objeto, que serán diferenciables por el orden de las palabras en sí, o por inflexiones de caso.</p>
+
+<p>Hay un sistema diferente, que se usa en la mayoría de los lenguajes de Filipinas, como el tagalog, en el cual el sujeto, el objeto y otros modificadores pueden aparecer en órdenes distintos y no están marcados de forma tradicional. Se llama <strong>sistema de gatillo</strong>.</p>
+
+<p>El gatillo es la parte de la oración sobre la cual se pone énfasis (creo que es correcto llamarla el tópico). El gatillo puede ser el sujeto de la oración de acuerdo a nuestra visión, pero también el objeto, o una localización, o el verbo o predicado mismo. El gatillo está marcado como tal (por una partícula, por inflexión o por orden de palabras), pero esto sólo indica que es el gatillo, no su función. Otras partes de la oración se marcan de forma distinta. Luego, el verbo se marca para mostrar la relación entre la acción y el gatillo. Es decir, el 'caso' del gatillo no se marca en él, sino en el verbo.</p>
+
+<p>Para ilustrar esto, voy a transcribir parte de un mensaje de Kristian Jensen a la lista Conlang, enviado amablemente por él cuando pregunté de qué se trataba el tema. Traduzco:</p>
+
+<p class="indented">En tagalog, hay sólo tres marcas de caso: el gatillo, el genitivo, y el oblicuo. Esto es exactamente como la mayoría de (si no todos) los lenguajes filipinos. Más aún, como ocurre en muchos lenguajes austronésicos occidentales, hay un gran inventario de afijos usados para crear diferentes matices en los verbos, notablemente el gatillo verbal. Cuando el gatillo cumple el rol de agente, un afijo de gatillo-agente se usa en el verbo. Cuando el gatillo cumple el rol de paciente, un afijo de gatillo-paciente se usa con el verbo. Cuando el gatillo cumple el rol de una locación, entonces se usa un afijo de gatillo-locación en el verbo. Etc. etc....</p>
+
+<p class="indented">Una característica particularmente digna de mención en este sistema es que los argumentos básicos no-gatillo (no enfocados) se marcan como genitivos. Como resultado, "Estoy comprando" y "Mi compra (de algo)" tienen estructuras idénticas. Las construcciones verbales parecen ser idénticas a las nominales, por medio del uso de genitivos. Una teoría dice que los afijos verbales de gatillo son realmente afijos nominalizantes. Los ejemplos siempre ayudan. Tomemos la oración "El hombre cortó madera en el bosque". Con tres argumentos distintos, son posibles tres formas del gatillo. Aquí abajo hay ejemplos desglosados de la forma en que un lenguaje filipino traduciría la oración. He decidido no usar ejemplos de un lenguaje real en este punto esperando que sea más fácil de entender cómo funciona el _sistema gramatical_ (_no_ el morfológico).</p>
+
+<div class="wide-elem indented">
+<pre>
+Gatillo AGENTE:
+ AGT-cortar GEN-madera OBL-bosque GAT-hombre
+ [agente-de-cortar] [de madera] [en bosque] = [hombre]
+lit.: "El cortador de madera en el bosque es el hombre"
+trad.: "El hombre, él cortó madera en el bosque"
+
+Gatillo PACIENTE:
+ PAC-cortar GEN-hombre OBL-bosque GAT-madera
+ [paciente-de-cortar] [de hombre] [en bosque] = [madera]
+lit.: "El paciente de corte del hombre en el bosque es la madera"
+trad.: "La madera, el hombre la cortó en el bosque"
+
+Gatillo LOCACIÓN:
+ LOC-cortar GEN-hombre GEN-madera GAT-bosque
+ [locación-de-cortar] [de hombre] [de madera] = [bosque]
+lit.: "La locación de corte de madera del hombre es el bosque"
+trad.: "El bosque, el hombre cortó madera allí"
+</pre>
+</div>
+
+<p>Noten cómo he nominalizado los verbos en la transcripción. Así, el verbo para cortar ha sido nominalizado como un agente, un paciente, o una locación, dependiendo del rol del gatillo. Hay otras formas verbales de gatillo, incluyendo benefactor e instrumento. Mi propia teoría es que los lenguajes de gatillo tienen sólo un argumento básico. Siendo éste el caso, recurren a nominalizar los verbos. Esto puede explicar también por qué no existen construcciones pasivas en los lenguajes de gatillo, ya que valencia de los verbos no cambia (no puede cambiar) con gatillos diferentes.</p>
+
+<p>En un lenguaje que usa un sistema de gatillo, no es útil hablar de sujeto, objeto, etc., y el orden de palabras puede variar considerablemente. En tagalog, el predicado (el verbo nominalizado) es la primera palabra de la oración, y el gatillo es la última. Otros lenguajes pueden ser distintos. También es igualmente inútil hablar de verbos transitivos o intransitivos, o de voz (activa, pasiva o media).</p>
+
+<p>Esto es sólo para mostrarte cómo las cosas pueden ser realmente diferentes, y aun así entendibles. ¡A ver si podés imaginarte algo más!</p>
+
+<p><a href="#gramatica" class="top-link">↑ Volver arriba</a></p>
+
+<h2 id="tipologia">Tipología morfosintáctica</h2>
+
+<p>Cuando uno habla de argumentos verbales (o elementos sintácticos que están en relación con el verbo), se pueden distinguir dos básicos, que llamamos sujeto y objeto. Según la forma en que se marcan (con sintaxis y/o con morfología) el sujeto y el objeto, tenemos varias clases de lenguajes:</p>
+
+<p>1. Un lenguaje <strong>acusativo</strong> es uno en que
+<ul>
+<li>el sujeto de todos los verbos (transitivos e intransitivos) se marca con un mismo caso gramatical, que convencionalmente se denomina "nominativo";</li>
+<li>el objeto de un verbo transitivo se marca con otro caso, que convencionalmente se llama "acusativo".</li>
+</ul>
+</p>
+
+<p>2. Un lenguaje <strong>ergativo</strong> es uno en que
+<ul>
+<li>el sujeto de un verbo intransitivo y el objeto de un verbo transitivo se marcan ambos con el mismo caso gramatical, que se denomina "absolutivo";</li>
+<li>el sujeto de un verbo transitivo se marca con otro caso, que por convención se llama "ergativo".</li>
+</ul>
+</p>
+
+<p>3. Un lenguaje <strong>activo</strong> es uno en que
+<ul>
+<li>el sujeto de un verbo transitivo se marca con un caso gramatical, que se llama generalmente "agentivo" (A);</li>
+<li>el objeto de un verbo transitivo se marca con otro caso, que se denomina "pacientivo" (P);</li>
+<li>el sujeto de un verbo intransitivo se marca con uno de los dos casos mencionados (agentivo o pacientivo) según consideraciones semánticas.</li>
+</ul>
+</p>
+
+<p>Una forma diferente y más formal de entender este tema es usar tres categorías sintácticas, que convencionalmente se llaman S, A y P, donde S es el único argumento de un verbo intransitivo, y A y P son los dos argumentos de un verbo transitivo.</p>
+
+<p>No hay (según parece) ningún lenguaje en la Tierra que marque estos tres roles usando tres casos gramaticales diferentes; generalmente están divididos, dos por un lado (con un caso dado) y uno por el otro (con otro caso distinto). Un lenguaje que agrupa (trata igualmente) los argumentos S y A es un lenguaje acusativo (P va en acusativo); un lenguaje que agrupa S y P es un lenguaje ergativo (A va en caso ergativo); y un lenguaje que agrupa S y A o S y P según el verbo es un lenguaje activo.</p>
+
+<p>Aparentemente no hay lenguajes que agrupen los tres roles; algo (morfología, orden de las frases) distingue entre ellos en la mayoría de las ocasiones (y si no, el contexto resuelve las ambigüedades). Además, casi ningún lenguaje agrupa A y P y aparta S, ya que A y P necesitan ser diferenciados de alguna forma porque aparecen los dos juntos con el verbo es transitivo, mientras que S no necesita marcas especiales porque el verbo es intransitivo y no tiene otros argumentos.</p>
+
+<div class="wide-elem">
+<pre style="line-height: 1">
+     _                   _
+    / \	                / \
+   / S \               / S \
+  /    /               \    \
+ /    /	                \    \
+ \ A /  P             A  \ P /
+  \_/	                  \_/
+        ^             ^
+   ^    |             |    ^
+   |    |             |    |
+  NOM  ACU           ERG  ABS
+</pre>
+</div>
+
+<h3 id="acusativos">Lenguajes acusativos</h3>
+
+<p>Recordemos la definición dada arriba: los lenguajes acusativos marcan el sujeto de todos los verbos con un mismo caso (nominativo, <tt>NOM</tt>) y el objeto de los verbos transitivos con otro caso (acusativo, <tt>ACU</tt>). Por eso también se llaman nominativo-acusativos.</p>
+
+<p>El ejemplo clásico de lenguajes de este tipo es el latín.</p>
+
+<div class="wide-elem">
+<pre class="indented">
+domin-us  veni -t
+señor-NOM venir-3sPRS
+<em>"El señor viene."</em>
+
+domin- us serv   -um  audi    -t
+señor-NOM esclavo-ACU escuchar-3sPRS
+<em>"El señor escucha al esclavo."</em>
+</pre>
+</div>
+
+<p>En la mayoría de los lenguajes romances no se han preservado las marcas morfológicas de caso del latín, pero el orden de las palabras dentro de la oración, al igual que la concordancia y el contexto, permiten diferenciar el rol nominativo y el acusativo, con lo cual dichas lenguas presentan acusatividad sintáctica antes que morfológica.</p>
+
+<p>Ésta puede confirmarse observando frases donde un argumento es elidido (omitido) y queda expresado en forma tácita. En la frase <em>"el alumno vio a la maestra y se fue"</em> hay dos proposiciones coordinadas con un argumento en común. El hecho de que el argumento faltante sea <em>"el alumno"</em> apunta a que éste es un lenguaje acusativo, porque el argumento que está en caso nominativo tomó precedencia para ocupar el lugar vacante, ya que el verbo de la segunda preposición (<em>"se fue"</em>) requiere un sujeto nominativo. En un lenguaje ergativo (ver abajo) el lugar faltante hubiera sido ocupado por el argumento en caso absolutivo (que es el objeto de la primera proposición).</p>
+
+<p>La inmensa mayoría de los lenguajes indoeuropeos son acusativos. Sin embargo, algunos presentan comportamiento ergativo parcial.</p>
+
+<h3 id="ergativos">Lenguajes ergativos</h3>
+
+<p>Un lenguaje ergativo, como ya vimos, es uno que marca los sujetos de los verbos transitivos con un caso (ergativo, ERG), y los sujetos de los verbos intransitivos y los objetos de los transitivos con otro caso (absolutivo, ABS).</p>
+
+<p>El lenguaje ergativo más conocido en Europa es el euskara (vasco); de hecho es el único lenguaje ergativo europeo, y no puede ser agrupado en ninguna familia lingüística, representando probablemente el último resto de ergatividad que quedó atrás luego de la ocupación indoeuropea.</p>
+
+<p>El georgiano (hablado en la nación de Georgia, ex-república soviética y lugar de nacimiento de Stalin) presenta patrones ergativos en una de las series de conjugaciones verbales (sistema extremadamente complicado), pero es acusativo en el resto. En una gramática de la que dispongo se lo describe como de ergatividad formal, pero con características de lenguaje activo de tipo Split-S (ver abajo).</p>
+
+<p>El lenguaje australiano dyirbal es también ergativo en parte (utiliza una estructura ergativa para las oraciones en tercera persona, pero es acusativo cuando se usan los pronombres de primera y segunda persona), con una estructura sintáctica subyacente ergativa. El hindi es ergativo en los tiempos verbales perfectos y acusativo en los imperfectos. (Estos casos extraños han sido explicados de varias maneras, todas ellas muy densas...)</p>
+
+<p>Un ejemplo de ergatividad (en euskara):</p>
+
+<div class="wide-elem">
+<pre class="indented">
+<em>umea erori da</em>
+ume -a -0   eror-i   da
+niño-el-ABS caer-PRF AUX:PRS+3sS
+el niño (ABS) caído está
+<em>"El niño se cayó."</em>
+
+<em>emakumeak gizona ikusi du</em>
+emakume-a -k   gizon -a -0   ikus-i   du
+mujer  -la-ERG hombre-el-ABS ver -PRF AUX:PRS+3sS+3sO
+la mujer (ERG) al hombre (ABS) visto ha
+<em>"La mujer ha visto al hombre."</em>
+</pre>
+</div>
+
+<p>En un lenguaje ergativo, el argumento en caso absolutivo es el que se asume cuando falta. Así, mientras que en español <em>"el alumno vio a la maestra y se fue"</em> se interpreta que <em>"el alumno vio a la maestra" + "el alumno se fue"</em>, el equivalente en euskara u otro lenguaje ergativo (con ergatividad sintáctica) se interpretaría incorporando el objeto absolutivo de la primera proposición como sujeto del segundo verbo (que es intransitivo):</p>
+
+<div class="wide-elem">
+<pre class="indented">
+"el alumno (ERG) vio a la maestra (ABS) y se fue"
+<em>se interpreta como</em>
+"el alumno (ERG) vio a la maestra (ABS)" + "[la maestra (ABS)] se fue"</pre>
+</div>
+
+<p>Una prueba de este tipo con los hablantes nativos de un lenguaje (donde se les fuerce a llenar los espacios vacantes y completar su interpretación) es una forma de determinar si un lenguaje es ergativo/absolutivo.</p>
+
+<p>Como rasgo interesante, los lenguajes ergativos no suelen presentar voz pasiva, pero sí una voz antipasiva, la cual elimina el objeto directo y degrada el sujeto de ergativo a absolutivo (transforma el verbo en intransitivo).</p>
+
+<h3 id="activos">Lenguajes activos</h3>
+
+<p>Recordemos que un lenguaje activo es uno donde el Sujeto de un verbo intransitivo puede marcarse de dos formas (A o P) según consideraciones semánticas del verbo o de su argumento.</p>
+
+<p>Los lenguajes activos se subdividen a su vez en dos tipos:
+<ul>
+<li>a. Lenguajes con Sujeto Dividido ("Split-S"), en los que la decisión de marcar el sujeto de un determinado verbo como agentivo o como pacientivo está por así decirlo tomada de antemano de forma convencional, y fijada como parte de la estructura sintáctica;</li>
+<li>b. Lenguajes con Sujeto Fluido ("Fluid-S"), en los que la decisión de marcar un sujeto como agentivo o pacientivo depende de consideraciones semánticas actuales y debe ser tomada por el hablante según su intención y contexto, pudiendo variar el significado de la expresión.</li>
+</ul>
+</p>
+
+<p>Las consideraciones semánticas mencionadas pueden tener que ver con la clase de concepto descripta por el verbo (¿es un evento o acción, o es un estado o circunstancia?), así como con el grado de control o voluntad del sujeto sobre la acción o estado expresado por el verbo (¿es una acción voluntaria o involuntaria? ¿la realiza el actor directamente o a través de un instrumento u otro medio indirecto?). En los lenguajes Fluid-S estas consideraciones deben ser meditadas por el hablante para inclinar el significado hacia un lado u otro. En los lenguajes Split-S cada verbo tiene asignada estas connotaciones (y por lo tanto la forma en que debe marcar su sujeto) como parte de su definición, y por lo tanto el hablante sólo puede aprender la forma usual y emplearla, modificándola por otros medios cuando le parezca necesario cambiar el significado más común.</p>
+
+<p>Por ejemplo, 'dormir' es un estado no voluntario. En un lenguaje Split-S, el hablante marcará el sujeto de 'dormir' como pacientivo siempre. Si desea explicitar que se realizó un esfuerzo para conciliar el sueño, o algo similar, deberá recurrir a auxiliares ('tratar de dormir') u otros medios para transmitir este significado. En cambio, en un lenguaje Fluid-S, si bien típicamente se usará 'dormir' con un sujeto en pacientivo, quizá el hablante podría sugerir un 'irse a dormir con esfuerzo' utilizando el mismo verbo 'dormir' con sujeto agentivo. De la misma manera se podrían dar significados distintos al verbo 'toser' (generalmente involuntario pero a veces provocado por el mismo actor) o 'darse vuelta' (activo y casi siempre voluntario, pero a veces un acto reflejo inconsciente).</p>
+
+<p>Daniel Andreasson, de la lista CONLANG, investigó el tema por su cuenta y envió a la lista un resumen. Afirma que los lenguajes activos distinguen los sujetos A y P según varios criterios (cada lenguaje utiliza primariamente uno de éstos):</p>
+
+<ul>
+<li>a) evento vs. estado</li>
+<li>b) control</li>
+<li>c) actuación, efecto e instigación</li>
+</ul>
+
+<p>"Evento vs. estado" significa que si el verbo expresa un evento ('correr', 'bailar', 'hablar', 'matar'), entonces el sujeto se marcado con A. Si es un estado ('tener hambre', 'estar cansado', 'dormir'), entonces se marca con P.</p>
+
+<p>"Control" significa que si el argumento del verbo controla el evento (o estado), entonces es marcado con A; y si no tiene dicho control, entonces es marcado con P. 'Irse' y 'tener cuidado' son predicados controlados; 'morir' y 'caer' no lo son.</p>
+
+<p>"Actuación, efecto e instigación" se refiere a que algunos predicados son de alguna manera actuados (realizados) o instigados por el actor, aun cuando no estén controlados por él, como ocurre en el caso de verbos como 'estornudar' y 'vomitar'. En lenguajes como el lakhota o el georgiano, es suficiente si el actor de cualquier forma efectúa la acción (o el estado), aunque no lo controle, para que el sujeto sea marcado como A. En un lenguaje del tipo (c), 'estornudar' y 'tener hipo' marcan su argumento como A, al contrario que los del tipo (b), donde por no tener control el actor se marcan como P.</p>
+
+<p><a href="#gramatica" class="top-link">↑ Volver arriba</a></p>
+
+<h2>Analogía</h2>
+
+<p>Analogía es el término general que designa varios tipos de procesos que cambian la forma fonética y la gramática de una palabra o de una expresión, y que se produce por ciertas causas que detallaré. Cuando hable de analogía aquí, me referiré normalmente a un cambio fonético.</p>
+
+<p>La analogía es la creación de una nueva forma (de una palabra) por influencia de otras formas similares, <strong>análogas</strong>. Es un medio gramatical muy fructífero, y probablemente uno de los que más crean palabras en todos los lenguajes. Veamos un ejemplo.</p>
+
+<p>El latín deriva del protoindoeuropeo (un lenguaje o conjunto de dialectos de un lenguaje que ha sido reconstruido basándose en sus lenguas hijas). En PIE, los sustantivos tenían caso gramatical. La palabra para 'honor' se reconstruyó con una raíz <em>*honos</em>, que en un cierto caso era <em>*honosem</em>.</p>
+
+<p>Ahora bien, a medida que el PIE se transformaba en latín (y también en griego, germánico, sánscrito, etc.), se produjeron algunos cambios de sonidos. En particular, la <tt>/s/</tt>  intervocálica se hizo gradualmente sonora (<tt>/z/</tt>), y finalmente produjo un sonido trillado alveolar, <tt>/r/</tt> (como la <em>rr</em> española). Este cambio es bastante común (se llama rotacismo). Sucedió solamente cuando la <tt>/s/</tt> era intervocálica, no en otra posición.</p>
+
+<pre class="indented">
+(Antes)     (Después)
+*honos   -&gt; honos
+*honosem -&gt; honorem
+</pre>
+
+<p>Esto, como se ve, produjo una irregularidad; la forma radical de la palabra se dividió en dos formas, <em>honos-</em> y <em>honor-</em>. Todos los lenguajes tienen formas irregulares, pero ésta (y muchas otras de la misma clase) probablemente no fue aceptado por los hablantes. Ahora vamos a poner una mano sobre la columna 'Antes' para taparla, ignorarla. Los hablantes de latín no sabían nada de cambio de sonidos, que es un proceso sutil e inconsciente (y no estudiado en esa época). ¿Qué hacer con el par irregular, <em>honos/honorem</em>?</p>
+
+<p>La solución vino de la mano de una analogía con las muchas palabras que no habían cambiado su forma, conservando la misma raíz (o cambiándola consistentemente). Tenían <em>honorem</em> y también tenían <em>honoris</em>, quizá incluso palabras como <em>honorificum</em> y así, de manera que comenzaron a decir <em>honor</em> en vez de <em>honos</em>. Por analogía, una forma se asimiló a las otras.</p>
+
+<p>Por supuesto, ningún lenguaje lleva la analogía tan lejos como para regularizar toda su gramática.</p>
+
+<p>Una forma relacionada de analogía aparece cuando la gente crea palabras a partir de elementos que tenían, basadas palabras similares. Por ejemplo, teniendo <em>fin - finalizar</em> y otras similares, en español han aparecido <em>idealizar</em>, <em>nacionalizar</em>, <em>hospitalizar</em> y muchísimas más. Si estás creando un lenguaje, la analogía probablemente sea la mejor herramienta posible para incrementar tu <a href="#creando">léxico</a>.</p>
+
+<h2>Otros medios gramaticales</h2>
+
+<p>Ésta es una sección general en la que menciono y hago un sumario de los medios gramaticales más comunes que se encuentran en los lenguajes del mundo, es decir, cómo la gramática se maneja a nivel práctico, en palabras reales.</p>
+
+<p>Ya hemos visto la mayoría de estos medios de una forma u otra. Aquí hay una breve lista de ellos:</p>
+
+<ul>
+
+<li><strong>Afijación</strong>: añadir prefijos, sufijos o infijos a las palabras, para cambiar su significado o su relación con otras palabras. Estos afijos incluyen lo que llamamos inflexiones y aglutinación.</li>
+
+<li><strong>Orden de palabras</strong>: es libre en algunos lenguajes, y fijo en otros. En general, cuanto más sintético es un lenguaje, más libre es el orden. Un lenguaje analítico depende más del orden de las palabras para clarificar su significado y relaciones, ya que estas palabras no toman inflexiones y por lo tanto no muestran su función en su estructura. Un lenguaje sintético puede construir una oración con palabras desparramadas o desordenadas (de hecho esto se llama <strong>hipérbaton</strong> y es un tipo de licencia poética).</li>
+
+<li><strong>Acento y altura</strong>: los hemos visto. En algunos lenguajes son solamente formales; en muchos otros, dos palabras pueden tener diferentes significados si difieren sólo en sus patrones de acentuación. Por ejemplo, en español <em>camino</em> (verbo o sustantivo) vs. <em>caminó</em>, o en inglés <em>record</em> <tt>/'rEk@rd/</tt> 'disco, grabación' vs. <em>record</em> <tt>/rI'kord/</tt> 'grabar, registrar' (el inglés tiene muchos pares de palabras bisilábicas como éstas, que alternan entre verbo y sustantivo según cambie el acento).</li>
+
+<li><strong>Tono</strong>: lo mismo que para el acento y la altura. A veces un cambio en el tono distingue dos palabras, y a veces produce una forma diferente del mismo concepto raíz. En shilluk, yít (tono alto) significa 'oreja', y yìt  (tono bajo) significa 'orejas'; el tono no es sólo fonético sino gramatical. En chino, por otro lado, el tono es casi siempre sólo fonético y fonémico, pero no tiene función gramatical.</li>
+
+<li><strong>Alternancia</strong>: la hemos visto con ejemplos. Es el cambio (regular) de sonidos en las palabras. La más común es la alternancia vocálica, que se encuentra mucho en los lenguajes germánicos, particularmente en el inglés: obsérvense las formas verbales <em>sing/sang/sung</em> 'cantar/cantó/cantado', y los plurales irregular <em>man/men</em> 'hombre/hombres', <em>goose/geese</em> 'ganso/gansos'. En algunos lenguajes esto no es irregular sino la norma. La alternancia consonántica es menos común pero existe. Las consonantes pueden alternar en formas diferentes: por voz (sonora/sorda), por modo de articulación (cambiando de oclusiva a fricativa, o a africada, o de simple a doble [geminada]), o de formas más extrañas. Hay un lenguaje africano donde <tt>/t/</tt> alterna con <tt>/l/</tt>, y <tt>/p/</tt> alterna con <tt>/w/</tt> (esto es alternancia de voz y de modo de articulación).</li>
+
+<li><strong>Reduplicación</strong>: (una parte de) una palabra es duplicada, repetida antes o después de ella. Un verbo reduplicado puede hacerse continuo o incrementar su fuerza, como en el hotentote, go 'mirar' vs. go-go 'examinar con atención' (usado por Philip J. Farmer en Jinetes del salario púrpura, en su "Escuela de Crítica Go-go"). Un sustantivo reduplicado puede ser tomado como plural, como gyat 'persona' vs. gyigyat 'personas' (de vuelta un lenguaje africano), que también muestra alternancia vocálica. A veces la reduplicación no tiene función en sí sino que forma parte de una inflexión. En griego, las formas perfectas de los verbos usan reduplicación y alternancia: līp ō 'me voy', <em>hélipon</em> 'me fui', léloipa 'me he ido'.</li>
+
+</ul>
+
+<p><a href="#gramatica" class="top-link">↑ Volver arriba</a></p>
+
+<h2>Creando palabras</h2>
+
+<p>Bien, ahora que todo está dispuesto, hay que empezar a crear palabras. Probablemente ya tengas algunas partículas, terminaciones de caso, afijos, etc., pero eso es solamente el esqueleto.</p>
+
+<p>¿Cuántas palabras necesitás? Si estás creando un lenguaje completo (asumo que así es, porque no habrías llegado hasta aquí si no), vas a necesitar cerca de dos mil palabras para comunicarte con cierta comodidad. Se puede hacer bastante con unas mil palabras, si eso te asusta; pero probablemente vayas a ir creando nuevas palabras de cuando en cuando.</p>
+
+<p><a href="../zompist/eskit.html">Mark Rosenfelder</a> menciona la tesis de Ogden y Richards. Esta gente demostró que la mayor parte de un texto común en inglés (pero esto vale para cualquier lenguaje) contiene un léxico muy reducido. Un cierto grupo de palabras comunes cubre el 80 o 90% de todo el texto. Entonces dijeron, "Bueno, entonces aislemos estas palabras y usémoslas a ellas y sólo a ellas, combinándolas para formar los conceptos más complicados en vez de usar palabras menos comunes". Por ejemplo, olvidar la palabra <i>succeed</i> 'tener éxito' y usar la expresión <i>make good</i> 'irle bien a uno'. En total uno podría arreglarse con 850 palabras comunes, más unas cien extra para campos específicos.</p>
+
+<p>El argumento es correcto, pero tiene un falla. Las palabras más comunes que cubren tanto del texto son también las que llevan menos información: artículos, preposiciones, pronombres, etc. En los titulares de los diarios, éstos son usualmente omitidos, porque no son tan importantes, y el resto se puede entender. Las palabras no tan comunes no se pueden omitir, porque son las que transportan todo el significado, toda la información. De hecho, la base teórica de la informática moderna dice que los signos más raros son los que poseen la mayor información. Si entendés el 90% de las palabras de un texto, pero el 10% restante se compone de la información más crítica, realmente no estás obteniendo nada excepto un montón de partículas que conectan conceptos ininteligibles.</p>
+
+<p>Por lo tanto, no ahorres palabras. Nunca pueden ser demasiadas.</p>
+
+<p>¿Cómo empezar? No hay método, pero puedo contarte algunas maneras que he usado:</p>
+
+<ul>
+
+<li>Podés traducir textos simples. Cuando necesites una palabra, la creás; si hay una raíz relacionada disponible, la derivás de ahí, o de lo contrario creás y anotás una raíz nueva primero. No se puede hacer salir palabras de ninguna parte. La traducción es tediosa, y es molesto parar a cada palabra e inventarla, pero es muy buena para crear palabras. Qué traducir es tu decisión. Desde luego, no recomiendo comenzar con Borges o Cortázar... El texto de Babel (Génesis 11, 1-9) es bastante bueno (y un clásico entre la comunidad internacional de creadores de lenguajes, por razones obvias). Podés continuar con la Biblia (o el Talmud o el Rgveda o cualquier otro libro sagrado de tu religión, si tenés una y si tiene libros sagrados). Si parece demasiado denso, probá con comics o con <em>El Hobbit</em>. Si te animás, probá <a href="javascript:;//no hace nada">traducir de otro lenguaje construido</a><span class="clarification"> [enlace muerto]</span>.</li>
+
+<li>Quizá puedas encontrar una lista de vocabulario básico. Por ejemplo, yo tengo un diccionario inglés-inglés pensado para alumnos no nativos, con una lista de dos mil palabras comunes que se usan para explicar las definiciones, y he tomado algunas palabras de allí y las he traducido a mi propio lenguaje. <em>No traduzcas diccionarios</em>. Es aburrido, consume tiempo, y no tiene sentido; vas a terminar teniendo muchas palabras raras, con traducciones españolas comenzadas todas por <em>a</em>.</li>
+
+<li>Encontrá un tema o campo semántico e inventá palabras pertenecientes a él. Por ejemplo, verbos de movimiento (caminar, ir, saltar, venir, levantarse, arrastrar, girar), o partes del cuerpo (cabeza, brazos, piernas, dedos, cara, ojos, pelo), o colores (ya conocés los colores), o números (vas a tener que crear un sistema numérico o usar el decimal), o herramientas, o animales, o electrodomésticos.</li>
+
+<li>Ésta todavía no la he usado, pero parece interesante: crear palabras que riman. Tomá cualquier conjunto de conceptos en español, y traducí el primero con una cierta palabra en tu lenguaje, y todas las otras con palabras que rimen con ésa. O al revés. O podés probar con series alternantes, palabras que varían sólo su primera consonante, o sus vocales (por supuesto, deberían ser conceptos sin relación, a menos que la alternancia de sonidos sea un dispositivo de inflexión válido). Después podés usar la lista para hacer juegos de palabras. :-)</li>
+
+</ul>
+
+<p>Hay una lista de palabras muy interesante (<strong>Universal Language Dictionary</strong>) que abarca 1600 palabras divididas por temas, y usadas de alguna forma por los lenguajes más comunes del mundo. La podés encontrar en el sitio de <a href="javascript:;//no hace nada">Model Languages</a> <span class="clarification">[enlace muerto]</span>: viene con el generador de lenguajes Langmaker. Muy bueno, por lo menos para buscar palabras (no es muy divertido sentarse y generarlas una después de otra). Para una forma simple pero útil de generar palabras, probá <a href="javascript:;//no hace nada">Wordgen</a><span class="clarification"> [enlace muerto]</span>. Te permite especificar las consonantes y combinaciones iniciales, medias y finales, las vocales y diptongos, y el número de sílabas que querés.</p>
+
+<table style="width: 100%;">
+<tr>
+<td><a href="sonidos.html" class="nav-btn">Regresar a Sonidos</a></td>
+<td><a href="fin.html" class="nav-btn">Continuar al Fin</a></td>
+</tr>
+</table>
+
+<br/>
+
+<hr/>
+
+<div class="crumbles">
+<a href="/">Inicio</a> &gt; <a href="como-crear-un-lenguaje.html">Cómo crear un lenguaje</a> &gt;
+</div>
+
+</div> <!--end main-->
+
+<div id="footer">
+Derecho de autor &copy; 1999 Pablo David Flores.
+</div>
+
+</div> <!--end wrapper-->
+
+</body>
+</html>

@@ -1,0 +1,521 @@
+<html>
+<head>
+<title>Cómo crear un lenguaje - Sonidos</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1">
+
+<link rel="shortcut icon" href="/ii-favicon.png" />
+<meta name="og:title" content="Idiomas imaginarios" />
+<meta name="og:type" content="website" />
+<meta name="og:description" content="Guías y artículos sobre la creación de idiomas" />
+<meta name="og:image" content="https://idiomas-imaginarios.github.io/ii-socialicon.png" />
+
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="pablo-flores-style.css">
+
+<body>
+
+<div id="wrapper">
+<div id="title">
+<h1>Idiomas imaginarios</h1>
+</div>
+
+<div id="main">
+
+<div class="crumbles">
+<a href="/">Inicio</a> &gt; <a href="como-crear-un-lenguaje.html">Cómo crear un lenguaje</a> &gt;
+</div>
+
+<hr/>
+
+<h1 id="sonidos">Sonidos</h1>
+
+<p>Los sonidos son la forma en que un lenguaje se vuelve real en el mundo físico, así que comenzaremos hablando de ellos. Algunas personas creen que una letra en su alfabeto es lo mismo que un sonido, o que todos los sonidos de todos los lenguajes del mundo son los mismos (que los sonidos de su propio lenguaje), sólo que con 'acentos' diferentes. Por qué esto es falso se puede explicar fácilmente y ser entendido por la mayor parte de la gente. Aquí no mezclaré sonido con representación o transliteración, y daré ejemplos de sonidos en lenguajes que pueden resultar familiares sólo para simplificar las cosas.</p>
+
+<p>Sin embargo, tenemos que hablar primero de un tema bastante abstracto, para poder proseguir con confianza después. Hablaremos de fonos (sonidos reales) y fonemas (los sonidos en un lenguaje como los ve un lingüista).</p>
+
+<h3 id="fonos+fonemas">Fonos y fonemas</h3>
+
+<p>El inmenso (de hecho, infinitamente denso) rango de sonidos posibles que un ser humano puede producir se llaman <b>fonos</b>. Cada posición particular de los labios, lengua y otras características de nuestro órganos fonadores puede pensarse como un punto en un continuo multidimensional. Dadas dos posiciones de la lengua con respecto al interior de la boca, siempre hay una posición en el medio, y así sucesivamente. Como los números reales en su recta.</p>
+
+<p>Sin embargo, agrupamos los sonidos en torno a ejemplos prototípicos de ellos mismos, para estudiarlos mejor y más fácilmente, y llamamos a cada uno un <strong>fono</strong>, un sonido simple (es decir, único) que se puede describir por ciertas características (por ejemplo, la lengua toca los dientes, las cuerdas vocales vibran, etc.).</p>
+
+<p>En un lenguaje dado, encontraremos muchos fonos, pero éstos no son el objeto de nuestro estudio. Necesitamos distinguir los sonidos que son distinguibles por los hablantes del lenguajes, es decir, los que éstos conceptualizan como diferentes. Éstos se llaman <b>fonemas</b>. Un fonema puede pensarse como una familia de sonidos relacionados que los hablantes consideran como una misma unidad fonética. Los sonidos que forman parte de un mismo fonema se llaman <strong>alófonos</strong> o variantes alofónicas.</p>
+
+<p>En símbolos fonéticos, las transcripciones fonémicas se encierran entre barras ( <tt>/X/</tt> ), mientras que las fonéticas (aquéllas que distinguen los alófonos de un mismo fonema) se encierran entre corchetes ( <tt>[X]</tt> ). Los símbolos fonéticos estándar que usa la mayor parte de la gente hoy en día pertenecen a un conjunto, el IPA (International Phonetic Alphabet, "Alfabeto Fonético Internacional"). Son muchos, y necesitarías una fuente especial para verlos si los usara aquí, así que yo (como la mayoría de los que tienen que manejar símbolos del IPA en la Web o en e-mail) uso una transliteración que permite representar el IPA con caracteres ASCII de 7 bits, y que se llama X-SAMPA.</p>
+
+<p>Hay varios otros tipos de <a href="http://www.blahedo.org/ascii-ipa.html">transliteraciones del IPA en ASCII</a>. Para oír los sonidos del IPA, podés usar un programa, <a href="https://software.sil.org/ipahelp2-1/">IPAHelp</a>.</p>
+
+<p>De vuelta al tema... Los alófonos de un fonema no tienen por qué ser sonidos parecidos. Pueden serlo o no. Por ejemplo, en español el fonema <tt>/b/</tt> tiene dos alófonos, <tt>[b]</tt> y <tt>[B]</tt> (una fricativa bilabial, parecida a la <em>v</em> del inglés, donde se sopla aire entre los labios). Éstos son sonidos similares y relacionados. Por otro lado, la <tt>/h/</tt> japonesa tiene tres alófonos, <tt>[h]</tt>, <tt>[C]</tt> (algo así como en <em>huge</em> en inglés, el Ich-Laut del alemán, o la <strong>j</strong> española ante <tt>/i/</tt>), y por último <tt>[p\]</tt> (como <tt>/f/</tt>, pero el aire soplado entre los labios, no entre labios y dientes). Éstos son <a href="javascript:;//no hace nada">sonidos bastante distintos</a> <span class="clarification">[grabación perdida]</span> entre sí. Lo que los hace alófonos es que los hablantes de japonés los tratan como el mismo sonido (fonema). Notemos que, por ejemplo, en alemán <tt>[C]</tt> y <tt>[h]</tt> son alófonos de <em>distintos</em> fonemas, así que <em>sí</em> pueden distinguir palabras.</p>
+
+<p>Esto nos lleva a la principal característica de los alófonos: usualmente están en <strong>distribución complementaria</strong>. Esto significa que el alofóno dado de un fonema que aparece en una posición particular depende de esa posición, la cual determina cuál fonema (uno y no otros) aparecerá. Volviendo a los ejemplos, en español <tt>/b/</tt> es <tt>[b]</tt> después de <tt>/m/</tt> y cuando comienza una palabra claramente (por ejemplo, al principio de una oración); de otra forma es <tt>[B]</tt>. No se puede tener <tt>[mB]</tt> o <tt>[ab]</tt>, ya que solamente <tt>[mb]</tt> y <tt>[aB]</tt> son posibles.</p>
+
+<p>Esto se reduce al hecho que define qué son los fonemas: sonidos que pueden distinguir palabras. Si dos sonidos son alófonos, no pueden producirse dos palabras (distintas) intercambiándolos, porque de hecho son lo mismo; si pronunciás uno donde debería aparecer otro, sonará extraño o incorrecto a los hablantes nativos, pero probablemente no oirán una palabra <em>diferente</em>.</p>
+
+<p>Vas a ver más de esto después, en otras secciones, ya que seguiré repitiéndome. Si no entendés el concepto de fonema, es mejor que sigas tratando.</p>
+
+<h3 id="vocales+consonantes">Vocales y consonantes</h3>
+
+<p>Los sonidos usados en cualquier lenguaje se pueden dividir (generalmente) en <strong>consonantes</strong> y <strong>vocales</strong>. Esta división no es necesariamente univeral; en muchos lenguajes algunas 'consonantes' como <em>r, m, n, l,</em> sirven de hecho como vocales (es decir, se las trata como núcleos de sílaba, pueden ser acentuadas or alargadas, etc.). Por ejemplo, el sánscrito tiene <em>l</em> y <em>r</em> silábicas; y la <em>n</em> japonesa de final de sílaba es moraica (se pronuncia con longitud similar a una vocal, e influye en la métrica). La división entre vocales y consonantes es un asunto de cierre: cuanto más cerrados están los pasajes respiratorios, más consonántico es un sonido. Vamos a examinar los diferentes tipos de sonidos usando esta escala.</p>
+
+<h3 id="consonantes">Consonantes</h3>
+
+<p>Los sonidos varían a lo largo de <strong>dimensiones</strong>. Éstas representan rangos de características posibles, o características binarias (de tipo sí/no). Cada lenguaje tiene una fonología con una o más dimensiones dentro de las cuales se encuentran y reconocen sonidos. Una dimensión importante es el <strong>grado de cierre</strong> (u oclusión). De acuerdo a esto, las consonantes se clasifican en:</p>
+
+<ul>
+
+<li><strong id="oclusiv">Oclusivas</strong>: el flujo de aire se detiene completamente por un instante, y luego se suelta, para producir el sonido. Los sonidos <tt>/p t b g/</tt> son oclusivos.</li>
+
+<li><strong id="fricativ">Fricativas</strong>: el flujo de aire no se detiene totalmente, pero causa una fricción audible. Por ejemplo: <tt>/f/</tt>, <tt>/s/</tt>, la <em>j</em> española <tt>/x/</tt> o la <em>ch</em> alemana, la <em>sh</em> inglesa (<tt>/S/</tt>), etc.</li>
+
+<li><strong id="aproximant">Aproximantes</strong>: el flujo de aire apenas se modifica. Por ejemplo: <tt>/w l r/</tt>.</li>
+
+</ul>
+
+<p>Además, una <strong id="africad">africada</strong> es una oclusiva más una fricativa, que ocurren en el mismo punto de articulación, como la <em>ch</em> española (que es <tt>/tS/</tt>, donde <tt>/S/</tt> = <em>sh</em>), o la <em>z</em> alemana (que se pronuncia <tt>/ts/</tt>).</p>
+
+<p>Un <strong id="click">click</strong> es un sonido producido colocando la lengua en posición para una oclusiva, mientras hay un segundo cierre del paso de aire en otro lugar (generalmente el velo del paladar, donde se pronuncia <tt>/k/</tt>), acumulando presión y luego soltando el aire (ver abajo).</p>
+
+<p>También tenemos el <strong>punto de articulación</strong>, es decir, dónde ocurre la obstrucción del flujo de aire. De acuerdo a esto, las consonantes pueden ser:</p>
+
+<ul>
+
+<li><strong id="labial">Labiales</strong>: formadas por los labios (<tt>/m/</tt>, <tt>/p/</tt>, también conocidas como bilabiales), o por los labios y los dientes (<tt>/f/</tt>, también conocidas como labiodentales), o por los labios y un cierre parcial en el velo del paladar (<tt>/w/</tt>, labiovelar).</li>
+
+<li><strong>Dentales</strong>: entre los dientes y los alvéolos, como en la <em>th</em> inglesa (<tt>/T/</tt> o <tt>/D/</tt>), o la <em>t</em> española.</li>
+
+<li><strong>Alveolares</strong>: en los alvéolos, el lugar justo atrás de los dientes (<tt>/s/</tt>, <tt>/l/</tt>, la <em>t</em> inglesa, la <em>r</em> y la <em>rr</em> españolas).</li>
+
+<li><strong>Palato-alveolares</strong> (o <strong>postalveolares</strong>): un poco más atrás, casi en el paladar duro (como <em>sh</em> en inglés, o <em>j</em> en inglés y francés).</li>
+
+<li><strong>Retroflejas</strong>: como las palatoalveolares, pero la lengua se curva hacia atrás (de forma que lo que toca el paladar es la cara inferior). La característica <em>r</em> con sonido 'hueco' de buena parte de los dialectos norteamericanos del inglés es retrofleja.</li>
+
+<li><strong>Palatales</strong>: en la cúspide del paladar (el sonido de la <em>i</em> en diptongo, como en <em>hierro, diodo, diálogo</em>).</li>
+
+<li><strong>Velares</strong>: en la parte de atrás de la boca, o velo (<tt>/k/</tt>, la <em>j</em> española <tt>/x/</tt>, la <em>ng</em> inglesa <tt>/N/</tt> como en <em>sing</em>).</li>
+
+<li><strong>Uvulares</strong> (o <strong>postvelares</strong>): muy atrás en la boca, en la úvula (o campanilla) (el sonido oclusivo <tt>/q/</tt>, tal como aparece en árabe; la <em>r</em> francesa).</li>
+
+<li><strong>Glotales</strong>: en la parte de atrás de la garganta, pronunciadas con participación del órgano (la epiglotis) que cierra la glotis o pasaje entre el esófago y la tráquea. Por ejemplo, la <em>h</em> inglesa, el <em>glottal stop</em> que aparece ante vocales iniciales.</li>
+
+</ul>
+
+<p>Algunas otras dimensiones son:</p>
+
+<ul>
+
+<li><strong>Voz</strong>: presente cuando las cuerdas vocales vibran al producir el sonido (que se llama <strong>sonoro</strong>), ausente cuando no vibran (<strong>sordo</strong>). Los sonidos <tt>/p t f/</tt> son sordos, mientras que <tt>/b d l/</tt> son sonoros.</li>
+
+<li><strong>Nasalización</strong>: depende de si pasa aire por la nariz o no. Los sonidos <tt>/m n/</tt> son nasales.</li>
+
+<li><strong>Aspiración</strong>: (sobre todo hablando de oclusivas) se presenta cuando hay una 'explosión' de aire al soltarlo. Los sonidos <tt>/p t k/</tt> iniciales, en inglés, son aspirados. (La aspiración es lo que hace que la <em>t</em> de la palabra inglesa <em>two</em> suene parecida a una <em>ch</em> a muchos hispanohablantes.)</li>
+
+<li><strong>Palatalización</strong>: cuando la parte media de la lengua se eleva hacia el paladar al pronunciar la consonante. La <em>ñ</em> española (y la <em>ll</em>, en España) son palatales o palatalizadas, según el análisis que se haga.</li>
+
+<li><strong>Glotalización</strong>: cuando hay un cierre en la glotis al mismo tiempo que se pronuncia el sonido principal, y ambas obstrucciones se sueltan juntas.</li>
+
+</ul>
+
+<p>Examinemos ahora estos contrastes. Los llamo contrastes porque eso es lo que son: cosas que pueden ser distinguidas. La lingüística se basa en contrastes, en diferencias. Si un lenguaje no distingue entre dos sonidos, entonces, para todos los propósitos prácticos, es el mismo sonido, y como tal debe ser estudiado.</p>
+
+<p>La <strong>voz</strong> (vibración o no de las cuerdas vocales) es un contraste muy común en los lenguajes occidentales indoeuropeos, aunque no en muchas otras familias lingüísticas, donde esta distinción no se hace (de manera que, por ejemplo, <tt>/p/</tt> y <tt>/b/</tt>, o <tt>/t/</tt> y <tt>/d/</tt>, son el mismo fonema).</p>
+
+<p>La <strong>nasalización</strong> es un contraste muy común. Las nasales más comunes son a su vez oclusivas sonoras, pero algunos lenguajes (como el galés) tienen nasales sordas, y unos pocos tienen nasales fricativas. Si no te imaginás como pronunciar una nasal sorda, tené en cuenta que una <em>m</em> es similar a una <em>b</em> nasalizada (la diferencia es mínima), de manera que una <em>m</em> sorda es casi como una <em>p</em> nasalizada: pronunciá una <em>p</em> al mismo tiempo que dejás salir aire por la nariz, y listo. Mucha gente de hecho nasaliza las consonantes (y las vocales) después de una nasal, aunque no se dan cuenta: la distinción generalmente no es fonémica (no se puede usar para distinguir una palabra de otra).</p>
+
+<p>Ya hablamos de la <strong>aspiración</strong>. Un lenguaje puede tener oclusivas aspiradas, no aspiradas, o ambas; y puede hacer fonémica esa distinción (como el hindi) o sólo fonética (como el inglés).</p>
+
+<p>La <strong>palatalización</strong> es un fenómeno bastante común entre los lenguajes. Una consonante se palataliza elevando la parte media de la lengua hacia la parte superior de la boca (el paladar). Normalmente la consonante palatalizada tiene una contrapartida alveolar. El resultado es algo que suena como la consonante alveolar correspondiente más un sonido <tt>/j/</tt> (como la <em>i</em> en 'tiene' o, en España, la <em>y</em> de 'yo'). El ruso tiene una serie de consonantes palatalizadas, transliteradas con un apóstrofe (<em>t', l', d'</em>). El español (peninsular) tiene dos, <em>ll</em> (en IPA, <tt>/L/</tt>) y <em>ñ</em> (<tt>/J/</tt>); el francés tiene también éste último, escrito <em>gn</em>, y el portugués tiene <em>lh, nh</em>.</p>
+
+<p>La <strong>glotalización</strong> se hace cerrando la glotis (el órgano que impide que la comida vaya a los pulmones y el aire al estómago, cuando se cierra a tiempo), y abriéndola al mismo tiempo que se pronuncia el sonido. Los sonidos glotalizados son generalmente oclusivas, y se las llama también <strong>eyectivas</strong>. Se puede crear una glotalización produciendo un <em>glottal stop</em> (oclusiva glótica) al mismo tiempo (en coarticulación) que la oclusiva principal, y luego liberando ambos cierres al mismo tiempo. Pero ¿qué es un <em>glottal stop</em>? Al comenzar una palabra en vocal, y si no hay nada antes, solemos producir uno antes de la vocal, aunque no nos damos cuenta. También cuando queremos separar dos vocales, haciendo una pausa entre ellas. Al aclararnos la garganta dos veces, generalmente hay un <em>glottal stop</em> entre ellas. En alemán, siempre hay un <em>glottal stop</em> antes de una vocal inicial. Este sonido no es fonémico en alemán o en español, pero es bastante común en otros lenguajes, generalmente transliterado como un apóstrofe (como en hawaiiano o klingon), o con su símbolo IPA, similar a un signo de interrogación sin punto (transliterado <tt>/?/</tt>). El georgiano y el quechua tienen sendas series completas de oclusivas sordas glotalizadas o <a href="glosario.html#eyectivo"><strong>eyectivas</strong></a>, que también se llaman <strong>glotálicas <a href="glosario.html#egresivo">egresivas</a></strong>.</p>
+
+<p>También hay consonantes <strong><a href="glosario.html#glotalico">glotálicas</a> <a href="glosario.html#ingresivo">ingresivas</a></strong>, o <strong><a href="glosario.html#implosivo">implosivas</a></strong>. Para producir una implosiva, hay que crear, además de una aproximación o clausura en otro punto, una clausura o cierre en la glotis, luego bajar la glotis, y al alcanzarse una cierta presión soltar ambos cierres. Algunos lenguajes africanos, entre otros, tienen consonantes implosivas, que son usualmente oclusivas sonoras. Mi lenguaje construido g'amah tiene <a href="javascript:;//no hace nada">oclusivas implosivas</a> <span class="clarification">[grabación perdida]</span> y <a href="javascript:;//no hace nada">nasales implosivas</a><span class="clarification"> [grabación perdida]</span>.</p>
+
+<p>Algunos otros contrastes que no mencioné hasta ahora:</p>
+
+<p>Una consonante <strong>lateral</strong> es una en la que la lengua mantiene cerrado el paso de aire en la parte central de la boca, pero dejando que fluya aire por los costados. La lateral más común que conocemos es <tt>/l/</tt>, que usualmente indica un sonido alveolar y sonoro. Sin embargo, el inglés tiene dos variantes, una alveolar y otra velar <tt>[L\]</tt>; ésta última (llamada <em>dark L</em> o 'L oscura') es la que le da ese sonido extraño a la <em>l</em> en palabras como <em>milk, sell</em>, etc. Esta <em>l</em> velar es más parecida a una <em>g</em> que a otra cosa. Ambas variantes, al igual que nuestra <em>l</em>, son sonoras, pero algunos lenguajes, como el galés, tienen una <em>l</em> sorda y fricativa (que se escribe <tt>/K/</tt>, y se parece a una mezcla entre <tt>/l/</tt> y <tt>/s/</tt>).</p>
+
+<p>Una consonante <strong>retrofleja</strong> se produce doblando la lengua hacia atrás dentro de la boca, hasta que toque el paladar con la punta de la cara inferior. La retroflexión existe y es fonémica en muchos lenguajes. Las retroflejas también se llaman <strong>apico-palatales</strong> (lo cual significa que el ápice, o sea la punta de la lengua, toca el paladar). No hay ejemplos conocidos (para nosotros) de retroflejas, excepto la <em>r</em> de muchos dialectos del inglés norteamericano. En sánscrito hay una serie completa de consonantes retroflejas que van paralelas a las alveolares, y se transliteran como <em>t, d, s</em>, etc., con un punto debajo.</p>
+
+<p>Si sólo se usan las dos dimensiones principales (grado de cierre y punto de articulación) y se simplifican algunos puntos de articulación, puede mostrarse la distribución de las consonantes del español rioplatense en una grilla como ésta:</p>
+
+<div class="wide-elem">
+<pre>
+
+             labial  lab-dnt   dental  alv   alv-pal  velar
+
+oclusivas      p b              t d                   k g
+fricativas             f               s      S       x
+africadas                                     tS
+aproximantes                           4 l r
+nasales          m                       n    J
+
+</pre>
+</div>
+
+<p>Nótese que <tt>/S/</tt> representa el sonido tanto de <em>ll</em> como de la <em>y</em> consonántica, ya que ambas consonantes se funden en una en este dialecto, y su articulación varía entre la postalveolar a la francamente palatal. Esta tabla es válida, sin estas consideraciones, para todos los otros dialectos del castellano.</p>
+
+<h3 id="nuevas-consonantes">Nuevas consonantes</h3>
+
+<p>¿Cómo inventar nuevas consonantes para tu lenguaje? El primer paso debería ser decidir qué contrastes vas a usar. El español tiene tres puntos de articulación (PdAs) para las oclusivas, que son normalmente el marco de referencia, y distingue voz para las oclusivas (no para las fricativas) y nasalización.</p>
+
+<p>Lo más importante es notar que la fonología de un lenguaje es un sistema. Las consonantes que estén fuera del sistema (porque, por ejemplo, usan contrastes excepcionales) tienden a perderse y desaparecer, o se funden con otras similares. Por ejemplo, el español no podría tener una eyectiva (glotalizada) porque usaría un contraste que no se encuentra en ningún otro punto del lenguaje, y no sobreviviría mucho tiempo. Las excepciones (como la presencia de <tt>/tS/</tt>, el sonido <em>ch</em>, que es la única africada) son posibles, pero no deberías abusar de ellas. Si tenés un sonido exótico, deberías tener otros del mismo tipo. Por otra parte, probablemente no deberías inventar muchos sonidos extraños; tenés que saber cómo pronunciar cada uno de ellos, y ser capaz de leer tu lenguaje fluidamente. (Esto también involucra una planificación cuidadosa del esquema de transliteración.)</p>
+
+<p>Una vez decididos los contrastes que vas a usar, armá la grilla y llená los huecos. Probablemente tengas que inventar nuevos símbolos o digrafos para algunas letras (ver <a href="#escribiendo">Cómo escribir</a>). Si te parece que hay muchas consonantes, borrá una serie, o algunos miembros. No hay obligación de ocupar todos los lugares de la grilla (el español, como habrás visto, deja muchos espacios vacíos). Por ejemplo, podés tener oclusivas sordas y sonoras, pero solamente fricativas sordas y nasales sonoras, y no tener africadas.</p>
+
+<p>El español tiene sólo una africada, <em>ch</em> <tt>/tS/</tt>; en cambio, tu lenguaje podría tener africadas en todas las posiciones donde haya una oclusiva y una fricativa. Por ejemplo, las consonantes <em>pf</em> (que se encuentra en alemán, como en <em>Pferd</em>), <em>ts</em> (también en alemán, escrita <em>z</em> como en <em>zehn</em>, y en japonés, como en <em>tsukuru</em>, aunque sólo es una variante alofónica de <tt>/t/</tt>), <em>tth</em> <tt>/tT/</tt> (donde <tt>/T/</tt> es la <em>th</em> sorda del inglés, o la <em>z</em> dental del español de Castilla), <em>tsh</em> (<em>ch</em>), <em>kkh</em> (como sonarían <em>kj</em> simultáneas en español), etc.</p>
+
+<p>Puede completarse una serie de consonantes, por ejemplo las nasales españolas: no hay nasal velar (no hay razón para que la haya, pero tampoco para que no). Una nasal velar es el sonido del grupo final escrito <em>ng</em> en inglés). También podría completarse la serie de las oclusivas para que hubiera una palatal que se correspondiera con la nasal <em>ñ</em> (<tt>/J/</tt>), etc.</p>
+
+<p>Para meterte de lleno en la cosa, podrías añadir un contraste no usado en español, y crear una serie de consonantes palatalizadas. O usar la aspiración como distinción fonética, o lateralizar o retroflexionar consonantes. Como dice <a href="http://www.zompist.com/">Mark Rosenfelder</a>, la clave de un lenguaje naturalista es añadir (o sustraer) dimensiones. Estudiante de quechua, menciona él que este lenguaje no tiene una o dos, sino <em>tres</em> series de oclusivas: aspiradas, no aspiradas, y glotalizadas; pero no distingue entre consonantes sordas y sonoras. De manera que para un hablante de quechua la <em>p</em> de <em>peso</em> y la <em>b</em> de <em>beso</em> son el mismo sonido (fonema), y las dos palabras suenan como lo mismo.</p>
+
+<p>Algunos sonidos son más comunes que otros. De acuerdo a las fuentes de Mark Rosenfelder, la mayoría de los lenguajes tienen las oclusivas simples <tt>/p t k/</tt>. Por lo que he podido averiguar, los sistemas fonológicos más simples corresponden al hawaiano, con ocho consonantes y cinco vocales, y el rotokas, con sólo seis consonantes y cinco vocales. El quechua tiene muchas consonantes pero sólo tres vocales (<tt>/a i u/</tt>, que son las más comunes). El sistema más complejo parece ser el del !xu~ (o !kung), lengua de la familia khoisan de África, con 92 consonantes (47 de las cuales son clicks).</p>
+
+<h3 id="vocales">Vocales</h3>
+
+<p>Las vocales se producen exactamente igual que las consonantes; no son diferentes esencialmente de ellas. Pero el detalle principal es que el flujo de aire prácticamente no es molestado de ninguna forma al pasar por la boca; sólo es modulado por la posición de la lengua y otras partes de los órganos del habla. Además, las vocales son normalmente sonoras (algunos lenguajes tienen vocales sordas, especialmente al final de las palabras; suenan como pronunciar una <em>h</em> inglesa con la lengua, labios, etc. en la misma posición que para la vocal).</p>
+
+<p>Las vocales varían a lo largo de las siguientes dimensiones:</p>
+
+<ul>
+
+<li><strong>Altura</strong>: cuán abierta está la cavidad de resonancia, formada dentro de la boca por la lengua (cuanto más alta está la lengua, más cerrada la cavidad). Las vocales se clasifican usualmente en <strong>altas</strong> (<tt>/i/</tt>, <tt>/u/</tt>), <strong>medias</strong> (<tt>/e/</tt>, <tt>/o/</tt>), y <strong>bajas</strong> (<tt>/a/</tt>). Esta escala es por supuesto continua, no discreta; en algunos casos no puede describirse una vocal como media o baja, por ejemplo, pero se puede decir que es más alta que <tt>/a/</tt> pero no tan alta como <tt>/e/</tt>.</li>
+
+<li><strong>Frontalidad</strong>: cuán cerca está la parte articuladora de la lengua del frente de la boca. Puede variar desde <strong>frontal</strong> (<tt>/i/</tt>, <tt>/e/</tt>), a <strong>central</strong> (<tt>/a/</tt>), hasta <strong>posterior</strong> (<tt>/o/</tt>, <tt>/u/</tt>). Las vocales frontales se llaman a veces <strong>palatales</strong>, y las posteriores <strong>velares</strong>.</li>
+
+<li><strong>Redondeamiento</strong>: depende de si los labios están redondeados o no.  Las vocales <tt>/o/</tt>, <tt>/u/</tt>, la <em>u</em> francesa o la <em>ü</em> alemana (IPA <tt>/y/</tt>) son redondeadas, mientras que las vocales <tt>/i e a/</tt> son no redondeadas. In muchos lenguajes esto cubre todas las posibilidades, pero de hecho el sueco tiene tres grados de redondeamiento en una vocal frontal, desde no redondeada hasta totalmente redondeada, pasando por semi-redondeada.</li>
+
+<li><strong>Longitud</strong>: cuánto tiempo se estira la vocal, por supuesto. El español o el inglés no distinguen las vocales por longitud, pero el latín, el griego, el inglés antiguo y muchos otros sí. El estonio tiene tres grados de longitud (vocales cortas, semilargas y largas).</li>
+
+<li><strong>Nasalización</strong>: como las consonantes, las vocales pueden ser nasalizadas. En español, una vocal al lado de una consonante nasal generalmente se nasaliza, pero esto no es distintivo (fonémico). En francés, por otro lado, hay cuatro pares de vocales que se distinguen por ser nasales u orales.</li>
+
+<li><strong>Voz</strong>: las vocales normalmente son sonoras, pero algunos lenguajes tienen vocales sordas (suenan como <tt>/h/</tt> con los labios y lengua en posición para pronunciar la vocal). En japonés, <tt>/u/</tt> e <tt>/i/</tt> son sordas si no tienen tono alto y se encuentran entre consonantes sordas (pero se hacen sonoras cuando por alguna razón se las enfatiza).</li>
+
+<li><strong>Tensión</strong>: es difícil de explicar, excepto con ejemplos; en inglés tenemos que las vocales <tt>/I/</tt> y <tt>/U/</tt> de <em>pit</em> y <em>put</em> son <strong>laxas</strong>, mientras que <tt>/i/</tt> y <tt>/u/</tt> como en <em>repeat</em> y <em>boot</em> son <strong>tensas</strong>. En español, <tt>/e/</tt> y <tt>/o/</tt> tienen variantes alofónicas tensas cuando están en sílaba abierta (terminada en vocal) y laxas cuando están en sílaba cerrada (terminada en consonante).</li>
+
+<li><strong>Retroflexión</strong>: igual que la retroflexión en consonantes. Una vocal se hace retrofleja curvando y doblando la lengua hacia atrás, de manera que la parte inferior quede levemente hacia arriba. Un cierto lenguaje africano cuyo nombre no recuerdo ahora tiene tres series de tres vocales cada una; la primera es de no retroflejas, la segunda de semi-retroflejas, y la tercera de totalmente retroflejas.</li>
+
+<li><strong>Constricción</strong>: una vocal constreñida suena como si te estuvieras atragantando. En algunos lenguajes, éstas y otras formas de pronunciar sonidos son fonémicas, no sólo un accidente.</li>
+
+<li><strong>Otras</strong>: hay más contrastes para vocales, pero no sé nada de ellos. Otras modificaciones se pueden hacer por medio del <a href="#acento+altura">acento</a> y el <a href="#tono">tono</a> (en lenguajes tonales, como el chino o el vietanamita; ver abajo).</li>
+</ul>
+
+<p>El español tiene este sistema vocálico:</p>
+
+<div class="wide-elem">
+<pre>
+         front centr post
+
+altas    i               u
+
+medias       e       o
+
+bajas            a
+
+</pre>
+</div>
+
+<p>Este diagrama en forma de triángulo es recurrente, y se encuentra en todos los libros de fonética; usa las dos dimensiones principales (altura y frontalidad). Puede pensarse el triángulo como un diagrama del interior de la boca, donde los dientes (la parte frontal) están a la izquierda. Dentro del triángulo puede haber vocales en cualquier lugar. Los sonidos centrales y medios, como la <em>schwa</em> inglesa (<tt>/@/</tt>), son los menos distinguibles y marcados; la <em>schwa</em> está justo en el centro del triángulo, sobre la <tt>/a/</tt>. En ruso hay una vocal central alta <tt>/i\/</tt> (en cirílico &#x044b;), que se encuentra también sobre la <tt>/a/</tt>, pero más arriba, en el medio de la línea i&mdash;u.</p>
+
+<h3 id="nuevas-vocales">Nuevas vocales</h3>
+
+<p>Como ocurre con las consonantes, podés inventar tantas vocales como quieras. Tendrías que tener en cuenta que las vocales forman un sistema, uno que no debe estar desbalanceado. Si hay una versión tensa y una laxa de <em>i</em>, es porque estás usando la tensión como contraste, y debería estar presente en algún otro par de vocales.</p>
+
+<p>El redondeamiento, aunque así lo parece, no está desbalanceado en español. Parece ser que el redondeamiento es más frecuente en las vocales posteriores que en las anteriores. Sin embargo, muchos lenguajes tienen frontales redondeadas, que el español no tiene (el alemán y el francés tienen ambos formas redondeadas de <em>i</em> y <em>e</em>, escritas <em>ü</em> y <em>ö</em> en alemán). Por otro lado, podés usar vocales posteriores no redondeadas (como la <em>u</em> japonesa).</p>
+
+<p>Puede haber tantas vocales como quieras. Los sistemas más simples tienen tres, generalmente <tt>/i a u/</tt> (los vértices del triángulo, y no por casualidad). Esto significa que distinguen tres sonidos vocálicos, no que sus hablantes no puedan o sepan pronunciar una <tt>[e]</tt> o una <tt>[o]</tt>. Un hablante de quechua puede decir algo que suena como <tt>[e]</tt> a un hablante español, pero que es de hecho una <tt>/i/</tt>, de la cual el sonido <tt>[e]</tt> es una mera variante alofónica.</p>
+
+<p>El español y el japonés tienen cinco vocales, <tt>/i e a o u/</tt>. El inglés británico estándar tiene doce vocales, el alemán catorce, y el sueco alrededor de diecicho. Pero no hace falta que llegues a tanto.</p>
+
+<p>Hay al menos dos lenguajes naturales con sólo dos vocales, el abkhazio y el  abaza, hablado en el Cáucaso Noroccidental, a los cuales podría sumarse otro del mismo origen, el ubykh, si no fuera porque se supone extinto. Estas vocales probablemente podrían caracterizarse como <tt>/a/</tt> e <tt>/i/</tt>, donde <tt>/i/</tt> tendría como variantes <tt>[i]</tt>, <tt>[u]</tt> y quizá cualquier otro sonido alto, sea frontal, central o posterior, redondeado o no.</p>
+
+<p><a href="#sonidos" class="top-link">↑ Volver arriba</a></p>
+
+<p></p>
+
+<h2 id="acento+altura">Acento y altura</h2>
+
+<p>El <strong>acento</strong> es por supuesto la fuerza que ponemos en cierta sílaba de cada palabra (o de las palabras importantes en una oración completa). Un lenguaje puede tener una regla de acentuación regular, en cuyo caso solamente hay que mencionarla, o puede tener una acentuación irregular, en cuyo caso deberías indicarla. En español, por ejemplo, aunque el acento es impredecible, hay reglas para saber dónde colocarlo en palabras que uno lee, ya que se lo indica usando un 'acento agudo' o tilde, o se explicita por la forma de la palabra. En inglés, el acento es también impredecible, pero no se lo marca de ninguna forma en la escritura. En francés, todas las palabras se acentúan en la última sílaba (el uso de 'acentos' agudos, graves y circunflejos no tiene nada que ver con esto). En quechua, todas las palabras son graves; en finés, el acento cae en la primera sílaba, no importa lo larga que sea la palabra. En latín, la regla es un poco más compleja: se acentúa la penúltima sílaba si es larga (es decir, si contiene una vocal larga o termina en una consonante), y si no se acentúa la antepenúltima. Es decir que <em>seculus</em> es <tt>/'sekulus/</tt> , mientras que <em>secundus</em> es <tt>/se'kundus/</tt>  (el apóstrofe, en IPA, indica que en la próxima sílaba cae el acento).</p>
+
+<p>La <strong>altura</strong> se refiere al nivel (musical) de una sílaba, que puede ser alto, medio, bajo, etc. El japonés usa un sistema de acentuación por altura, que ignora la fuerza o acento al que estamos acostumbrados, y marca las palabras con distintos patrones de altura. Algunas sílabas son bajas, y otras altas, dependiendo de dónde caiga un punto en particular donde la altura baja más abruptamente (ver aquí para más detalles). En japonés no hay palabras graves, agudas, esdrújulas, o de cualquier otro tipo como ése; lo que varía es la altura, no la fuerza de las sílabas.</p>
+
+<p>En la mayoría de los lenguajes, algunas palabras no reciben acento (de fuerza o de altura) cuando participan de una oración completa. En español, por ejemplo, en la frase 'La casa es vieja', no hay acento sobre 'la' ni sobre 'es'. Al perder su acentuación, además, estas palabras en algunos lenguajes reducen sus vocales, transformándolas en versiones más centrales y menos distintivas (por ejemplo, el inglés tiende a reducir las vocales no acentuadas a <tt>/@/</tt> o <tt>/I/</tt> ).</p>
+
+<h2 id="tono">Tono</h2>
+
+<p>El <strong>tono</strong> es el perfil de entonación de una sílaba. Existe en todos los lenguajes, pero no suele ser fonémico. En español, podés pronunciar '¿Qué hiciste?' con muchos tonos distintos, pero las palabras son las mismas.</p>
+
+<p>En algunos lenguajes, el tono es fonémico. Estos lenguajes incluyen el chino mandarín, el cantonés, el vietnamita, y muchos lenguajes africanos. Cada sílaba recibe un tono particular, que es tan característico como la altura de las vocales que contiene, y que puede distinguir palabras. El mandarín, por ejemplo, tiene cuatro tonos, llamados alto, ascendente, descendente bajo y descendente alto. Ejemplos de Mark Rosenfelder: <em>ma</em> 'madre', <em>má</em> 'cáñamo', <em>mâ</em> 'caballo', <em>mà</em> 'maldición'. El vietnamita tiene seis tonos, dos de los cuales incluyen una pronunciación tan grave que las vocales presentan <em>creaky voice</em> o voz quebrada, donde las vibraciones de las cuerdas vocales son de tan baja frecuencia que <a href="javascript:;//no hace nada">se pueden oír</a> <span class="clarification">[grabación perdida]</span> separadamente.</p>
+
+<p>Podés tratar de usar tonos en tu lenguaje, pero no lo recomiendo a menos que sepas hablar un lenguaje tonal previamente. Es una característica interesante, pero requiere mucha reeducación de los órganos del habla. El tono puede ser una característica fonémica y/o (raramente) un dispositivo gramatical.</p>
+
+<p>Hay una interesante discusión corta en un trabajo de Marjorie K.M. Chan <span class="clarification">[en inglés]</span>: <a href="https://journals.linguisticsociety.org/proceedings/index.php/BLS/article/download/1828/1600">"Tone and Melody in Cantonese"</a>, que plantea y responde tentativamente una pregunta interesante: ¿cómo se hace para cantar una canción en un lenguaje tonal?</p>
+
+<h2 id="restricciones">Restricciones fonológicas</h2>
+
+<p>Cada lenguaje tiene combinaciones de sonidos que son consideradas difíciles, prohibidas, o imposibles. Se llaman <strong>restricciones fonológicas</strong>, y son los moldes en los que toda palabra tiene que caber o hacerse entrar para lograr coherencia y 'familiaridad'.</p>
+
+<p>Lenguajes como el inglés están bastante libres de restricciones fonológicas. De ahí la gran cantidad de palabras extranjeras que ha podido absorber, como <em>garage</em>, <em>sombrero</em>, <em>mosquito</em>, <em>ersatz</em>, <em>schmuck</em>... Algunos lenguajes no resisten tales invasiones. El español, aunque no tan libre, permite una cierta relajación, pero otros no.</p>
+
+<p>Por ejemplo, el japonés (uno de los lenguajes más restringidos) sólo permite sílabas formadas por una consonante (quizás doble, o ninguna), una vocal, y opcionalmente <tt>/n/</tt>: <tt>(C)V(n)</tt>. La palabra inglesa <em>club</em> fue adaptada al japonés como <em>kurabu</em>, para dar sólo un ejemplo. Aún un nombre español sencillo como <em>Rodríguez</em> se transforma en <em>Rodorigesu</em>. Cualquier fan del <em>anime</em> conoce además las indelicadezas cometidas por los creadores de superhéroes (y heroínas) al forzar gritos de batalla en inglés a la fonética del japonés, como cuando Sailor Moon exclama <em>muun kurisutaru pawaa meeku appu!</em>, o sea "moon crystal power make-up!".</p>
+
+<p>El lenguaje hablado en las islas Fidji es casi igual de restringido: consonante más vocal, con una consonante opcional al final de las palabras.</p>
+
+<p>El finés no toleraba combinaciones de consonantes como <tt>/pr/</tt> o <tt>/fl/</tt> hasta no hace mucho. El lenguaje élfico Quenya directamente no tolera combinaciones de consonantes iniciales o finales. Las palabras griegas sólo pueden terminar en <tt>/s/</tt>, <tt>/n/</tt> o una vocal. Algunos lenguajes pueden usar ciertos sonidos junto con otros, nunca solos.</p>
+
+<p>Es difícil diseñar un patrón <em>in abstracto</em>; pero deberías hacerte una idea de él. Lo principal es definir si tu lenguaje será vocálico o consonántico, por decirlo en términos no técnicos e inexactos. El inglés y la mayoría de los lenguajes del norte de Europa son bastante consonánticos. El español, el japonés y el griego son bastante vocálicos. El hawaiano es muy vocálico (¡una palabra como <em>Kilauea</em> no es posible en muchos lenguajes!). La tendencia global, de acuerdo a algunas teorías, es hacia la estructura básica consonante + vocal. Podrías empezar por ahí.</p>
+
+<p>Un lenguaje sintético con muchas inflexiones generalmente prefiere una estructura simple. (Sin embargo, considérese el georgiano, un lenguaje muy aglutinante, donde se pueden encontrar hasta seis consonantes seguidas, como en <em>vprtskvni</em> 'Yo lo estoy pelando' [ts es una africada y cuenta como una sola consonante]). Un lenguaje aislante puede tener palabras muy intrincadas, ya que no se les va a añadir nada más a ellas. Lo mejor es probar y probar hasta que las palabras comiencen a sonar bien respecto a tu gusto y ánimo particular (¡pero no lo cambies a mitad de camino!).</p>
+
+<p>Los sonidos tienden a influenciarse unos a otros y a cambiar. <a href="#cambio">El cambio de sonidos</a> puede eventualmente producir un nuevo lenguaje o dialecto.</p>
+
+<p><a href="#sonidos" class="top-link">↑ Volver arriba</a></p>
+
+<h2 id="cambio">Cambio de sonidos</h2>
+
+<p>Nadie sabe por qué, pero los sonidos cambian en todos los lenguajes. Los únicos lenguajes que no cambian son los muertos.</p>
+
+<p>Los sonidos se transforman en otros, y a veces por influencia de otros. Los cambios de sonidos se pueden clasificar en condicionados e incondicionados (no recuerdo si hay palabras más correctas para esto). Un cambio de sonido incondicionado transformó la palabra inglesa antigua <em>sceadu</em> <tt>/'sk&amp;adu/</tt> en <em>shadow</em> <tt>/'S&amp;dOw/</tt>, de la misma forma que en toda otra palabra que comenzaba con <tt>/sk/</tt> éste la cambió a <tt>/S/</tt> (<em>sh</em>). La mayoría de las palabras inglesas modernas con <tt>/sk/</tt> inicial son préstamos escandinavos, por si te lo estabas preguntando. Un cambio de sonido condicionado transformó el francés <em>marbre</em> en el inglés <em>marble</em> (la segunda <tt>/r/</tt> se disimiló de la primera).</p>
+
+<p>Los tipos principales de cambio de sonido influenciado son:</p>
+
+<ul>
+
+<li><strong>Asimilación</strong>: un sonido se acerca a otro vecino. Por ejemplo, la misma palabra <em>asimilar</em>, del latín <em>ad- + simul-</em>; la <tt>/d/</tt> se volvió <tt>/s/</tt> a causa de la <tt>/s/</tt> vecina (luego las dos se fundieron, desde luego). La asimilación puede transformar a los dos sonidos a la vez (recíproca), al primero (regresiva) o al segundo (progresiva).</li>
+
+<li><strong>Disimilación</strong>: lo contrario a la asimilación; dos sonidos idénticos o similar se apartan uno de otro. Por ejemplo, el cambio <em>marbre</em> &rarr; <em>marble</em> ya mencionado, o el cambio del mismo tipo ocurrido con palabras latinas como <em>arbor</em>, que dio en español <em>árbol</em>. La disimilación suele ser para evitar cacofonías.</li>
+
+<li><strong>Metátesis</strong>: dos sonidos intercambian sus lugares. Esto generalmente produce una nueva combinación más fácil de pronunciar (aunque 'fácil' es un término muy subjetivo). Por ejemplo, en español antiguo en palabras como <em>dejadle</em> solía producirse metátesis en <em>dejalde</em>.</li>
+
+<li><strong>Elisión, síncopa, apócope</strong>: todos éstos son nombres para el mismo fenómeno. Se refieren a la pérdida de sonidos; elisión específicamente significa pérdida de vocales o sílabas no acentuadas, mientras que síncopa se refiera a la pérdida de sonidos medios, y apócope es la pérdida de sonidos finales. En francés se produce mucha elisión, como en <em>au revoir</em> <tt>/or'vwa/</tt>. La pérdida de la <tt>/e/</tt> final en inglés y francés es un apócope, al igual que las formas alternativas de algunos adjetivos en español, como <em>gran</em> vs. <em>grande</em>.</li>
+
+<li><strong>Haplología</strong>: la pérdida de una secuencia de sonidos por semejanza con sonidos vecinos. En latín, según las reglas de derivación y cambio esperadas, <em>stipendium</em> debería haber sido <em>*stipipendium</em>; la misma <em>haplología</em> se reduciría probablemente a <em>haplogía</em> si fuese un término más comúnmente usado.</li>
+
+<li><strong>Liaison</strong> ('ligadura', pronunciada <tt>/li.e'zo~/</tt>): la introducción de un sonido entre otros dos, especialmente entre palabras. El francés, de donde viene la palabra, produce mucha: las consonantes finales 'perdidas' de muchas palabras reaparecen cuando la siguiente palabra empieza por vocal. Por ejemplo, <em>C'est moi</em> <tt>/,sE'mwa/</tt> vs. <em>C'est Anne</em> <tt>/,sEt'an/</tt>.</li>
+
+<li><strong>Prótesis</strong>: se añade un sonido inicial extra al principio de ciertas palabras, como la <tt>/e/</tt> que en español se añadió a las palabras latinas comenzadas en <tt>/sp/</tt> (y hoy en día aún a muchos préstamos ingleses): latín <em>spectrum</em> &rarr; <em>espectro</em>.</li>
+
+<li><strong>Epéntesis</strong>: un sonido medio extra se añade entre otros. En galés, una <strong>vocal epentética</strong> aparece entre ciertos pares de consonantes en position final; por ejemplo <em>llyfr</em> se pronuncia como si fuese <em>llyfyr</em>.</li>
+
+</ul>
+
+<p>Los cambios de sonido condicionados e incondicionados no son siempre fáciles de separar. Si tomamos la definición como una regla estricta, casi todos los cambios son condicionados; muy pocos son absolutamente espontáneos. Por ejemplo, el cambio de la <tt>/k/</tt> latina (escrita <em>c</em>) en los lenguajes romances se ve como incondicionado, pero fue de hecho producido por la influencia de las vocales: <tt>/k/</tt> cambió en <tt>/s/</tt> en español y francés (aunque siguió siendo escrita <em>c</em>) cuando el sonido siguiente era una vocal frontal (<tt>/e/</tt> o <tt>/i/</tt>).</p>
+
+<p>El cambio de sonidos suele producir irregularidades. En español, las diferentes formas en las que cambió la <tt>/k/</tt> latina produjo las formas irregulares del verbo <em>decir</em>: <em>digo, dice, dijo, dicho</em>. Pero un cambio de un tipo específico puede ser regularizador. Se llama analogía, y se lo tratará en su propia sección.</p>
+
+<h3 id="reglas">Reglas de cambio de sonidos</h3>
+
+<p>Los cambios de sonido pueden ser de muchos tipos distintos, como se vio arriba; pero todos cumplen ciertas reglas:</p>
+
+<ul>
+
+<li>El cambio de sonidos es <strong>gramaticalmente irrestricto</strong>. Si un cierto fonema cambia a otro, no importa qué clase de palabra sea. Una regla de cambio que transforma un fonema o conjunto de fonemas en otro puede incluir sólo restricciones fonéticas, por ejemplo: 'A cambia a B cuando sigue a C, excepto en sílabas acentuadas', o 'X intervocálica cambia a YZ'. Una regla de cambio no puede restringirse a ciertas clases de palabras o construcciones gramaticales, como 'A y B finales se pierden, excepto en los adjetivos' o 'X cambia a Y en los sustantivos con inflexión'.</li>
+
+<li>El cambio de sonidos <strong>no tiene memoria</strong>. Esto puede sonar estúpido, pero no lo es. Una regla de cambio que transforma X en Y no puede discriminar entre una cierta X que el lenguaje ha tenido desde el principio y otra X que proviene de un cambio anterior W &rarr; X. Los ciclos de cambio de sonidos son acumulativos y cada uno, por decirlo así, borra las huellas del anterior.</li>
+
+<li>El cambio de sonidos es <strong>imparable</strong>. Algunas personas solían pensar que un lenguaje escrito ayuda a evitar el cambio en el lenguaje hablado. Esto es obviamente falso. Lo que hace un lenguaje escrito es hacer que las palabras escritas se vean como eran antes de cambiar. Si aprendiéramos nuestro lenguaje nativo de los libros, el argumento sería probablemente válido; &#161;pero aprendemos a hablar escuchando a otra gente hablar! Si un lenguaje no cambia, es probablemente una lengua muerta. Esto por supuesto no se aplica a los lenguajes artificiales auxiliares como el esperanto, o a lenguajes artificialmente resucitados y mantenidos vivos como el latín. Con respecto al esperanto, no sé si los esperantistas hablan el lenguaje en su casa para que sus hijos lo oigan y aprendan como (segunda) lengua nativa. Si lo hacen, los niños probablemente harán algunos cambios muy lentamente a medida que pasan los años (si ellos hacen lo mismo con sus hijos, y así sucesivamente). Esto quizá horrorizaría al doctor Zamenhof y a sus seguidores, pero sería un signo seguro de que el lenguaje es de hecho usado para la comunicación y está vivo, un lenguaje natural(izado) más entre pares. En cuanto al latín, todos lo hablan más o menos como prefieren...</li>
+
+</ul>
+
+<p>Estas reglas pueden tener excepciones, pero deben ser adecuadamente explicadas. Si escribís la historia de tu lenguaje, podés explicarlas o bien decir que "por alguna razón desconocida...", pero no dejes que esto se vuelva una excusa para violar las reglas lingüísticas.</p>
+
+<p>Las excepciones a estas reglas son causadas en general por la analogía o procesos relacionados que tienden a regularizar el lenguaje. Por ejemplo, si un cambio hace que X se vuelva Y y esto provoca que dos pronombres suenen igual, una de éstas cosas ocurrirá: 1) nada, 2) los dos pronombres se fundirán en uno, gramaticalmente como lo fueron fonéticamente, 3) el pronombre que cambiaría se 'rehusará' a cambiar, 4) la gente dejará de usar uno de los pronombres para evitar la confusión, reemplazándolo por otra construcción.</p>
+
+<p>El cambio de sonido puede ser lentificado o acelerado. Algunas personas han tratado de formular un conjunto de factores que podrían causar que un lenguaje entre en una fase de cambio rápido (como caos económico y social, guerras, un movimiento religioso nuevo, etc.) Estas teorías se han demostrado inútiles. Seguramente hay factores sociales que regulan la velocidad y calidad del cambio de sonidos, pero dependen de tantas 'variables sociales' que son imposibles de calcular. Algunas las podés imaginar: si un país cerrado (en una isla, por ejemplo) de pronto entra en contacto con una cantidad masiva y constante de visitantes extranjeros, su lenguaje probablemente comenzará a cambiar más rápido, tomando prestadas nuevas palabras y estructuras, creando o copiando expresiones idiomáticas, e inventando palabras para conceptos que antes no conocían.</p>
+
+<p>Otra causa de excepciones es el hecho de que algunas palabras son menos comunes que otras. Las palabras cambian si son dichas y repetidas una y otra vez, siendo así 'desgastadas'; las palabras extrañas y raramente usadas probablemente quedarán incambiadas. Estas palabras raramente usadas incluyen términos muy educados, muy formales o específicos. Algunas veces no son exactamente preservados, sino <strong>represtadas</strong> desde el lenguaje antiguo (u otro), como <em>tiroides</em>, que viene del griego <em>thur&#x0101;</em> 'puerta' y ésta a su vez del protoindoeuropeo <em>*dhwor-</em>, de donde también provienen <em>fuera, foro, forense, foresta</em> y el inglés <em>door</em> 'puerta'; o <em>semáforo</em>, donde <em>-foro</em> 'llevar' tiene mismo origen, <em>*bher-</em>, que el elementio <em>-f(e)r-</em> que aparece en <em>conferir, diferir, inferir, preferir, proferir, transferir, vociferar, ofrecer</em>, y hasta <em>ferry</em>. Algunos otros ejemplos incluyen pares de palabras relacionadas como <em><em>noch</em>e-<em>noct</em>urno</em>, <em><em>recib</em>ir-<em>recept</em>áculo</em>, <em><em>ped</em>ir-re<em>pet</em>ir</em>, <em><em>habl</em>ar-<em>fabul</em>ar</em>, etc.</p>
+
+<p><a href="#sonidos" class="top-link">↑ Volver arriba</a></p>
+
+<h2 id="armonia">Armonía</h2>
+
+<p><strong>Armonía</strong> es un cambio en alguna de las cualidades de un sonido, en ciertos contextos, para concordar o armonizar con otro sonido. Puede relacionarse (aunque no siempre) con un proceso de asimilación. Se produce entre los fonemas de la raíz de una palabra y los fonemas de los afijos (cambiando estos últimos para acomodarse a las cualidades de los primeros).</p>
+
+Por ejemplo, la <strong>armonía vocálica</strong> se encuentra en el finés y otros lenguajes fino-úgricos (como el húngaro), y en el turco, que son aglutinantes y sufijantes. En finés el elemento radical viene primero y le sigue una cadena de sufijos. La vocal de la raíz está acentuada y marca el grupo armónico al que deben pertenecer todas las vocales de los sufijos. Estos grupos armónicos se componen de vocales que comparten alguna característica (generalmente el punto de articulación, por ejemplo frontal, central y posterior). Cada sufijo tiene varias formas alternativas, con vocales que pertenecen a cada uno de los grupos. Aquí hay algunas palabras finesas con marcas de caso:</p>
+
+<pre class="indented">
+autossa    'en el auto'
+laatikossa 'en la caja'
+järvessä   'en el lago'
+</pre>
+
+<p>¿Ves cómo la vocal final alterna entre <em>-a</em> (posterior) y <em>-ä</em> (frontal)? Algunos otros ejemplos, con el tiempo perfecto de verbos:</p>
+
+<pre class="indented">
+on lyönyt   'ha golpeado'
+on ajanut   'ha conducido'
+</pre>
+
+<p>La marca de tiempo perfecto es <em>-nut</em> para las raíces con vocales posteriores, <em>-nyt</em> para raíces con vocales frontales (como <strong>y</strong>, que es <tt>/y/</tt>, como la <em>ü</em> alemana).</p>
+
+<p>La armonía vocálica puede extenderse a otros contrastes además del punto de articulación; puede incluir longitud, nasalidad o redondeamiento. La armonía de altura vocálica es posible, pero no se la encuentra en ningún lenguaje natural conocido.</p>
+
+<p>Otra forma de armonía es conocida como <strong>armonía nasal</strong>. Se la encuentra en el guaraní (el lenguaje de un grupo nativo sudamericano que habitaba en el noreste de Argentina y en Paraguay, donde el lenguaje aún es floreciente y de hecho es lengua única de un gran porcentaje de la población). La armonía nasal 'enciende' el contraste de nasalización en ciertas consonantes de los afijos aglutinados (sí, el guaraní también es aglutinante) cuando la raíz de la palabra contiene consonantes nasales. Así, muchos afijos tienen dos formas, una nasal y otra no nasal. Por ejemplo, de <em>hecha</em> 'ver' podemos formar <em>jajoechapeve</em> 'hasta que nos veamos'. Esto es no nasal. Pero de <em>hendu</em> 'oír' tenemos que decir <em>ñañoendumeve</em> 'hasta que nos oigamos'. La <em>j</em>, que es una palatal no nasal, cambia a una nasal palatal, <em>ñ</em>, y además la oclusiva labial <em>p</em> (en <em>-peve</em>) cambia a la nasal labial <em>m</em> (<em>-meve</em>).</p>
+
+<p>Puede haber otros tipos de armonía en tu lenguaje. Por ejemplo, una especie de 'armonía inversa' donde dos sílabas consecutivas no puedan tener la misma vocal, o no puedan comenzar ambas por una cierta combinación de consonantes. Esto tiene mucha relación con el fenómeno de disimilación <a href="#cambio">disimilación</a>, sólo que es sistemático, no accidental. El griego provee un ejemplo de esto: al derivar palabras de sus raíces, no puede haber dos sonidos fricativos que comiencen sílabas consecutivas; si los hay, el primero se transforma en oclusiva. Por ejemplo, la raíz <em>thrikh-</em> 'pelo' da <em>trikhós</em> (en vez de lo que esperaba, **<em>thrikhós</em>). (El griego también produce mucha asimilación.)</p>
+
+<h2 id="umlaut+ablaut">Umlaut y Ablaut</h2>
+
+<p>Umlaut es el nombre dado a la asimilación regresiva de vocales no contiguas. Asimilación, porque la cualidad de una de las vocales se asimila a la de la otra (en una o varias de sus características fonéticas); regresiva, porque ocurre de atrás hacia adelante (la vocal afectada <em>anticipa</em> la cualidad de la vocal que provoca el Umlaut); no contiguas, porque se produce entre distintas sílabas, con las vocales generalmente separadas.</p>
+
+<p>En alemán se encuentra Umlaut en varios puntos de la gramática, como una manera de marcar plurales de sustantivos y también en varios tiempos verbales. Algo similar ocurre en inglés, aunque aquí es diacrónico (el cambio se ve actualmente como una alternancia vocálica, siendo que el Umlaut ocurrió en una etapa anterior, ahora oscurecida por la desaparición de la vocal que lo provocó).</p>
+
+<p>Se comprenderá mejor esto con ejemplos. El lenguaje que originó el inglés tenía un sufijo de pluralidad <em>-i</em>. Este sufijo provocó Umlaut de las vocales precedentes de la raíz del sustantivo pluralizado (la forma singular quedó igual, naturalmente); las vocales afectadas fueron las centrales y posteriores, que se volvieron anteriores (frontales). Luego el inglés perdió gran parte de las vocales finales y la fuente del Umlaut original quedó oculta:</p>
+
+<div class="wide-elem">
+<pre class="indented">
+
+           antes                           después
+           &gt;-------------------------------------&gt;
+SINGULAR    fo:t   fo:t   fo:t   fo:t   fu:t  fUt     'pie'
+PLURAL      fo:ti  fø:ti  fe:ti  fe:t   fi:t  fit     'pies'
+</pre>
+</div>
+
+<p>Un cambio similar dio origen a los pares singular/plural <em>goose/geese, man/men, mouse/mice.</em></p>
+
+<p>El Umlaut es en general provocado por una de las tres vocales que forman los vértices del triángulo vocálico, <tt>/i/</tt> - <tt>/a/</tt> - <tt>/u/</tt>, en ese orden de frecuencia. En inglés y alemán hay sólo Umlaut provocado por <tt>/i/</tt>, que frontaliza las vocales afectadas, pero el galés tiene, por ejemplo, Umlaut diacrónico por <tt>/a/</tt>, que baja la altura de las vocales: el femenino de <em>gwyn</em> 'blanco' es <em>gwen</em>, provocado por una <em>-a</em> final que se ha perdido.</p>
+
+<h3 id="ablaut">Ablaut</h3>
+
+<p>El <strong>Ablaut</strong> se menciona aquí como advertencia, ya que no es un cambio provocado sino básicamente arbitrario, en el cual las vocales de una raíz alternan según un criterio gramatical, no fonético. Es Ablaut, por ejemplo, la alternancia que se observa en los verbos ingleses llamados 'fuertes', como por ejemplo los siguientes:</p>
+
+<div class="wide-elem">
+<pre class="indented">
+I sing.        /sIN/   ("Canto.")
+I sang.        /s&amp;N/   ("Canté.")
+I've sung.     /sVN/   ("He cantado.")
+
+I write.       /raIt/  ("Escribo.")
+I wrote.       /roUt/  ("Escribí.")
+I've written.  /ritn/  ("He escrito.")
+</pre>
+</div>
+
+<p>Si bien se supone que el Ablaut tiene alguna explicación diacrónica, ésta no se conoce con certeza. Según entiendo, el protoindoeuropeo ha sido reconstruido como un lenguaje con Ablaut que quizá fue condicionado por la presencia de ciertas consonantes en cercanía de las vocales (es decir, por asimilación); esto debe ser así puesto que Ablaut es muy frecuente en toda la familia indoeuropea.</p>
+
+<h2 id="sandhi+mutacion">Sandhi o mutación</h2>
+
+<p><strong>Sandhi</strong> es el nombre dado por los antiguos académicos sánscritos a una serie regular de cambios de sonidos que se producen en las palabras en determinadas condiciones. También se lo llama <strong>mutación</strong>. Estos cambios pueden ser de distintas formas. Mencionaré una, aquélla con la que estoy más familiarizado: la lenición.</p>
+
+<p><strong>Lenición</strong> or <strong>suavizamiento</strong> es un cambio producido en los sonidos iniciales de las palabras cuando son usadas en ciertas posiciones, o para ciertos propósitos. Estos cambios afectan los inicios de las palabras quitando, añadiendo o cambiando sonidos iniciales. Así, las palabras pueden tener dos o más formas.</p>
+
+<p>De los lenguajes occidentales que conozco algo, el galés y el irlandés tienen patrones de lenición. El galés, de hecho, inspiró la fonología del famoso lenguaje sindarin inventado por J. R. R. Tolkien para los Elfos Grises de la Tierra Media. No conozco mucho del galés, pero tengo algo de <a href="http://folk.uib.no/hnohf/sindarin.htm">material sobre el sindarin</a>, que tiene patrones de lenición tomados del galés. Así que usaré el sindarin para los ejemplos.</p>
+
+<p>La lenición sindarin afecta las consonantes iniciales de las palabras en ciertos contextos. Una consonante lenitada cambia de esta forma: las oclusivas sordas <em>p, t, k</em> se hacen sonoras <em>b, d, g</em>. Las oclusivas sonoras se hacen fricativas, excepto <em>g</em>: <em>b, d, g</em> cambian a <em>v, dh</em>, y nada. Las sordas <em>lh</em> y <em>rh</em> se sonorizan en <em>l, r</em>; <em>s</em> da <em>h</em>, y <em>m</em> da <em>v</em>.</p>
+
+<p>En sindarin, una palabra es lenitada cuando es <strong><em>(a)</em></strong> el objeto de un verbo, y está junto a él, <strong><em>(b)</em></strong> cualquier cosa después de conjunciones y artículos, <strong><em>(c)</em></strong> un adjetivo que sigue el sustantivo al que describe, y <strong><em>(d)</em></strong> el segundo elemento de un compuesto. Por ejemplo: de <em>certh</em> 'runa' tenemos <em>i gerth</em> 'la runa'; de <em>peth</em> 'palabra' el hechizo mágico <em>Lasto beth lammen</em> 'Escucha la palabra de mi boca'; de <em>calen</em> 'verde' el nombre <em>Tol Galen</em> 'Isla Verde'; de <em>mellyn</em> 'amigos' el nombre <em>Elvellyn</em> 'Amigos de los Elfos'.</p>
+
+<p>Los patrones de mutación del galés son bastante más complicados que eso; hay tres tipos de mutación, llamados suave (lenición), nasal, y espirante. El galés también muestra un fenómeno relacionado, que involucra la conjugación verbal (al menos para el verbo <em>bod</em> 'ser') donde las formas interrogativas y negativas, a parte de cambiar la entonación y/o usar partículas, producen un cambio de los sonidos iniciales.</p>
+
+<p>Se pueden usar otros tipos de lenición y mutación, y especificar cuándo se deberían aplicar. En el lenguaje africano ful, un sustantivo de la clase de las personas es lenitado cuando se pluraliza; el singular <em>jim</em> 'compañero' se hace <em>yim'be</em> en plural, con lenición <em>j &rarr; y</em>. Curiosamente, los sustantivos de la clase de las cosas mutan exactamente al revés.</p>
+
+<p><a href="#sonidos" class="top-link">↑ Volver arriba</a></p>
+
+<h2 id="escribiendo">Escribiendo tu lenguaje</h2>
+
+<p>Una vez determinados los sonidos que va a usar tu lenguaje, vas a necesitar una forma de escribirlos (<strong>transliterarlos</strong>) en el alfabeto latino, y quizá un alfabeto propio. En un momento hablaremos de alfabetos.</p>
+
+<p>La <strong>transliteración</strong> puede ser una pesadilla. Lo ideal sería tener un símbolo para cada sonido, pero el alfabeto latino no tiene símbolos para representar algunos sonidos muy comunes. Aquí está la primera elección que tenés que hacer: ¿vas a inventar o usar un símbolo para cada sonido, o vas a usar alguna otra manera?</p>
+
+<p>Si querés un símbolo para cada sonido, probablemente vayas a tener que usar símbolos que no son letras (como <em>' @ ? !</em>) o recurrir a <strong>marcas diacríticas</strong>, es decir modificar letras usando pequeños signos encima (o debajo) de ellas. Los acentos y diéresis sobre las vocales son marcas diacríticas: <em>á è î ÿ</em>. El español muestra alguna de sus vocales acentuadas con un acento agudo: <em>acá éramos ínfimos órganos súbitos</em>, y escribe el sonido nasal palatal como <em>ñ</em>. El inglés, por otra parte, no usa diacríticos (pero su ortografía es impredecible y atroz). El francés usa acentos para mostrar que una <em>e</em> debe pronunciarse, y por tradición, en muchas palabras: <em>été âme à mère</em>; y tiene una letra <em>ç</em> (cedilla) para representar <tt>/s/</tt> antes de <em>a, o, u</em>. El portugués muestra las vocales nasales con una tilde(<em>~</em>) sobre ellas (como en <em>são</em>). De hecho, esta tilde es del mismo origen que la que va sobre <em>ñ</em>; se trata de una <em>N</em> estirada y estilizada por el uso. El alemán escribe las versiones frontales de las vocales con una diéresis (<em>ä ö ü</em>). El danés escribe una especie de <em>a</em> redondeada con <em>å</em>, y una <em>o</em> frontal con <em>ø</em>. Muchos lenguajes tienen letras no estándar para ciertos sonidos, y a menos que hablés uno de ellos y tu teclado esté configurado para ellos, no vas a poder acceder a ellas fácilmente al escribir tu lenguaje en tu computadora.</p>
+
+<p>Si no querés tantos símbolos extraños, probablemente vas a tener que usar dos o más símbolos (formando símbolos compuestos) para representar algunos sonidos, tal como el español usa <em>rr</em> y <em>ch</em> para sonidos individuales. Éstos se llaman <strong>digrafos</strong> (los trigrafos, aunque posibles, deberían evitarse por su longitud). La letra <em>h</em> es generalmente útil para hacer digrafos. Pero hay que tener en cuenta algo: dos símbolos nunca deberían usarse para hacer un digrafo si pueden aparecer solos para representar dos sonidos distintos. El español puede usar <em>ch</em> porque <em>h</em> no tiene sonido asignado y <em>ch</em> no se usa nunca para el mismo sonido que <em>c</em> (de los dos que tiene); podemos escribir <em>ll</em> porque no hay combinaciones <tt>/ll/</tt> en nuestra fonología. En cambio, no podríamos usar <em>ls</em> para representar una fricativa lateral, porque <em>ls</em> representa dos sonidos, <tt>/l/ + /s/</tt>.</p>
+
+<p>La transliteración no tiene reglas sobre cuáles símbolos hay que usar para representar tal sonido, pero tendrías que tratar de hacer legible el lenguaje: está bien usar <em>zh</em> para representar <tt>/f/</tt>, pero la mayoría de la gente seguramente leerá algo completamente distinto de <tt>/f/</tt> cuando se encuentren con este digrafo, y además, ya tenemos un símbolo más familiar, <em>f</em>, para llenar este espacio, ¿verdad?</p>
+
+<p>La transliteración debería ser tan fonémica como sea posible. El español y el italiano son bastante fonémicos, y en cuanto al español en particular, es muy importante el hecho de que se puede leer una palabra y saber siempre cómo se va a pronunciar. Por el contrario, el inglés tiene una ortografía arcaica, donde las palabras se escriben como sonaban hace siglos, aunque en cierta medida se puede adivinar el sonido de muchas. Lo mismo o peor se puede decir del francés (Ferdinand de Saussure cita como ejemplo la palabra <em>oiseau</em>, que se pronuncia <tt>/wa'zo/</tt>, de manera que no hay un solo sonido que se corresponda con una letra 'apropiada'). El tibetano escrito es aún peor; el lenguaje escrito ha permanecido casi incambiado desde el siglo VII d. C. En cambio, otros lenguajes (como el ruso) son muy consistentes en cuanto a la concordancia entre lo escrito y lo fonético.</p>
+
+<p>Desde luego puede haber utilidad en utilizar una ortografía arcaica. El inglés tiene muchos dialectos, y si se intentara representarlo fonéticamente sin ambigüedad, se lograría una representación adecuada para algunos pocos dialectos pero incorrecta para otros; así, la forma escrita permite una intercomunicación entre los dialectos (cada uno de los cuales pronuncia distinta una misma palabra escrita). Lo mismo vale para el tibetano, que además es una lengua sagrada (en la que están transcriptas antiquísimas escrituras), por lo cual es interesante y útil conocer la etimología y forma precisa de las palabras antiguas, preservada en la ortografía. Cualquiera de estos motivos, y otros, pueden utilizarse para "justificar" ficcionalmente una ortografía a primera vista complicada y contraintuitiva para un lenguaje construido, si su creador tiene ganas de hacerlo.</p>
+
+<h3 id="alfabetos">Alfabetos y otras escrituras</h3>
+
+<p>Un <strong>alfabeto</strong> es una colección de símbolos que representan sonidos. Si querés poder inventar uno para tu lenguaje. Si lo hacés, y tu ortografía romanizada es fonémica, tu alfabeto debería serlo también: un símbolo para cada sonido. También podés usar digrafos y añadir diacríticos. Si tu lenguaje deriva de otro lenguaje para el cual ya tenías un alfabeto, probablemente el lenguaje más joven use el alfabeto viejo, pero algunas letras habrán cambiado de sonido. Por ejemplo, el español usa el alfabeto latino, pero la letra <em>c</em> (que en latín era siempre <tt>/k/</tt>) ahora representa <tt>/s/</tt> frente a <em>e, i</em>. Esto no es fonémico, pero es completamente regular.</p>
+
+<p>Al inventar letras, jugá un poco con ellas y escribílas rápidamente una después de otra. La gente en la mayoría de los casos escribe sin cuidado, y las letras muy elaboradas probablemente serán simplificadas. También tenés que tratar de hacer que cada letra se distinga bien de las otras, para que no se las confunda. El punto sobre la <em>i</em> apareció cuando el palito de la <em>i</em> minúscula comenzó a confundirse con las líneas verticales de las <em>m</em> y <em>n</em> en la escritura gótica. Algunas fuentes de computadoras y los programadores distinguen <em>0</em> (cero) y <em>O</em> (la letra <em>o</em> mayúscula) escribiendo una barra sobre el cero.</p>
+
+<p>Tenés que decidir también cómo vas a escribir y leer. ¿Será de izquierda a derecha, como en el alfabeto latino y el cirílico? El hebreo y el árabe se escriben de derecha a izquierda, y las vocales no se escriben excepto en los libros para niños y (el árabe) en el Corán. El japonés se escribe tradicionalmente (en novelas y <em>manga</em>) de arriba a abajo y de derecha a izquierda, pero en ciertos libros (de texto, como los de matemáticas) se escribe a la manera occidental, en líneas de izquierda a derecha. Los japoneses leen intercambiablemente en un sentido u otro.</p>
+
+<h4 id="ideogramas+silabarios">Ideogramas, silabarios, etc.</h4>
+
+<p>Los alfabetos no son la única manera de escribir. El chino usa <strong>ideogramas</strong>, o caracteres que solían representar un dibujo de un objeto. Cada carácter se lee como una sílaba; pero palabras que suenan igual y no tienen relación se escriben como caracteres distintos. Los caracteres chinos (<em>hanzi</em>) tienen cada uno dos partes, el <strong>radical</strong> y la <strong>fonética</strong>. El radical da una idea del significado, y la <strong>fonética</strong> daban una idea del sonido (caracteres con la misma fonética representaban sílabas que rimaban, hace milenios). Un radical puede actuar a veces como fonética y viceversa. Muchas veces la relación entre el significado original y el actual es sumamente tortuosa, o su sentido se ha perdido en el tiempo.</p>
+
+<p>El japonés usa un sistema mixto de <strong>kanji</strong> (ideogramas, tomados de los chinos) y <strong>kana</strong> (caracteres silábicos fonéticos). En general, el contenido principal de lo que uno dice (las raíces de las palabras) se escribe en <em>kanji</em>, mientras que las partículas, conjugaciones y terminaciones se escriben en <em>kana</em>. Hay unos 90 <em>kana</em> divididos en dos conjuntos equivalentes (<strong>hiragana</strong> y <strong>katakana</strong>). Se usan normalmente <em>hiragana</em> para las palabras japonesas originales; se prefieren <em>katakana</em> para las palabras prestadas o inventadas, y también para añadir énfasis, como la cursiva en el alfabeto latino. Cuando se usa un <em>kanji</em> inusual, se puede clarificar escribiéndolo fonéticamente en <em>hiragana</em> (que se llaman en este caso <strong>furigana</strong>). En un <em>kana</em> se puede cambiar la calidad de la consonante usando algunas marcas diacríticas. Hay 1945 <em>kanji</em> estándar, de los cuales 1006 se enseñan en la escuela primaria, y cada <em>kanji</em> se puede leer de acuerdo a su pronunciación japonesa (<em>kun-yomi</em>) o a su pronunciación china original (<em>on-yomi</em>). Como si no fuese complicado ya, cada <em>kanji</em> suele tener varias lecturas para cada forma.</p>
+
+<p>El coreano usa un alfabeto llamado <strong>hangul</strong> que es un <strong>código característico</strong> (<em>featural code</em>), un sistema en el cual sonidos similares se representan con símbolos parecidos. La tradición dice que fue inventado por un rey. En cualquier caso, requiere un notable análisis fonético. En <em>hangul</em>, los símbolos se agrupan en sílabas, haciendo que la escritura parezca como si consistiese de muchos ideogramas o caracteres silábicos, el cual no es el caso.</p>
+
+<p>El árabe usa una escritura <strong>cursiva</strong>, lo cual es raro porque la mayoría de los pueblos históricamente han comenzado con letras de bloque aisladas, debido a la naturaleza del soporte material de su escritura (piedra, arcilla o madera). El árabe, imagino, comenzó desde el principio a ser escrito con pinceles finos sobre alguna superficie lisa; las letras cursivas son completamente inadecuadas para esculpirlas rápidamente en piedra o arcilla. En árabe y en hebreo no se escriben las vocales (excepto las vocales largas en árabe), sino sólo las consonantes, debiéndose interpolar las vocales según el contexto; este tipo de sistema se llama <strong>abjad</strong>.</p>
+
+<p>El tailandés, aunque de raíces monosilábicas, usa un <strong>alfabeto fonético</strong> de letras únicas, que frecuentemente tienen pequeños bucles y torceduras en los extremos. Algunas otras escrituras de pueblos de ese área geográfica también usan este tipo de caracteres que parecen un poco demasiado elaboradas. La razón es que fueron pensados para escribirse usando materiales que requerían que las líneas fueran 'cerradas' de alguna forma.</p>
+
+<p>Muchas lenguas de la India se escriben con un silabario llamado <strong>devanagari</strong>, el cual funciona así: el símbolo básico representa una sílaba con la vocal <em>a</em> (<em>pa, ta, sa, ra,</em> etc.). Por medio de signos diacríticos se puede cambiar la vocal por otra. Si se requiere la consonante sola, se utiliza otro signo diacrítico, el "matavocales", que se llama <em>virama</em>. El sistema base, con signos que implican una "vocal inherente", lleva el nombre genérico de <strong>abugida</strong>.</p>
+
+<p>Todo esto se reduce a un principio: para inventar un alfabeto, tenés que saber sobre qué se va a escribir y por qué medios.</p>
+
+<p>Inventar un alfabeto es simple, pero un silabario (o ideogramas) puede ser un dolor de cabeza, así que tendrías que meditarlo cuidadosamente antes. Los ideogramas son probablemente la peor forma de escritura (en términos de practicidad), y probablemente no deberías usarlos a menos que tengas memoria fotográfica. Los silabarios están muy bien, pero funcionan mejor en lenguajes muy restringidos; el español, por ejemplo, tiene un número bastante grande de sílabas posibles, e inventar un signo para cada una sería casi imposible.</p>
+
+<p>Si te parece, echále una mirada a algunas escrituras de lenguajes naturales en <a href="http://www.ancientscripts.com/index.html">Ancient Scripts</a> <span class="clarification">[en inglés]</span>, una página con ejemplos de todo el mundo.</p>
+
+<h3 id="orden-escritura">El orden del sistema de escritura</h3>
+
+<p>Estamos acostumbrados a tener las letras en orden. Esto es muy útil para diccionarios y guías de abonados telefónicos, y para los índices en generales. ¿Cómo vas a ordenar tus símbolos?</p>
+
+<p>Los alfabetos occidentales derivados del alfabeto latino usualmente siguen un orden predecible. El inglés, que es probablemente el más reducido y simple de todos, usa un conjunto pequeño de símbolos, y los digrafos no se consideran símbolos independientes; pero esto no es así en otros lenguajes. Por ejemplo:</p>
+
+<ul>
+<li>El alfabeto español consiste de todas las letras del alfabeto inglés (que conocemos por ser el set estándar ASCII), más las siguientes: <em>ch</em> (después de <em>c</em>), <em>ll</em> (después de <em>l</em>), y <em>ñ</em> (después <em>n</em>). Así que una palabra como <em>chico</em> no se encuentra en la sección de la <em>C</em>. ¿Tu lenguaje usa un derivado del alfabeto latino? ¿Qué símbolos extra usa, y cuáles tienen lugar propio en el alfabeto?</li>
+
+<li>El finés pone las vocales con Umlaut <em>ä</em> y <em>ö</em> después de la <em>y</em>.</li>
+
+<li>En holandés, el digrafo <em>ij</em> todavía se considera a veces un símbolo independiente (¡las máquinas de escribir antiguas tienen una tecla para él!).</li>
+
+<li>En sueco, la <em>v</em> y la <em>w</em> se consideran dos versiones de la misma letra, así que ambas caen en la sección de la <em>V</em> en las listas alfabéticas. Esto causa grandes problemas dada la gran cantidad de palabras inglesas y alemanas con <em>w</em> que han sido tomadas por el sueco (el cual usa solamente <em>v</em> para palabras nativas).</li>
+
+</ul>
+
+<p>Algunos otros lenguajes, que usan escrituras no latinas, ordenan sus caracteres de forma distinta. Algunos usan las características fonéticas de los sonidos para ordenar las letras; por ejemplo, primero los labiales (<em>p, b, m, f</em>), luego los alveolares (<em>t, d, n, s</em>) y así.</p>
+
+<p>En cuanto a los silabarios, también hay generalmente un orden fijo. En japonés, ambos tipos de <em>kana</em> se disponen así: primero las vocales, <em>a i u e o</em>, luego las sílabas que comienzan con <em>k</em> (<em>ka, ki, ku, ke, ko</em>), luego <em>t-, n-, h-, m-, y-, r-, w-,</em> y finalmente el símbolo para la <em>n</em> silábica. Otro orden, más tradicional, se usaba en tiempos antiguos (y todavía se usa en índices y tablas, por oposición al moderno, que se usa en diccionarios). Este orden sigue el de un poema del monje budista Kuukai, que usa cada carácter <em>hiragana</em> exactamente una vez:</p>
+
+<blockquote><em>
+Iro ha nihohe to<br>
+chirinuru wo<br>
+waka yo tare so.<br>
+Tsune naramu<br>
+uwi no okuyama<br>
+kefu koete<br>
+asaki yume<br>
+mishi wehi mo sesu.<br></em>
+</blockquote>
+
+<p>(Nota: esto probablemente no es japonés moderno correcto, ni ésta es la pronunciación correcta. El <em>kana</em> de <em>ha</em>, donde aparece aquí, se pronuncia <em>wa</em>, y los de <em>wi</em> y <em>we</em> son obsoletos. El de <em>wo</em> se pronuncia <em>o</em>.)</p>
+
+<p>En cuanto a los ideogramas, los <em>kanji</em> japoneses (y los <em>hanzi</em> chinos) se ordenan por número de radical y, dentro del mismo radical, por el número de trazos que se usan para escribirlos (hay un método para contarlos apropiadamente).</p>
+
+<p>Sería una buena idea tener letras con nombres que signifiquen algo, o que puedan ser recitadas en orden. Las letras latinas tienen nombres sin sentido en todos los lenguajes que las usan, y esos nombres son muy similares entre sí; de ahí la necesidad de códigos como 'Alpha, Bravo, Charlie'... Otros lenguajes y escrituras no tienen este problema.</p>
+
+<table style="width: 100%;">
+<tr>
+<td><a href="como-crear-un-lenguaje.html" class="nav-btn">Regresar a Introducción</a></td>
+<td><a href="gramatica.html" class="nav-btn">Continuar a Gramática</a></td>
+</tr>
+</table>
+
+<br/>
+
+<hr/>
+
+<div class="crumbles">
+<a href="/">Inicio</a> &gt; <a href="como-crear-un-lenguaje.html">Cómo crear un lenguaje</a> &gt;
+</div>
+
+</div> <!--end main-->
+
+<div id="footer">
+Derecho de autor &copy; 1999 Pablo David Flores.
+</div>
+
+</div> <!--end wrapper-->
+
+</body>
+</html>

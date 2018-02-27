@@ -1,0 +1,18 @@
+#main h1 { color: #4d0000; 
+  background-color: #eec25a;
+  padding: 0.5em 0.3em 2em;
+  line-height: 1em;
+  font-size: 2.2em;
+  font-family: 'Charis SIL',Gentium,Cambria,Georgia,serif; }
+h2 { color: #a60000;
+  background-color: #eec25a; }
+h3 { color: #c08700; }
+h4 { color: #c08700; }
+
+tt { color: #a60000;
+  font-weight: bold;
+  font-family: 'Charis SIL',Gentium,'Linux Libertine','FreeSerif',serif; }
+
+@media print {
+  .buy-btn { display: none; }
+}

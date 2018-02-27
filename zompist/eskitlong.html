@@ -1,0 +1,805 @@
+<HTML> 
+<HEAD>
+<TITLE>La Caja de herramientas para construir idiomas</TITLE>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1">
+
+<link rel="shortcut icon" href="/ii-favicon.png" />
+<meta name="og:title" content="Idiomas imaginarios" />
+<meta name="og:type" content="website" />
+<meta name="og:description" content="Guías y artículos sobre la creación de idiomas" />
+<meta name="og:image" content="https://idiomas-imaginarios.github.io/ii-socialicon.png" />
+
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="zompist-style.css">
+
+</HEAD> 
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<div id="wrapper">
+<div id="title">
+<h1>Idiomas imaginarios</h1>
+</div>
+
+<div id="main">
+<a href="/">Inicio</a> &gt; <a href="eskit.html">Caja de herramientas para construir idiomas</a> &gt;
+<hr />
+
+
+<h1>Caja de herramientas para construir idiomas</h1>
+
+
+<h2><a name="models">Modelos</A></h2>
+
+<h3><a name="natural">Idiomas naturales y no naturales</a></h3>
+
+<p>En lo personal a mí me gustan los idiomas naturalistas, por lo que mis lenguas construidas o artificiales (para las cuales existe el término <b>(las) conlangs</b>) suelen estar llenas de irregularidades, derivaciones lexicales curiosas y frases interesantes.
+
+<p>Es más fácil, sin duda, crear un idioma lógico, y hasta deseable si se desea crear un idioma auxiliar para uso internacional,
+ como el esperanto. El peligro aquí se encuentra en a) crear un sistema tan prístino, tan abstracto, que sea imposible de aprender; b) no darte cuenta que has producido algo ilógico en los modelos usados. Sólo pregúntame de las  <a href="http://www.zompist.com/kitespo.html">irregularidades del esperanto</a> <a name="espreturn">un día de estos</a>.
+
+<hr><h3><a name="nonwest">Modelos no occidentales (o al menos no como el español o el inglés)</a></h3>
+
+<p>Leer de algunos idiomas que no son indoeuropeos, como el quechua (puedes ver mi <a href="http://www.zompist.com/quechua.html">introducción al quechua aquí</a>, en inglés), el chino mandarín, el turco, el árabe o el suajili, puede ser muy revelador.
+
+<p>Aprende otros idiomas, si puedes. Si los idiomas te son difíciles de aprender, entonces solo echa una ojeada a una gramática para encontrar ideas que robar. <cite>The World&#8217;s Major Languages</cite>, editado por Bernard Comrie, contiene descripciones sustanciosas de cincuenta idiomas. <i>An Introduction to the Languages of the World</i>, escrito por Anatole Lyovin, provee una visión general y fácil de leer de todas las familias de idiomas del mundo, recalcando lo más destacado y dando esbozos de algunos idiomas importantes que Comrie omite.
+
+<p>Si no hablas otro idioma bien, estás bastante condenado a producir cifrados del español. Apenas echar un vistazo a algunas gramáticas te puede ayudar para que no copies la gramática del español, y te puede dar buenas ideas que probar; aunque la dificultad está en el léxico. Si lo único que conoces es el español, tenderás a duplicar la estructura y las frases del vocabulario del español. Abajo doy varios consejos para minimizar este problema.
+
+<p>&nbsp;
+
+
+<h2><a name="sounds">Sonidos</A></h2>
+
+<p>Los angloparlantes que no son lingüistas suelen empezar con el alfabeto, añadiendo apóstrofos y tildes. El resultado muchas veces se parece demasiado al inglés, tiene más sonidos de lo necesario, y ni el propio autor sabe cómo pronunciar las palabras.
+
+<p>Obtendrás mejores resultados según sepas más de <b>fonética</b> (el estudio de los sonidos posibles en un idioma) y de <b>fonología</b> (cómo los sonidos se usan en el idioma).  
+
+<p>Si solo puedes leer un libro de lingüística... además del mío, quiero decir... asegúrate que sea <cite>A Practical Introduction to Phonetics</cite>, escrito por J.C. Catford. Catford presenta los sonidos posibles sistemáticamente, con descripciones prácticas de cómo producir cada uno sin siquiera haberlos oído.
+
+<p>No te preocupes mucho por los términos técnicos encontrados abajo. Los hay muchos, pero es bueno conocerlos todos, y el resto del documento no es así de difícil.
+
+<hr><h3><a name="ipa">Los lingüistas de verdad y su notación</a></h3>
+
+<p>Los libros para aprender idiomas suelen describir los sonidos comparándolos con los del idioma del libro (ej. “la t del francés suena como la t española”), presentando recetas para producir sonidos inusuales. En vez de eso los lingüistas usan el <b>AFI</b> (el Alfabeto Fonético Internacional), un conjunto de símbolos con significados precisos.</p>
+
+<p>No voy a depender mucho del AFI aquí, ya que es un tanto estremecedor hasta que aprendas algo sobre fonología. Pero voy a presentar los símbolos mientras hablamos de cada sonido. Para clarificar que uso un símbolo del AFI, lo pondré así: <tt>p</tt>. Muchos de ellos, como <tt>p</tt>, son lo que esperarías a juzgar por el español.
+
+<hr><h3><a name="conso">Tipos de consonantes</a></h3>
+
+<p>Las <b>consonantes</b> se forman obstruyendo el flujo de aire desde los pulmones. En lingüística, no las organizamos alfabéticamente, sino en una tabla de dos dimensiones: el lugar de articulación y el cierre.</p>
+
+<h4>Lugar de articulación</h4>
+
+<p>El <b>lugar de articulación</b> describe dónde ocurre la obstrucción. Por convención, empezaremos por los labios y luego seguiremos adentro. Compara las descripciones del diagrama, y asegúrate de pronunciar las consonantes para sentir dónde se producen.</p>
+
+<div class="wide-elem">
+&nbsp;&nbsp;<img src="eskitcons.png" alt="Diagrama de consonantes">
+</div>
+
+<div class="wide-elem">
+<table>
+<tbody><tr><td><i>Nombre</i></td>
+<td><i>Obstrucción</i></td>
+<td><i>Ejemplos</i></td>
+</tr>
+<tr><td><b>Labial</b></td>
+<td>solo los labios</td>
+<td><tt>p b m w</tt>
+</td></tr>
+<tr><td><b>Labiodental</b></td>
+<td>labios y dientes</td>
+<td><tt>f</tt>
+</td></tr>
+<tr><td><b>Dental</b></td>
+<td>lengua tocando los dientes</td>
+<td><tt>t</tt> <tt>d</tt>, la <b>z</b> del castellano del norte de España
+</td></tr>
+<tr><td><b>Alveolar</b></td>
+<td>lengua detrás de los dientes</td>
+<td><tt>s</tt>, <tt>z</tt>, <tt>r</tt>, la <tt>t</tt> del inglés
+</td></tr>
+<tr><td><b>Palato-alveolar</b></td>
+<td>lengua más atrás de los dientes</td>
+<td><b>sh</b> (<tt>&#643;</tt>), <b>j</b> del francés (<tt>&#658;</tt>)
+</td></tr>
+<tr><td><b>Palatal</b></td>
+<td>lengua en contacto con el paladar</td>
+<td>la <b>ñ</b> (<tt>&#626;</tt>), la <tt>c</tt> del sánscrito, la <b>y</b> en &#8220;voy a&#8221; (<tt>j</tt>)
+</td></tr>
+<tr><td><b>Velar</b></td>
+<td>parte de atrás de la lengua contra la parte de atrás de la boca</td>
+<td><tt>k</tt> <tt>g</tt>, <b>j</b> (<tt>x</tt>), el dígrafo <b>ng</b> en inglés como en <i>sing</i> (<tt>&#331;</tt>)
+</td></tr>
+<tr><td><b>Uvular</b></td>
+<td>la lengua comprime la parte más atrás de la boca</td>
+<td>la <tt>q</tt> del árabe, la <b>r</b> del francés (<tt>&#640;</tt>)
+</td></tr>
+<tr><td><b>Glotal</b></td>
+<td>constricción de la garganta</td>
+<td>la <tt>h</tt> del inglés, la plosiva glotal <tt>&#x0294;</tt> en la pronunciación del inglés <i>uh-oh</i>, o de <i>bottle</i> según pronuncia John Lennon
+</td></tr>
+</tbody></table>
+</div> <!--end wide-elem-->
+
+<br/>Si necesitas distinguir las <b>t, d</b> dentales de las alveolares en el AFI, puedes usar <tt>t&#810; d&#810;</tt> para las dentales.
+
+
+<h4>Grado de oclusión (cierre)</h4>
+
+<p>Las consonantes varían también sobre <i>cuánto</i> obstruyen el paso del aire.</p>
+
+<div class="wide-elem">
+<table>
+<tbody><tr><td><i>Nombre</i></td>
+<td><i>Modo</i></td>
+<td><i>Ejemplos</i></td>
+</tr>
+<tr><td><b>Oclusivas</b></td>
+<td>Obstrucción completa (aunque sea solo momentánea)</td>
+<td><tt>p t k &#x0294;</tt>, <tt>b d g</tt> en &#8220;ambos, andar, hongo&#8221;
+</td></tr>
+<tr><td><b>Fricativas</b></td>
+<td>Impedidas lo suficiente para crear un silbido</td>
+<td><tt>f s</tt>, <b>sh</b> (<tt>&#643;</tt>); <b>j</b> del francés (<tt>&#658;</tt>), <b>j</b> del español (<tt>x</tt>)
+</td></tr>
+<tr><td><b>Affricadas</b></td>
+<td>Plosiva que suelta fricativa</td>
+<td><tt>ts</tt>, <b>ch</b> (<tt>t&#643;</tt>), <b>y</b> en &#8220;enyesar&#8221; (<tt>ɟʝ</tt>)
+</td></tr>
+<tr><td><b>Aproximantes</b></td>
+<td>Impedidas muy poco, no hay silbido</td>
+<td><tt>r l w</tt>, <b>b d g</b> en &#8220;había, hada, hago&#8221; (<tt>&#x03B2;&#x031E; &#x00F0;&#x031E; &#x0263;&#x031E;</tt>), <b>y</b> en &#8220;voy a&#8221; (<tt>j</tt>), la <tt>h</tt> del inglés
+</td></tr>
+<tr><td><b>Vocales</b></td>
+<td>No hay cierre para nada &#8212;¡esto son las vocales!</td>
+</tr>
+</tbody></table> 
+</div> <!--end wide-elem-->
+
+<br/>Muchas veces les sorprende a los hablantes del inglés (o del español) que <b>ch</b> no sea nada más que <b>t + sh</b> (<tt>t&#643;</tt>). Igualmente, el sonido de <b>y</b> en &#8220;enyesar&#8221; se puede analizar como <b>d</b> + el sonido de la <b>j</b> del francés.
+
+<p>De manera confusa, el símbolo del AFI para el sonido de la <b>y</b> en &#8220;voy (a)&#8221; es <tt>j</tt>. Solo piensa en la <b>j</b> del alemán, que es el mismo sonido.
+
+<h4>Más distinciones</h4>
+
+<p>La <b>sonoridad</b> trata de la vibración de las vocales. (Por si no estás seguro: cuando tarareas, están vibrando; cuando susurras o cuchicheas, no están vibrando.) La diferencia entre <tt>t</tt> y <tt>d</tt> se basa en la sonoridad: el sonido <tt>t</tt> es sordo y <tt>d</tt> es sonoro.  </p>
+
+<p>Las consonantes sordas y sonoras suelen aparecer en parejas, aunque no siempre. Por ejemplo, el español tiene las parejas <tt>p b</tt>, <tt>t d</tt>, <tt>k g</tt>, pero al contrario del inglés, los sonidos <tt>f</tt> y <tt>s</tt> no tienen pareja. El árabe tiene <tt>b</tt> pero no tiene <tt>p</tt>.
+
+<p>La sonoridad no es binaria; por el contrario, las consonantes varían sobre cuándo las cuerdas empiezan a vibrar &#8212;<b>el tiempo de ataque de sonoridad</b>, abreviado VOT por sus siglas en inglés (<i>voicing onset time</i>). El inglés tiene un VOT bastante tardío, el español lo tiene más temprano.
+
+<p>En las consonantes <b>nasales</b>, el aire viaja a través de la nariz así como a través de la boca: <tt>m n</tt>.
+
+<p>La boca hace precisamente lo mismo en los sonidos <tt>b</tt> y <tt>m</tt>; la diferencia es que el paso nasal se abre en <tt>m</tt> (por lo que el sonido también se puede mantener). 
+
+<p>Las oclusivas se pueden soltar ligeramente o con un soplo de aire evidente &#8212;es decir, con <b>aspiración</b>. En inglés, las oclusivas sordas llevan aspiración al inicio de palabra (<i>pot, tall, cow</i>) entre otros lugares. El español no tiene esta aspiración inicial.
+
+<p>En chino mandarín, en hindi y en quechua, hay series separadas de oclusivas aspiradas y no aspiradas: <tt>p p&#688;</tt>. 
+(La h sobrescrita mostrada es la marca para la aspiración en el AFI.) <i>Beijing</i> no empieza con un sonido <tt>b</tt>, sino con el sonido <tt>p</tt>.
+
+<p>Las consonantes <b>palatalizadas</b> se pronuncian mientras se levanta la lengua hacia el techo de la boca. Es decir, más o menos la posición de la lengua al pronunciar la <b>y</b> de &#8220;voy (a)&#8221;; una consonante palatizada podría sonarle a un hispanohablante como si hubiera tal sonido <b>y</b> antes o después. En ruso y en gaélico irlandés, hay series distintas de consonantes palatizadas y no palatizadas. La palatización se marca en el AFI con una <b>j</b> sobrescrita, por ej. <tt>n&#690;et</tt>, que es &#1085;&#1077;&#1090; en ruso.
+
+<h4>Róticas</h4>
+
+<p>Las consonantes <b>róticas</b> comprenden los sonidos que parecen (o que al menos se escriben generalmente con) una <i>r</i>, los cuales vienen en un número de variantes. 
+
+<ul>
+<li>La <b>r</b> del inglés estadounidense es generalmente un sonido <b>retroflejo</b> <tt>&#x027b;</tt>, pronunciado enrollando la lengua detrás del puente alveolar. Algunos idiomas, como el hindi, tienen toda una serie de consonantes retroflejas, incluyendo las oclusivas <tt>&#x0288; &#x0256;</tt>.
+
+<li>La <b>r</b> del español como en <i>caro</i> es una <b>vibrante simple</b> <tt>&#x027e;</tt>, la cual consiste en un contacto corto de la lengua contra el puente alveolar.
+
+<li>La doble <b>rr</b> del español como en <i>carro</i> es una <b>vibrante múltiple</b>, la cual es como una vibrante simple repetida, haciendo vibrar la lengua contra el puente alveolar.
+
+<li>La <b>r</b> del francés es una aproximante o vibrante múltiple uvular <tt>&#x0280;</tt>. Suena parecido a una <b>j</b> según como se pronuncia en el norte de España o ciertas partes del Perú, pero es sonora; suena como si se hiciera gárgaras.
+</ul>
+
+<h4>Laterales</h4>
+
+<p>También hay varias consonantes <b>laterales</b>, sonidos que suenan como la <i>l</i>, en los cuales la lengua se pone en posición para una oclusiva pero deja espacio en los lados para que el aire salga.
+
+<ul>
+<li><b>La</b> <tt>l</tt> clara es el sonido de la <b>l</b> en español. La <b>l</b> en inglés es alveolar, en ruso es dental. 
+
+<li>La <b>l</b> oscura <tt>&#x026b;</tt> es el sonido de la <b>l</b> al final del inglés <i>cool</i>; este se forma retrayendo la lengua hacia el velo del paladar &#8212;un ejemplo de <b>velarización</b>, proceso que también se puede aplicar a otras consonantes.
+
+<li>Una <b>l palatal</b> <tt>&#x028e;</tt> se produce cerrando el paso del aire más atrás, contra el paladar duro, como en el italiano <i>voglio</i>. En algunos dialectos del español se pronuncia la <b>ll</b> de esta manera (pero la gran mayoría la pronuncian al igual que la <b>y</b>).
+
+<li>Si el borde de la lengua se acerca más a los lados de la boca, de manera que haya un siseo o silbido evidente, entonces se encuentra ante una <b>fricativa lateral</b> <tt>&#x026e;</tt>. Esta también tiene una versión sorda <tt>&#x026c</tt>.
+</ul>
+
+<h4>El cuadro de consonantes</h4>
+
+<p>Los lingüistas prefieren organizar las consonantes en un cuadro (o tabla). He aquí el cuadro para el español:
+
+<div class="wide-elem">
+<table>
+<tr bgcolor="#FFE9B3"><td></td>
+<td><i>labial</i></td>
+<td><i>labiodental</i></td>
+<td><i>dental</i></td>
+<td><i>alveolar</i></td>
+<td><i>alv-pal</i></td>
+<td><i>velar</i></td>
+<td><i>glotal</i></td>
+</tr>
+<tr><td bgcolor="#FFE9B3"><i>oclusivas</i></td>
+<td><tt>p b</tt></td>
+<td></td>
+<td><tt>t d</tt>
+<td></td>
+<td></td>
+<td><tt>k g</tt>
+</tr>
+<tr><td bgcolor="#FFE9B3"><i>fricativas</i></td>
+<td></td>
+<td><tt>f</tt></td>
+<td>(<b>z</b>)</td>
+<td><tt>s</tt></td>
+<td></td>
+<td><b>j</b></td>
+<td>
+</tr>
+<tr><td bgcolor="#FFE9B3"><i>africadas</i></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><b>ch y</b></td>
+</tr>
+<tr><td bgcolor="#FFE9B3"><i>vibrantes</i></td>
+<td></td>
+<td></td>
+<td></td>
+<td><tt>ɾ r</tt>
+<td></td>
+<tr><td bgcolor="#FFE9B3"><i>aproximantes&nbsp;&nbsp;</i></td>
+<td></td>
+<td></td>
+<td></td>
+<td><tt>l</tt>
+<td>(<b>ll</b>)</td>
+</tr>
+<tr><td bgcolor="#FFE9B3"><i>nasales</i></td>
+<td><tt>m</tt></td>
+<td></td>
+<td></td>
+<td><tt>n</tt>
+<td><b>ñ</b></td>
+<td></td>
+</tr>
+</table>
+</div> <!--end of wide-elem div-->
+
+<p>El sonido de la <b>z</b> (y de la <b>c</b> antes de <b>e</b> e <b>i</b>, como en <i><b>Ceci</b>lia</i>), según se pronuncia por la mayoría de personas en España, es <tt>&#x03b8;</tt>, distinguido del sonido <tt>s</tt>. El resto de hispanohablantes no tiene esta di<b>s</b>tin<b>c</b>ión, y por ello se encuentra entre paréntesis.
+
+<p>Algunas pocas personas en España y Sudamérica (muy pocas por cierto) distinguen todavía <b>ll</b> de <b>y</b>, de manera que <i>(ella) ralla</i> y <i>(una) raya</i> suenan diferente, pronunciando <b>ll</b> con la palatal <tt>ʎ</tt>.
+
+<p>Los sonidos oclusivos <tt>b d g</tt> se encuentran en palabras como <i>ambos, andas, angular</i>, pero los tres tienen los <b>alófonos</b> (o variantes) aproximantes <tt>β̞ ð̞ ɣ̞</tt>, respectivamente, en palabras como <i>había, hada, hago</i>.
+
+<p>El tema de la <b>y</b> en español es complicado, ya que varía mucho según el dialecto. Todo el mundo pronuncia la <b>y</b> de <i>enyesar</i> con el sonido africado <tt>ɟʝ</tt>, pero el sonido de la <b>y</b> de <i>hoyo</i> presenta gran variedad. Los españoles, mexicanos, peruanos y chilenos dicen <tt>ʝ</tt>, los centroamericanos dicen <tt>j</tt> (es decir, una <tt>i</tt> pronunciada rápido), la mayoría de argentinos y uruguayos dicen <tt>ʃ</tt> (&#8220;sh&#8221;) o <tt>ʒ</tt>, y los de Bogotá dicen <tt>ɟʝ</tt> tal y como en <i>enyesar</i>.
+
+<p>La vibrante simple <tt>ɾ</tt> es la <b>r</b> de <i>pero</i>, mientras que <tt>r</tt> es la <b>rr</b> de <i>perro</i>.
+
+<p>Además, <b>ch</b> es <tt>tʃ</tt>, <b>ñ</b> es <tt>ɲ</tt> y <b>j</b> es <tt>x</tt>.
+
+<p>Por otra parte, he aquí el cuadro para las consonantes del inglés:
+
+<div class="wide-elem">
+<table>
+<tr bgcolor="#FFE9B3"><td></td>
+<td><i>labial</i></td>
+<td><i>labiodental</i></td>
+<td><i>dental</i></td>
+<td><i>alveolar</i></td>
+<td><i>alv-pal</i></td>
+<td><i>velar</i></td>
+<td><i>glottal</i></td>
+</tr>
+<tr><td bgcolor="#FFE9B3"><i>oclusivas</i></td>
+<td><tt>p b</tt></td>
+<td></td>
+<td></td>
+<td><tt>t d</tt>
+<td></td>
+<td><tt>k g</tt>
+</tr>
+<tr><td bgcolor="#FFE9B3"><i>fricativas</i></td>
+<td></td>
+<td><tt>f v</tt></td>
+<td><tt>&#x03b8; &#x00f0;</tt></td>
+<td><tt>s z</tt></td>
+<td><b>sh zh</b>
+<td></td>
+<td><tt>h</tt>
+</tr>
+<tr><td bgcolor="#FFE9B3"><i>africadas</i></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><b>ch j</b></td>
+</tr>
+<tr><td bgcolor="#FFE9B3"><i>aproximantes&nbsp;&nbsp;</i></td>
+<td><tt>w</tt></td>
+<td></td>
+<td></td>
+<td><tt>r l</tt>
+<td><b>y</b></td>
+</tr>
+<tr><td bgcolor="#FFE9B3"><i>nasales</i></td>
+<td><tt>m</tt></td>
+<td></td>
+<td></td>
+<td><tt>n</tt>
+<td></td>
+<td><b>ng<b>
+</tr>
+</table>
+</div> <!--end of wide table-->
+
+<br/>La grafía <b>th</b> del inglés representa en realidad dos sonidos, el sonido <tt>&#x03b8;</tt> sordo de <i>thick</i> y el <tt>&#x00f0;</tt> sonoro de <i>this</i>.  
+
+<p>Para la columna de las alveolares-palatales he usado las grafías inglesas; <b>sh zh</b> son <tt>&#x0283; &#x0292;</tt>; <b>ch j</b> son <tt>t&#x0283; d&#x0292;</tt>; <b>y</b> is <tt>j</tt>.  Y <b>ng</b> es <tt>&#x014b;</tt>.
+
+<p>En este momento, si se le diera un nombre como <i>oclusiva velar sonora</i> o <i>aproximante alveolar-palatal sorda</i>, debería de poder entender lo que significa.
+
+
+
+<hr><h3><a name="invent">Inventando consonantes</a></h3>
+
+<p>Nota que los cuadros de consonantes del español y del inglés tienen espacios sin rellenar. ¿Significa esto que se pueden inventar nuevos sonidos llenando espacios del cuadro? Oh sí.
+
+<p>Pon atención en la celda debajo de <tt>k g</tt>, vacía en la tabla para el inglés &#8212;las etiquetas nos indican que es para <i>fricativas velares</i>. Se puede llenar con el sonido <tt>x</tt> de la <b>j</b> del español, y además la versión sonora <b>gh</b> <tt>&#x0263;</tt> existe en griego.
+
+<p>¿Qué hay de una <i>africada labial</i> <tt>pf</tt>? El alemán la tiene. Es posible pronunciar <i>fricativas labiales</i> <tt>&#x0278; &#x03b2;</tt> también &#8212;no una <tt>f</tt> ya que esta involucra al labio al inferior en contacto con los dientes, pero una fricativa con silbido suave formada únicamente con los labios. El japonés <i>fuji</i> empieza con <tt>&#x0278;</tt>.
+
+<p>Más emocionante todavía es añadir series enteras de consonantes usando contrastes que no existen en español (o en inglés), tales como la palatalización o la aspiración. O por el contrario, quitar series existentes. El quechua de Cuzco, por ejemplo, tiene tres series de oclusivas: aspiradas, no aspiradas, y glotalizadas, pero no distingue entre consonantes sonoras y sordas.
+
+<p>La clave para crear un idioma naturalista es, de hecho, añadir o (o quitar) dimensiones enteras. Se puede concebir un idioma con solo una consonante glotalizada, pero es más probable que tenga una serie de ellas (según los puntos de articulación: p&#x2019; t&#x2019; k&#x2019;). Un idioma puede contar con solo dos consonantes palatales, como la mayoría de dialectos del español con su <b>y</b> y su <b>&ntilde;</b>, pero uno con toda una serie de ellas es más típico o común.
+
+<p>También puede añadir puntos de articulación. Por ejemplo, mientras que el español y el inglés tienen tres series de oclusivas, el hindi tiene cinco (labial, dental, retrofleja, alveolopalatal y velar; las consonantes retroflejas involucran enrollar la lengua hacia atrás un poco), y el árabe tiene seis (labial, dental, dental &#x2018;enfática&#x2019; (ni preguntes qué es), velar, uvular, glotal).
+
+<p>Algunas consonantes son más comunes que otras. Por ejemplo, prácticamente todos los idiomas tienen las oclusivas <tt>p t k</tt>. El libro entitulado <i>Phonology</i> de Lass da ejemplos; véase también <CITE>The Cambridge Encyclopedia of Language</CITE> escrita por David Crystal, p. 165.
+
+
+
+
+<hr><h3><a name="vowels">Vocales</a></h3>
+
+<p>Los aspectos más importantes de las vocales son la <b>altura</b> (o <b>abertura</b>) y la <b>localización</b> (o <b>anterioridad</b>).
+
+<p>La <b>altura</b> se trata de cuánto se eleva la lengua; la boca también tiende a abrirse más ampliamante al bajar la lengua, por lo que a las vocales de altura baja también se les llama <b>abiertas</b>.
+
+<p>La escala usual contiene vocales <b>altas</b> como <i>mini tutú</i>, <b>intermedias</b> como <i>mete moto</i>, y <b>bajas</b> como <i>rana</i>.
+
+<p>Muchos idiomas, como el francés, tienen cuatro niveles en vez de tres. En lugar de un solo nivel de vocales intermedias, hay dos alturas:
+
+<ul>
+<li><tt>e o</tt> <b>semicerradas</b> como la <b>&eacute;</b> y la vocal de <i>eau</i> en francés, o la <b>e</b> y la <b>o</b> del italiano <i>cera, voce</i>.
+
+<li><tt>&#x025b; &#x0254;</tt> <b>semiabiertas</b> como la <b>&egrave;</b> y la vocal <b>o</b> de <i>donne</i> en francés, o la <b>e</b> y la <b>o</b> del italiano <i>sella</i> y <i>cosa</i>.
+</ul>
+</ul>
+
+<p>La <b>localización</b> se trata de la cercanía de la lengua respecto al frente de la boca.
+
+<ul>
+<li>Las vocales <b>anteriores</b> incluyen <tt>i e</tt> como en <i>mini mete</i>. La vocal del inglés <i>pat</i> es <tt>&aelig;</tt>, una vocal anterior abierta.
+
+<li>Las vocales <b>posteriores</b> incluyen <tt>u o</tt> como en <i>tutú todo</i>.
+
+<li>También hay vocales <b>centrales</b>, para las cuales la lengua se encuentra parcialmente hacia atrás. La <tt>a</tt> del español es una vocal central, así como la turbia <tt>&#x0259;</tt> o <i>schwa</i> del inglés tal y como aparece en palabras como <i>Chin<b>a</b>, <b>a</b>bout, phot<b>o</b>graph, li<b>o</b>n, <b>u</b>nofficial, pati<b>e</b>nt</i>.
+</ul>
+
+<h4>El cuadro de vocales</h4> 
+
+<p>Puedes poner las vocales del español en un cuadro según estas dos dimensiones. La parte más baja del cuadro suele dibujarse más corta ya que no le queda mucho espacio a la lengua para moverse al abrirse la boca.
+
+<div class="wide-elem">
+&nbsp;&nbsp;<img src="eskitvocales.png" alt="Diagrama de las vocales del español">
+</div>
+
+<p>Para probar como se sienten estas distinciones, pronuncia las vocales del diagrama, de arriba a abajo o de lado a lado, dándote cuenta de dónde se encuentra la lengua y de su cercanía con respecto al cielo de la boca.
+
+<p>La idea de este ejercicio es lograr entender lo que hace la lengua al hacer sonidos cerrados y abiertos, anteriores y posteriores. Las vocales &#8220;ideales&#8221; del AFI son extremas &#8212;por ejemplo, <tt>i</tt> es lo más cerrada y lo más anterior posible.
+
+<h4>Otras distinciones de vocales</h4>
+
+<p>Las vocales pueden variar en otras dimensiones también.
+
+<p>Los labios pueden ser <b>redondeados</b> o no. Es típico que las vocales anteriores como <tt>i e &#x025b;</tt> no sean redondeadas, mientras que las posteriores como <tt>u o &#x0254;</tt> sí lo sean. Pronuncia <i>muuu</i> y nota que los labios se aprietan hacia el centro &#8212;eso es el redondeamiento. Contrasta esto con la vocal de <i>mí</i>, la cual no es redondeada.
+
+<p>Ni el español ni el inglés tienen vocales <i>anteriores redondeadas</i>, pero el francés y el alemán si tienen tales vocales (francés: <b>u, œ</b>; alemán: <b>&uuml;, &ouml;</b>).  Los símbolos del AFI son la cerrada <tt>y</tt>, la semicerrada <tt>&#x00f8;</tt>, y la semiabierta <tt>&#x0153;</tt>. Para pronunciar <tt>y</tt>, di <tt>i</tt> y luego redondea los labios como con la vocal <tt>u</tt>.
+
+<p>Los símbolos del AFI para las vocales <i>posteriores no redondeadas</i> son la cerrada <tt>&#x026f;</tt>, la semicerrada <tt>&#x0264;</tt>, y la semiabierta <tt>&#x028c;</tt>. Esta última vocal es la misma de <i>cut</i> según la pronuncian muchos angloparlantes. La vocal rusa <b>&#x044b;</b> y la japonesa <b>u</b> son <tt>&#x026f;</tt>; para pronunciarla, di <tt>u</tt> pero con los labios relajados.
+
+<p>Las vocales pueden contrastar en <b>longitud</b>, como en latín, griego antiguo, sánscrito o inglés antiguo. El estonio tiene tres grados de longitud. Una vocal larga simplemente se pronuncia por más tiempo. El sonido <tt>a</tt> largo suele transcribirse <b>&#x0101;</b>, aunque en el AFI se escribe <tt>aː</tt>.
+
+<p>Así como las consonantes, las vocales pueden ser <b>nasalizadas</b> &#8212;pronunciadas con el paso nasal abierto. El francés por ejemplo tiene cuatro vocales nasalizadas: <tt>&#x0153;&#x0303; &#x0254;&#x0303; &#x025b;&#x0303; &#x0251;&#x0303;</tt> como en <i>un bon vin blanc</i>.
+
+<p>Cuando dos vocales se encuentran adjuntas una justo después de la otra, generalmente forman un <b>diptongo</b>, como en el inglés <i>coy, cow, guy</i> <tt>koj kaw gaj</tt>. Las vocales no se distinguen claramente; la posición de los órganos vocálicos se mueve fluidamente de una posición a la otra.
+
+<p>El inglés tiende a hacer diptongos de sus vocales semicerradas &#8212;por ejemplo <i>day, go</i> se pronuncian <tt>dej gow</tt>. En contraste, las semicerradas del francés, por ejemplo <i>th&eacute;, t&ocirc;t</i> son simplemente <tt>te to</tt>.
+
+
+<h4>Sistemas vocálicos</h4>
+
+<p>El inglés tiene un sistema de vocales algo complicado:
+
+<div class="wide-elem">
+<PRE>
+<br>             --laxa--       --tensa--
+<br>           front----back  front-----back
+<br>alta       pit       put  peat      poot
+<br>intermedia pet      putt  pate      boat
+<br>baja       pat       pot   father bought
+<br>
+</PRE>
+</div>
+
+<p>En el inglés del sur de Inglaterra, como el inglés hablado en Londres, cada una de las doce palabras arriba tiene una vocal diferente. (En otras variedades del inglés algunas se pronuncian igual.) Las vocales <b>laxas</b> se pronuncian más cerca del centro del espacio vocálico &#8212;se parecen más a la schwa&#8212; mientras que las vocales <b>tensas</b> se pronuncian más cerca de la periferia. He aquí un diagrama con las mismas palabras dentro del espacio vocálico:
+
+<div class="wide-elem">
+<p>&nbsp;&nbsp;<img class="vowel-diagram" src="eskitvowels.png" alt="Diagrama de las vocales del inglés">
+</div>
+
+<p>Un sistema simple e interesante es el del quechua (tres vocales, <tt>i u a</tt>). Las vocales de semejantes sistemas tienden a expandir su espacio de alófonos; en quechua, por ejemplo, la <b>i</b> puede sonar como la <tt>i</tt> o la <tt>e</tt> del español, o como la vocal laxa del inglés <i>pit</i>.
+
+<p>El español, cuyo sistema vocálico es muy sencillo también, posee a su vez algo de alofonía. Los lingüistas describen los sonidos de la <b>e</b> y de la <b>o</b> como ligeramente más abiertos en las sílabas que terminan en consonante, y ligeramente más cerrados en otras posiciones.
+
+<p>Para tu conlang, no solo añadas una o dos vocales exóticas; trata de inventar un verdadero sistema de vocales, usando las dimensiones que discutimos arriba. Por ejemplo, podrías empezar con el sistema del español, agregar distinciones de redondeamiento, y luego dejar solo una vocal abierta.
+
+
+<hr><h3>Fonos, fonemas y alófonos</h3>
+
+<p><i>Sonido</i> es un término demasiado vago en lingüística. ¡Y por favor no los llames <i>letras</i>! A los sonidos crudos que los humanos producen se les llama <b>fonos</b>. (En realidad son más desordenados y vagos de como los he descrito hasta este momento, ya que las distinciones fonéticas no suelen ser binarias. Tales cosas como la altura o el lugar de articulación son en realidad variables continuas.)
+
+<p>Cada idioma tiene un inventario de <b>fonemas</b> &#8212;tipos de fonos que los hablantes nativos consideran &#x2018;el mismo sonido&#x2019;.  
+
+<p>Por convención:
+
+<ul>
+<li>los <b>fonemas</b> aparecen entre <b>barras diagonales</b>: <tt>/l/ /p/</tt>... 
+<li>los <b>fonos</b> aparecen entre <b>corchetes</b>: <tt>[l] [p]</tt>...
+</ul>
+
+La distinción es importante por dos razones:
+
+<ul>
+<li>Porque los fonemas se pueden pronunciar de más de una manera. Por ejemplo, en español, el fonema <tt>/b/</tt> se pronuncia con la oclusiva <tt>[b]</tt> al inicio de frase o después de <tt>m n</tt> y con la aproximante <tt>[β̞]</tt> en las otras posiciones. La <tt>/n/</tt> suele ser alveolar, pero se pronuncia con el fono velar <tt>[ŋ]</tt> antes de <tt>/k g/</tt>, como en <i>hincarse</i>. A tales variaciones se les denomina <b>alófonos</b>.<p>
+
+<li>Diferentes idiomas tienen diferentes distinciones fonéticas. Por ejemplo, podría decirse que el español, el inglés y el chino mandarín tienen los fonemas <tt>/p b/</tt>. Sin embargo&#8212;
+
+<ul><li>En español la distinción se hace según la sonoridad, con alofonía en el grado de oclusión &#8212;es decir, <tt>/p/</tt> siempre es <tt>[p]</tt>, pero <tt>/b/</tt> (como mencioné arriba) es <tt>[b]</tt> o <tt>[β̞]</tt>.
+<li>En inglés la distinción se hace según la sonoridad, con alofonía en la aspiración &#8212;es decir, <tt>/p/</tt> es <tt>[p]</tt> (<i>happy</i>) o <tt>[p&#x02b0;]</tt> (<i>piece, repost</i>), mientras que <tt>/b/</tt> siempre es <tt>[b]</tt>.  
+<li>En chino mandarín, la distinción se hace según la aspiración, con alofonía de sonoridad &#8212;es decir, <tt>/p/</tt> siempre es <tt>[p&#x02b0;]</tt>, mientras que <tt>/b/</tt> es <tt>[p]</tt> o <tt>[b]</tt>.  
+
+</ul>
+</ul>
+
+Los lingüistas suelen preguntar si una distinción fonética en un idioma determinado es <b>fonémica</b>. Al final eso quiere decir: ¿acaso se usa para contrastar palabras? En chino mandarín,  <tt>p&#x02b0;&agrave;&#x014b;</tt>  &#x2018;gordo&#x2019; contrasta con <tt>p&agrave;&#x014b;</tt> &#x2018;libra (de peso)&#x2019;, por lo que la distinción <tt>p/p&#x02b0;</tt> es fonémica en mandarín. Pero <tt>p/p&#x02b0;</tt> nunca distinguen dos palabras en inglés, ya que jamás aparecen en la misma posición en una palabra (<tt>[p&#x02b0;]</tt> aparece al inicio de palabra o antes de una vocal acentuada: <i>piece, repost</i>), por lo que la distinción es alofónica en inglés.
+
+<p>Cuando decides qué sonidos tendrá tu conlang, lo que haces es crear un <b>inventario fonológico</b> &#8212;una lista de fonemas. Esta debería ser la base de tu ortografía (o romanización, si tu conlang tiene un sistema de escritura propio). Presenta primero los fonemas, y luego describe la variación alofónica.
+
+<p>Nota que el AFI puede usarse para transcripciones fonémicas o fonéticas. Los símbolos se pueden usar (de forma un poco vaga) para los fonemas porque los fonemas en realidad son categorías mentales con diferentes fonos de todos modos. Algunos fonemas solo pueden explicarse de forma histórica, o haciendo referencia a otros dialectos... antes en esta página mencioné la pronunciación de John Lennon del fonema <tt>/t/</tt> usando el fono <tt>[&#x0294;]</tt> en <i>bottle</i>!
+
+<p>Por supuesto, ¡tu ortografía no tiene por qué usar el AFI! Sin embargo es útil para los lectores si tomas el cuidado de agregar las correspondencias con el AFI en tu sección de fonología.
+
+
+
+
+<hr><h3><a name="stress">Acento léxico (o sílabas tónicas)</a></h3>
+
+<p>No te olvides de clarificar cómo funciona el acento léxico. El español tiene acento léxico impredecible, y si no tienes cuidado puede ser que tu idioma inventado funcione de la misma manera.</p>
+
+<p>El francés suele poner el acento léxico (ligeramente) en la última sílaba (por lo que todas las palabras son “agudas”). En polaco y en quechua, la penúltima sílaba siempre es la sílaba tónica (es decir, todas las palabras son “graves” o “llanas”). El latín tenía una regla un poco más compleja: el acento léxico se encontraba en la penúltima sílaba (<i>múndus, pervádo</i> con <tt>aː</tt> larga), pero si la penúltima sílaba tenía una vocal corta y no terminaba en consonante entonces se encontraba en la antepenúltima sílaba (<i>ártifex, óculus</i> con <tt>i u</tt> cortas).
+
+<p>Si la regla es totalmente regular, no hay por qué indicar el acento léxico en la ortografía. Si es irregular, considera que es buena idea marcarlo, quizá como se hace en español: <i>coraz&oacute;n, porqu&eacute;.</i>  
+
+<p>En inglés, existe el fenómeno de <b>reducción</b> en las vocales. Cuando las vocales no tienen acento tónico, estas se vuelven más indistintas entre sí y se acercan al centro del espacio vocálico. Esta es una de las razones principales (aunque no la única) por las que la ortografía del inglés es difícil.
+
+
+<hr><h3><a name="tone">Tono</a></h3>
+
+<p>Las sílabas del chino mandarín pueden tener uno de cuatro  <b>tonos</b> disponibles, o contornos de entonación: nivelado alto, modulado ascendente, modulado descendente-ascendente, modulado descendente. Los tonos son parte de la palabra, y se usan para distinguir palabras de diferentes significados:</p>
+
+<div class="wide-elem">
+&nbsp;&nbsp;<img src="eskit-chinese-tones.png" alt="tonos del chino mandarin"></blockquote>
+</div>
+
+Los tonos suelen describirse en una escala de cinco niveles, en las que el 5 es el más alto. Los tonos descritos arriba son entonces 55, 35, 214 y 51.
+
+<p>El cantonés y el vietnamita tienen seis tonos.
+
+<p>El tono se vuelve más complejo al introducir <b>sandhi tonal</b>, en el que los tonos adjuntos se influencian entre sí. Por ejemplo, el tercer tono del chino mandarín se transforma en el segundo tono antes de otro tercer tono, de manera que <i>n&#x01d0;h&#x01ce;o</i> &#x2018;hola&#x2019; se pronuncia <i>n&iacute;h&#x01ce;o</i>.
+
+<p>Los tonos no son absolutos, pero son relativos a la entonación normal. (Y por si te lo preguntabas, los que escriben canciones a veces tratan de hacer coincidir los tonos con la melodía, a veces no.)
+
+<hr><h3><a name="tone">Acento tonal</a></h3>
+
+<p>Si eso parece muy complicado, podrías considerar usar un sistema de acento tonal en vez de eso, así como el que usé en otro idioma que inventé, el <a href="http://www.zompist.com/cuezi.htm">cu&ecirc;zi</a>: el acento léxico de una palabra puede tener un tono alto o bajo. El japonés y el griego antiguo también son idiomas con acento tonal.</p>
+
+<p>En el japonés estándar, las sílabas pueden ser de tono alto o bajo; cada palabra tiene una &#x2018;melodía&#x2019; particular o secuencia de sílabas altas y bajas &#8212;por ej. <I>ikebana</i> &#x2018;arreglo floral&#x2019; tiene la melodía BABB (tonos bajo alto bajo bajo); <I>sashimi</i> &#x2018;pescado crudo cortado en trozos delgados&#x2019; tiene BAA (bajo alto alto); <I>kokoro</i> &#x2018;corazón&#x2019; tiene BAB (bajo alto bajo). Quizá te imaginas que cada tono debe memorizarse para cada sílaba, pero no es así. Lo único que debes memorizar es dónde se encuentra el acento, tras el cual el tono va para abajo. Se pueden usar las tres reglas siguientes:</p>
+
+<ol>
+<LI>Asigna tono alto a todas las “moras” (= sílabas, excepto que una vocal larga cuenta como dos moras, y la -n final o una consonante doble cuenta como una mora extra también)</li>
+<LI>Cambia el tono de las moras después del acento a tono bajo</li>
+<LI>Asigna tono bajo a la primera mora si la segunda mora tiene tono alto</li>
+</ol>
+
+<p>Ejemplo: <I>ike'bana</i> tiene el acento entre <i>ke</i> y <i>ba</i>, por lo que al aplicar las tres reglas primero tenemos AAAA, luego AABB, y finalmente BABB.</p>
+
+
+<hr><h3><a name="phono">Restricciones fonológicas</a></h3>
+
+<p>Todo idioma tiene una serie de restricciones sobre qué palabras pueden ocurrir. Por ejemplo, como hispanohablante, sabrás que de alguna manera <i>truma</i> y <i>calto</i> son palabras posibles; simplemente no existen. Sin embargo, <i>lrimp</i> y <i>mtar</i> no podrían ser palabras del español.</p>
+
+<p>Diseñar las <b>restricciones fonológicas</b> valdrá mucho la pena para poder darle a tu idioma su apariencia distintiva.</p>
+
+<p>Empieza con el patrón distintivo de las sílabas. Por ejemplo,</p>
+
+<ul><li>El japonés solo permite <b>(C(y))V(V)(n)</b>: <I><a href="http://www.zompist.com/ranma.html">Ran-ma</a>, A-ka-ne, Ta-te-wa-ki Ku-n&#x014d;, Ru-mi-ko Ta-ka-ha-shi, Go-ji-ra, T&#x014d;-ky&#x014d;, kon-k&#x016b;-ru, su-shi,</i> etc.
+
+<p><li>El chino mandarín solo permite <b>(C)(i, u)V(w, y, n, ng)</b>: <i>w&#x01d2; sh&igrave; M&#x011b;i-gu&oacute;-r&eacute;n, w&eacute;n-y&aacute;n, ch&#x012b;-f&agrave;n, m&agrave;n-hu&agrave;, <a href="http://www.zompist.com/faye.html">W&aacute;ng F&#x011b;i</a>, <A HREF="http://www.zompist.com/zhang.shtml">Zh&#x0101;ng</A>,</i> etc.
+
+<p><li>El quechua permite <b>(C)V(C)</b>: <i>Wall-pa-ku-na sa-ra-ta mi-kuch-kan-ku, ach-ka a-llin ha-tun mo-soq pu-ka wa-si-ku-na,</I> etc.
+
+<p><li>El español permite en general <b>(C)(l, r, i, u)V(C)(s)</b>: <i>instrucción, abstracto, explicar.</i> Aunque nota que para la última sílaba se usa un patrón más restringido, <b>(C)(l, r, i, u)V(C)</b>.
+
+<p><li>El inglés es más permisivo, con la estructura siguiente: <b>(s) + (C) + (r, l, w, y) + (V) + V + (C) + (C) + (C)</b>: <i>sprite, thanks-giv-ing.</i>
+</ul>
+
+<p>C quiere decir consonante, V vocal, y los paréntesis marcan los fonemas opcionales, por lo que <b>(C)V(V)(n)</b> significa “una consonante opcional, una vocal necesaria, posiblemente otra vocal, y posiblemente una <b>n</b> final”.</p>
+
+<p>Prueba generalizando las restricciones. Por ejemplo, m + t es ilegal al inicio de una palabra en español. Podríamos generalizar esto como [nasal] + [oclusiva]. El inglés en general no permite palabras como <i>vlim zlam</i>, y esto podría generalizarse como una restricción en contra de [fricativa sonora] + [lateral], aunque sí se permite <i>vl</i> en préstamos de otros idiomas tales como <i>Vladimir</i>.</p>
+
+<p>Otro proceso que vale la pena conocer es la <b>asimilación</b>.  Las consonantes adjuntas tienden a asimilarse según el lugar de articulación. Esta es la razón por la que el prefijo in- del latín hacía lo siguiente: <i>in- + -portare = importare, ad + similare = assimilare</i>. En inglés, el escritor de ciencia ficción Larry Niven inventa la palabra <i>klomter</i> en su obra <CITE>The Integral Trees</CITE>, la cual a los angloparlantes nos suena mal formada:  m + t es difícil (aunque no imposible) de pronunciar, ya que cada sonido ocurre en un lugar de articulación diferente; es muy probable que ambos sonidos cambien a una articulación dental (<i>klonter</i>) o labial (<i>klomper</i>).  Otro resultado posible sería la inserción de un sonido fonético intermediario: <i>klompter.</i></p>
+
+<hr><h3><a name="alien">Bocas alienígenas</a></h3>
+
+<p>Si estás inventando un idioma para alienígenas, probablemente quieras darles sonidos <i>verdaderamente diferentes</i> (suponiendo que hablan del todo, claro). La solución de Marvel Comics es arrojar un montón de apóstrofos: <i>Esta es la Emperatriz Nx&#8217;id&#8217;&#8217;ar&#8217; del planeta Bla&#8217;no&#8217;no!</i> Larry Niven no hace más que violar las restricciones fonológicas del inglés: <i>Tnuctipun</i>. Podemos hacer algo mejor.</p>
+
+<p>Piensa en la forma de la boca de tus alienígenas. ¿Es que es muy larga? Eso sugiere agregar unos cuantos más lugares de articulación. Quizá la conducción del aire funciona de forma diferente: quizá no tienen nariz, y por eso no pueden producir nasales; o no pueden dejar de respirar al hablar, por lo que todas sus vocales son nasales; o la conducción del aire es a mayor velocidad, produciendo tonos más altos, chillones, y quizás más consonantes enfáticas. O quizá su anatomía les permite hacer chasquidos o ruidos sordos (ruidos al caer algo, como cuando se golpea un sofá con la mano) que se han vuelto fonemas en sus idiomas.</p>
+
+<p>Varios escritores han imaginado criaturas con dos tractos vocales, permitiéndoles pronunciar dos sonidos a la vez, o acompañarse a sí mismos en una armonía de dos partes.</p>
+
+<p>O bien, ¿qué hay de sonidos o sílabas que varíen en el <i>timbre</i>? Los sonidos podrían diferenciarse según si la voz suena como un trombón, o un violín, o una trompeta, o una guitarra.</p>
+
+<p>Sugerir sonidos adicionales es difícil y quizá cansado para el lector; un ambiente alienígena también se puede crear <b>quitando</b> dimensiones fonéticas enteras. Un alienígena podría tener problemas al producir consonantes sonoras, (más o menos como los alemanes: “te tigo que tengo canas de volver”), o faltándoles labios, no puedan con las labiales (“usted dede atrender a hacer esto si astira a ser dentrílocuo tandién”).</p>
+
+
+<h2><a name="alphabets">Sistemas de escritura</A></h2>
+
+<h3><a name="orthography">Ortografía</a></h3>
+
+<p>Una vez que hayas decidido los sonidos de tu idioma, vas a querer crear una <b>ortografía</b> &#8212;es decir, una forma estándar de representar esos sonidos en el alfabeto romano.
+
+<p>No recomiendo llevártela de muy creativo aquí. Por ejemplo, podría representar <b>a e i o u</b> como <b>ö é ee aw ù</b>, con los acentos al revés al final de la palabra. Una ortografía extravagante es probablemente un intento de hacer más interesante un sistema fonético que no terminó siendo muy diferente que el sistema del idioma del inventor. Enfóquate en los fonemas, e intenta hallar una manera simple y directa de escribirlos.
+
+<p>Si estás inventando un idioma para un mundo de fantasía, resulta sensato tomar en cuenta si los lectores podrían pronunciar mal tus bellas palabras. Tolkien es un modelo a seguir aquí: él escribía el <b>quenya</b> como si fuera latín, y no introdujo ninguna forma realmente vil de escribir palabras, indicando amablemente a sus lectores de habla inglesa que toda <b>e</b> final se pronuncia. Aun así, no pudo resistir pedir que toda <b>c</b> y <b>g</b> se pronunciaran como en <i>casa</i> y <i>gato</i> (yo tampoco con el verduriano), lo que significa que probablemente muchos de sus nombres, como <i>Celeborn</i>, comúnmente se pronuncian mal.
+
+<p>Marc Okrand, al inventar el <b>klingon</b>, tuvo la astuta idea de usar mayúsculas y minúsculas con diferentes valores fonéticos. Esto tiene la ventaja de doblar las letras disponibles sin usar diacríticos, pero no se ve muy bien (<i>HolQeD</i>) y necesita de más memoria del lector.
+
+<p>O bien puede irse por lo elegantemente corto, como hice al inventar el <a href="http://www.zompist.com/verdurian.htm">verduriano</a>. No me gustan los dígrafos, por lo que adapté la ortografía del checo; &#8212;<b>&#269;</b> para <b>ch</b> (<tt>t&#643;</tt>), <b>&#353;</b> para <b>sh</b> (<tt>&#643;</tt>), etc. En ese entonces me tocó crear una fuente tipográfica especial, pero estos días fácilmente se pueden usar los caracteres de Unicode.
+
+<p>Por favor no tome el catálogo de Unicode como si todos los caracteres fueran decoración. Así como lo muestran el AFI y la <i>Caja de herramientas</i>, todos tienen un cierto significado, y si decides usarlos por como so ven, a alguien que sepa qué significan en verdad le serán confusos y elecciones poco inteligentes.
+
+<p>Se puede lograr un aire de variación entre las naciones de tu mundo usando <b>estilos diferentes de transliteración</b> para cada uno. En mi mundo de fantasía, por ejemplo, <i>&#270;arcaln</i> en verduriano y <i>Dhârkalen</i> en barajinéi no suenan muy diferente del otro. ¿No crees que te gustaría más visitar el civilizado &#270;arcaln antes del oscuro y amenazador Dhârkalen? (Es broma. Son el mismo lugar.)
+
+<p>Si estás inventando un <b>idioma de comunicación internacional</b>, claro, no te deberías preocupar de las convenciones del español; crea la romanización más directa que puedas. Solo estarías metiéndose en problemas, eso sí, si inventas nuevas tildes, como hizo el inventor del esperanto.
+
+
+<hr><h3><a name="alphabet">Un ejemplo</a></h3>
+
+<p>He aquí el alfabeto que inventé para el verduriano:
+
+<div class="wide-elem">
+<blockquote><IMG SRC="alphabet.gif"></blockquote>
+</div>
+
+<p>Fíjate en cómo hay una correspondencia directa entre el alfabeto verduriano y la representación estándar en alfabeto romano. Esto no es muy naturalista &#8212;los esquemas de transliteración no suelen ser así de directos&#8212; pero es un buen comienzo. Una vez que puedas leer tu alfabeto con fluidez, siéntete libre de agregar complicaciones.
+
+<p>Un buen alfabeto no se puede crear en un día. Este tomó forma en el lapso de algunas semanas, mientras probaba diferentes formas de las letras.
+
+<p>Mantén las letras con formas diferentes. Los mejores alfabetos reparten el espacio gráfico conceptual, de manera que las letras no se puedan confundir una con la otra. Tolkien es un mal modelo a seguir aquí: los elfos deben haber sufrido de dislexia. Si las letras empiezan a parecerse demasiado una a la otra, los usuarios encuentran formas de diferenciarlas, de la misma manera que los programadores de computadoras escriben el número cero con una barra en medio. Al contrario de los estadounidenses, que siempre escriben el número uno como una "I", los europeos y muchos latinoamericanos escriben el uno empezando por un trazo hacia arriba, luego yendo abajo. Así no se puede confundirlo por una i mayúscula o una L minúscula &#8212;pero se parece mucho al 7, por lo que este último recibe un trazo horizontal en medio.
+
+<p>Recuerda que las letras se escriben una y otra vez, a lo largo de la vida de un individuo o una civilización. Es muy probable que las letras complicadas se simplifiquen. Puedes simular este proceso escribiendo la letra una y otra vez tú mismo; y las simplificaciones apropiadas aparecerán por sí solas automáticamente.
+
+<p>Fíjate en cómo he proveído mayúsculas y minúsculas para las letras, como en los alfabetos romano y griego. Las minúsculas son todas simplificaciones cursivas de las mayúsculas (que también son las formas antiguas de las letras). Pensándolo otra vez, quizá no debería haber imitado el sistema mixto de mayúsculas y minúsculas, el cual en nuestro planeta está básicamente limitado a alfabetos occidentales. Debería haberme quedado con las mayúsculas para los tiempos antiguos, y las minúsculas para los modernos.
+
+<p>Intenté darle a cada letra una historia individual, como la que tiene nuestro alfabeto. La letra <b>t</b>, por ejemplo, se deriva de la imagen de una taza, <i>touresiu</i> en cuêzi; la <b>n</b> originalmente era la imagen de un pie (<i>nega</i>); para las otras ve a mi <a href="http://www.zompist.com/cuezi.htm#Orthography">gramática del cuêzi</a>. Debo admitir que lo hice al revés &#8212;inventé los pictogramas de los que podrían haberse desarrollado las letras, ¡las cuales había inventado ya años antes!
+
+<p>También fíjate que las consonantes sonoras, en las mayúsculas, son simplemente formas sordas con una barra encima (esto se esconde un poco con la de y la te), y que las letras para <b>&#353; &#269; &#382;</b> son todas variaciones claras de las otras. Esto viola mi regla de la &#8216;distinción máxima&#8217;, pero creo que le da algo interesante al alfabeto. 
+
+<p>También te darás cuenta de la <b>ce</b> y la <b>ka</b> del alfabeto. Este es el tipo de etnocentrismo en que se puede caer fácilmente. ¿Por qué otro idioma duplicaría la historia complicada de la ce y ka de nuestro alfabeto? Reinterpreté esos símbolos para que representaran <tt>/k/</tt> y <tt>/q/</tt>.
+
+
+<hr><h3><a name="diacrit">Diacríticos</a></h3>
+
+<p>Un consejo: nunca uses una tilde o marca diacrítica sin darle un significado especial, idealmente uno estable en todos sus usos. Cometí este error en el verduriano: usé ö y ü como en alemán, pero la ë es más o menos como en ruso (indicando la palatalización de la consonante anterior), y la ä no es más que una a doble. Fui más astuto una vez que llegué al cuêzi: el circumflejo indica consistentemente un acento tonal bajo.
+
+<p>Evita usar los <b>apóstrofos</b> solo para hacer que las palabras parezcan extranjeras o alienígenas. Ya que los apóstrofos se usan de formas contradictorias (representan una oclusiva glotal en el árabe o el hawaiano, la glotalización en quechua, la palatalización en ruso, la aspiración o la división de sílabas en chino mandarín, los sonidos omitidos en español, inglés, francés e italiano), terminan por no decirle nada al lector.
+
+<hr><h3><a name="fancy">Sistemas de escritura más extravagantes</a></h3>
+
+<p>¿Cómo? ¿Dices que quieres construir un silabario? ¿Una forma cursiva de tu alfabeto? ¿Un sistema logográfico?
+
+<p>Lee un buen libro sobre cómo funcionan los sistemas de escritura. <cite>Writing Systems</cite> de Geoffrey Sampson is un libro muy bueno.
+
+<p>Si eso te parece demasiado, lee algo del tipo de escritura que piensas imitar: los caracteres chinos, los silabarios del japonés o el maya, el alfabeo silábico del sánskrito, el código de características coreano, el alfabeto completamente cursivo del árabe, etc.
+
+<p>Mi página sobre el <a href="http://www.zompist.com/yingzi/yingzi.htm">yingzi</a> describe una escritura logográfica del inglés, como una manera solapada de explicar cómo funcionan los caracteres chinos; también échale un vistazo al <a href="http://www.zompist.com/Uyse7-Logograms.pdf">sistema logográfico</a> de uno de mis idiomas, el uyse. <i>Advanced Language Construction</i> también tiene un capítulo sobre crear sistemas de escritura no alfabéticos.
+
+<p>Un libro como el <cite>Languages of the World </cite> escrito por Kenneth Katzer da ejemplos de una gran variedad de sistemas de escritura. <cite>The World&#8217;s Major Languages</cite> por Bernard Comrie hace lo mismo, pero en más detalle. O invierte en el gorila de 800 libras del campo, <cite>The World&#8217;s Writing Systems</cite> por Daniels y Bright, que explica cómo <i>todos</i> los sistemas de escritura del mundo funcionan.
+
+<p>Los sistemas logográficos y los silabarios tienden a funcionar mejor con idiomas que tienen una estructura silábica muy limitada &#8212;el japonés, con su estructura (C)V(n), está cerca del ideal; el español más o menos, hacerlo con el inglés sería terrible.
+
+
+<h2><a name="lexicon">Construcción de mundos</A></h2>
+
+<h3><a name="howmany">¿Cuántas palabras se necesitan?</a></h3>
+
+<p>Cuando el bicho de los conlangs muerde, el meme de <b>speedtalk</b> mucha veces sigue. Dejemos que Robert Heinlein lo explique:
+
+<blockquote>Mucho tiempo atrás, Ogden y Richards habían demostrado que ochocientos cincuenta palabras constituían suficiente vocabulario para expresar todo lo que se podía expresar en vocabularios humanos &#x201c;normales&#x201d;; con la ayuda de unas cuantas palabras especiales &#8212;poco más de cien&#8212; para cada campo especial, por ejemplo corridas de caballos o balística. Al mismo tiempo, los fonetistas habían analizado todas las lenguas huamanas usando ciento y algo sonidos, representados con las letras de un alfabeto general.
+<br>...Un símbolo fonético era equivalente a una palabra entera en un idioma &#x201c;normal&#x201d;, una palabra de speedtalk equivalía a una oración entera.
+<br>&#8212;&#x201c;Gulf&#x201d;, en <CITE>Assignment in Eternity</CITE>, 1953</blockquote>
+
+<p>Es una idea tentadora, y no solo porque promete ahorrarnos una gran cantidad de trabajo. ¿Por qué inventar miles de palabras si cien bastarían?
+
+<p>La desafortunada verdad es que <b>Ogden y Richards hicieron trampa</b>, reduciendo el vocabulario del inglés básico sacándole ventaja a frases idiomáticas como <i>make good</I> (“hacer bien”) para decir <i>tener éxito.</i> Eso quizá ahorraba una palabra, pero era aun así un elemento lexical que había que aprender como una unidad, ya que no se podía adivinar el significado con la ayuda de los componentes. Además, el proceso entero era muy irregular (<i>make bad </i> “hacer mal” no quería decir <i>fracasar</i>.)
+
+<p>La idea del speedtalk parece recibir apoyo de observaciones tales como el hecho de que el 80% de cualquier texto en inglés usa solo las 3000 palabras más comunes, y 50% usa tan solo 100. Sin embargo, como señala el lingüista Henry Ku&#x010d;era, existe una <b>relación inversa entre la frecuencia y el contenido de información</b>: las palabras más frecuentes son las de categoría funcional (preposiciones, partículas, conjunciones, pronombres), las cuales no contribuyen mucho al significado (y de hecho pueden hasta omitirse, como suele hacerse en los títulos de los periódicos), mientras que las palabras menos frecuentes son palabras de contenido importante. No importa mucho si entiendes el 80% de una oración si el 20% que queda es lo más importante para poder entenderla toda.
+
+<p>El otro problema es que <b>la redundancia no es un problema, es una característica importante</B>. Claude Shannon demostró que el contenido de información de un texto en inglés era más o menos un bit por letra &#8212;algo no muy alto, considerando que en texto generado automáticamente al azar es cinco bits por letra. ¿Suena ineficiente, eh? Sin embargo, en la práctica no oímos todos los sonidos (o todas las letras, si somos lectores veteranos) en una palabra. Usamos la redundancia propia del lenguaje para entender lo que se trata de comunicar.
+
+<p>Pongámoslo de esta manera: s psbl ntndr n txt n spñl sn vcls, o pronunciado por un caribeño rápidamente, o susurrado (lo que elimina las distinciones de sonoridad), o por una línea de teléfono ruidosa por la estática. En tales condiciones el speedtalk sería imposible de entender, ya que morfemas enteros se perderían o se malinterpretarían. Es probable que el grado de redundancia de los idiomas humanos está calibrado precisamente para el nivel mínimo de información que se necesita para soportar niveles típicos de distorción.
+
+<p>Aun así, ve y juega con la idea del speedtalk. Puede llegar a ser divertido por varias horas, tratando de determinar la colección de significado primitivos esenciales; y el hábito de usar frases idiomáticas es útil al crear idiomas. Simplemente no te lo tomes muy en serio; y si lo haces, que tu castigo sea aprender 850 palabras de cualquier idioma extranjero y encontrarte en una ciudad de hablantes monolingües de ese idioma.
+
+<hr><h3><a name="apriori">Idiomas alienígenas o <I>a priori</I></a></h3>
+
+<p>Si inventas un idioma para un mundo diferente, querrás de seguro crear palabras que no suenen como las de los idiomas que sí existen. Para esto solo tienes que crear palabras que usen los sonidos y la estructura silábica de tu idioma.
+
+<p>Esto te puede cansar rápido. No aconsejo sentarte y crear cien palabras de un solo golpe; es muy probable que se te acabe la inspiración, o que sientas que todas las palabras suenan igual. Puede ser también que creas raíces cuando mejor podrías derivar nuevas palabras de otras.
+
+<p>No es difícil escribir programas computacionales que generen palabras de tu idioma (incluso respetando la estructura silábica). Si haces esto, recuerda que los sonidos (y las estructuras de las sílabas) no están distribuidas con la misma probabilidad. El español usa mucho mas <b>t</b>&#x2019;s que <b>p</b>&#x2019;s, y más <b>p</b>&#x2019;s que <b>ñ</b>&#x2019;s. (Mi propio generador de palabras, <a href="http://www.zompist.com/gen.html"><b>gen</b>, disponible en zompist.com</a>, se encarga de esto.) 
+
+<p>Resiste la tentación de darle un significado a toda sílaba posible. Los idiomas existentes no funcionan así (excepto cuando el número de posibilidades es muy bajo). Incluso al trabajar en un idioma auxiliar muy estructurado, siempre es de tu interés dejar un poco de espacio para expansiones futuras. Y los hablantes de tu idioma no deberían tener que deshacerse de una vieja palabra cada vez que quieren inventar un nuevo uso o una abreviación.
+
+<p>También es de tu interés tener variedad en lo largo de las palabras, pero no inventes muchas palabras largas. Es mejor derivar palabras largas combinando palabras más cortas, o añadiendo sufijos; o bien, imitando al inglés y el español y sus muchos préstamos polisilábicos del latín y el griego, o el japonés y sus préstamos del chino, crea dos idiomas y construye palabras con componentes de palabras del otro.
+
+
+<hr><h3><a name="half">Algunos préstamos que quizá se puedan reconocer</a></h3>
+
+<p>Puedes variar el aspecto alienígena de tu idioma según como lo verán los hispanohablantes o angloparlantes. En un caso extremo, la conlang auxiliar llamada <b>interlingua</b> maximiza la comprensión instantánea para los hablantes de idiomas europeos:
+
+<blockquote><b>Esseva in le mundo scientific &#8212;specialmente le branca medical&#8212; que interlingua vermente se monstrave utile.</b>
+<br><i>Era en el mundo científico &#8212;especialmente la rama médica&#8212; donde el interlingua de verdad (“verdaderamente”) se mostraba útil.</i>
+</blockquote>
+
+Yo intenté hacer que el <a href="http://www.zompist.com/verdurian.htm">verduriano</a> pareciera familiar, como si pudiera ser un pariente distante de los idiomas europeos. Por ejemplo:
+
+<blockquote><b>Sul A&#x010f; e ot&aacute;l mudray dy t&uuml;, dalu es&euml;, er ya ce&#x010d;el &#x0159;o sen e s&euml;nul.</b>
+<br><i>Solo Dios es tan sabio como usted, rey mío, y aun así no estoy seguro de eso.</i>
+
+<p><b>So cuon er so ailuro eu druki.  Cuon ride &#x0161;e slu&#x0161;ir misot&eacute;m ailurei.  So ailuro e ara&#x0161;&oacute; rizuec.</b>
+<br><i>El perro y el gato son amigos. El perro se ríe de las bromas del gato. El gato es muy gracioso.</i></blockquote>
+
+<p>Para lograr tal impresión, tomé prestadas palabras de ciertos idiomas terrícolas &#8212;por ej. <i>ailuro</i> &#x2018;gato&#x2019; y <i>cuon</i> &#x2018;perro&#x2019; fueron adaptadas del griego; <i>sul</i> &#x2018;solo&#x2019; del francés; <i>rizir</i> &#x2018;entretener&#x2019; y <i>ya</i> &#x2018;de hecho&#x2019; del español; <i>druk</i> &#x2018;amigo&#x2019; y <i>slu&#x0161;ir</i> &#x2018;hear&#x2019; del ruso. La ortografía amistosa y la estructura silábica simple (C)(C)V(C) también ayudan a invitar al lector.
+
+<p>En contraste, otro de mis idiomas, el <a href="http://www.zompist.com/xurnash.htm">xurnés</a>, fue diseñado para verse más alienígena. Todavía hay algunos cognados, pero son más sutiles.
+
+<blockquote><b>Ir nevu jadz&iacute;es mno&#x0161;uac.  To&#x0161; to ray do &#x0161;asaup rile &#x0161;izen.  To am &#x0161;us bunji dis kes denjic.  Syu cu &#x0161;us izrues &#x0161;a&#x010d;.</b>
+<br><i>Mi sobrina es novia de un escultor. Ella no ve ningún defecto en él. Él espera poder gobernar un día una provincia. Yo no le tengo envidia a esa provincia.</i></blockquote>
+
+<p>Otro idioma, el <a href="http://www.zompist.com/lenani.htm">escoureno antiguo</a>, se ve incluso menos familiar:
+
+<blockquote>
+<b>Nuasdi go&#x015f;rimi &#x014b;age&#x015f;ordor nen-ikku&#x1e37;i&#x014b;.</b>
+<br><i>Nuestro gobernante se las agarra con sus súbditos como un león a su presa.</i>
+</blockquote>
+
+
+
+
+<hr><h3><a name="existing">Idiomas basados en idiomas existentes</a></h3>
+
+<p>Los idiomas auxiliares suelen basarse en idiomas existentes; por ejemplo, el esperanto se basa sobretodo en el francés, el italiano, el alemán y el inglés. El problema de crear palabras se reduce entonces al de adquirir buenos diccionarios.
+
+<p>Ha habido algunos creadores de idiomas que han intentado resolver la tarea de manera sistemática &#8212;por ejemplo el interlingua se basa en nueve idiomas, y generalmente adopta la palabra más común encontrada en ellos.
+
+<p>El lojban usa una variedad más amplia de idiomas, incluyendo algunos idiomas no occidentales, usando un algoritmo estadístico para producir formas intermedias. La intención es proveer ayuda de tal manera que una gran variedad de hablantes puedan recordar un poco de las palabras. Es una idea intrigante, aunque la ejecución es tan sutil que muchas veces la gente piensa que es una lengua <i>a priori</i>.
+
+<p>Algunas conlangs, incluyendo varias sofisticadas, intentan imitar el aspecto de algún idioma en particular, o de una familia de idiomas. Estos suelen encontrarse en historias mundiales alternativas, o en países de fantasía ubicados en el planeta Tierra.
+
+
+<hr><h3><a name="soundsym">Simbolismo en los sonidos</a></h3>
+
+<p>Ciertos lingüistas sostienen que han encontrado patrones comunes de significados en los idiomas humanos. Por ejemplo, las vocales frontales (i, e.) sugieren supuestamente lo pequeño, lo suave, o tonos altos; las vocales abiertas y posteriores (a, u, o) sugieren lo grande, lo ruidoso, o tonos bajos. Compárense <i>mínimo, brillar, trinar</i> y el inglés <i>itty-bitty</i> ‘diminuto’, <i>tinkle</i> ‘tintinear’, <i>chirp</i> ‘piar’ por un lado, y por otro <i>máximo, grande</i> y el inglés <i>clatter</i> ‘ruido’, <i>crash</i> ‘chocar’, <i>growl</i> ‘gruñir’, <i>rumble</i> ‘retumbo’. En español se pueden contrastar también las palabras <i>mujercita</i> y <i>mujerona</i>.
+
+<p>Las excepciones no son difíciles de encontrar, por supuesto  &#8212;véanse el inglés <i>small</i> ‘pequeño’ and <i>big</i> ‘grande’.
+
+<p>Al inventar idiomas alienígenas, los autores suelen usar lo que podríamos denominar estereotipos fonéticos. El idioma de los orcos de Tolkien, por ejemplo, utiliza mucho los sonidos de la garganta y están llenos de consonantes, mientras que las lenguas de los elfos son más vocálicas, y parecen tener muchas melifluas eles y erres.
+
+<p>Es curioso que el añadir consonantes sonoras hace que a los angloparlantes les suene desagradable el idioma de los orcos. Compárense <i>Gorbag, Shagrat, Lagduf, Muzgash</i> tal y como Tolkien escribió, con <i>Corpac, Shacrat, Lactuf, Muscash</i>.
+
+
+<hr><h3><a name="derie">Morfología derivacional</a></h3>
+
+<p>Puedes multiplicar la utilidad de tus raíces básicas, e incrementar la consistencia de tu idioma, a través del uso de un sistema de <b>derivaciones</b>. Algunas de las más útiles:</p>
+
+<div class="indented">
+<table>
+<tr><td>proceso o estado</td> <td>conocimiento, salida, blancura</td>
+<tr><td>persona asociada</td> <td>luchador, bibliotecario</td>
+<tr><td>lugar</td> <td>dormitorio, taquería</td>
+<tr><td>colección</td> <td>“apilapalabras” (= diccionario)</td>
+<tr><td>herramienta</td> <td>“cortadora” (= cuchillo)</td>
+<tr><td>adjetivo característico</td> <td>guerrero, bovino, estelar</td>
+<tr><td>causativo</td> <td>enojar (a alguien), hacer-morir (= matar)</td>
+<tr><td>diminutivo</td> <td>perrito, loquillo, mujercita</td>
+<tr><td>aumentativo</td> <td>grandote, mujerona</td>
+<tr><td>habitante</td> <td>verduriano, xurnés</td>
+<tr><td>negativo</td> <td>incompetente, deshacer, ateo</td>
+</table>
+</div>
+
+Puedes añadir simplemente un sufijo o prefijo, o bien puedes usar palabras compuestas (&#x2018;libro-lugar&#x2019;), o métodos más exóticos como la reduplicación (por ejemplo el malayo <i>balik</i> &#x2018;regresar&#x2019; &#x2192; <i>balik-balik</i> &#x2018;ir de acá para allá&#x2019;).
+
+<p>Para más ejemplos dale un vistazo a <a href="http://www.zompist.com/virtuver.htm">cualquiera de mis conlangs</a>.  Estos procesos son muy útiles incluso si no quieres más que hacer un idioma para nombrar personas y lugares.
+
+
+
+<hr><h3><a name="dontcopy">Guía para no inventar el vocabulario del español otra vez</a></h3>
+
+<ul>
+<li>Si el sentido literal de una expresión no tiene mucho sentido (por ejemplo <i>make good</i> en speedtalk, <i>tener frío, hacerse el suizo, salirse con la suya</i>), es probable que sea una frase idiomática. Tradúcelas con expresiones que sí tengan sentido literal (<i>lograr éxito, sentirse frío, pretender que no le corresponde a uno, lograr que actúen como uno quiere</i>), o crea tus propias frases idiomáticas (<i>reírse del diablo, tiritar como abeja, continuar al costado, arrancar la cebolla</i>).<p>
+
+<li>Inspecciona la sección idioma extranjero - español de un diccionario bilingüe. Pon atención a la gama de significados que una palabra extranjera puede tener: trata de imaginar qué concepto esencial podría expandirse hasta acaparar todos esos significados. Luego mira la sección opuesta poniendo atención a las palabras que se usan para traducir una palabra española: imagina las distinciones que el idioma extranjero hace donde el español solo usa una palabra.<p>
+
+<li>Hazte el hábito de proveer dos términos para cada palabra de tu conlang: por ejemplo el xurnés <i>&#x0161;&aacute;suc</i> = &#x2018;defecto, falla&#x2019;; <i>kes</i> = &#x2018;reinar, gobernar; legislar&#x2019;. Le da a tus palabras cierto carácter único, y ahorra tiempo cuando necesitas una palabra. Par acompensar, divide los diferentes significados del español &#8212;por ejemplo &#x2018;hombre&#x2019; es <i>xuma</i> en el sentido usual (lo opuesto de “mujer”), <i>xumaur</i> en el sentido de la humanidad (como en “no solo de pan vive el hombre”).<p>
+
+<li>Busca la etimología de una palabra en español. Imagina un proceso alternativo. Por ejemplo, la palabra <i>lenguaje</i> viene del francés <i>langue</i> &#x2018;lengua&#x2019;. Quizá podrías derivar la palabra de alguna otra: <i>hablar, decir, conversar, boca, manera (de comunicarse), cotorreo</i>.<p>
+
+<li>Plantéate grupos de palabras españolas relacionadas  &#8212;los verbos de movimiento, por ejemplo. Diseña el mismo grupo de palabras de tu idioma, dividiendo el espacio conceptual a tu propia manera. (Por ejemplo, un par de divisiones básicas en español son <i>venir / ir</i> así como <i>subir / bajar</i>; en ruso, <i>ir a pie / ir en vehículo</i>.)
+<p>
+
+<li>Lee el libro <CITE>Metaphors We Live By</CITE> de Lakoff y Johnson. Crea tus propias metáforas y el vocabulario que les acompaña.<p>
+
+<li>Para un idioma de literatura de fantasía, piensa en la cultura que utiliza tu idioma. ¿Qué conceptos son los más importantes para ellos? Es muy probable que tengan varios sinónimos, o que incluso estén reflejados en la gramática. ¿De qué se trata su historia y su mitología? Es probable que generen un número de palabras derivadas. 
+</ul>
+
+<hr />
+
+<table width="100%">
+<tr>
+
+<td>&nbsp;</td>
+
+<td><a href="eskit.html"><img src="kit-gears.gif" border=0></a>
+<br>De regreso a <i>Portada</i></td>
+
+<td><a href="eskitgram.html"><img src="kitgram-thumb.gif" border=0></a>
+<br>A <i>Gramática</i></td>
+
+</tr>
+</table>
+
+<hr />
+
+<a href="/">Inicio</a> &gt; <a href="eskit.html">Caja de herramientas para construir idiomas</a> &gt;
+
+</div> <!--end main-->
+
+<div id="footer">
+La <i>Caja de herramientas para construir idiomas</i> es &copy; 1996, 2012 por Mark Rosenfelder.
+</div>
+
+
+
+</div> <!--end wrapper-->
+</BODY>
+</HTML>
+
